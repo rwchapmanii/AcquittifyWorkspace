@@ -1,0 +1,62 @@
+{
+  "stats": {
+    "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+    "scanned": 1196,
+    "changed": 22,
+    "with_interpretive_edges_before": 1062,
+    "with_interpretive_edges_after": 1062,
+    "interpretive_edges_added_total": 10051,
+    "missing_hover_before": 0,
+    "missing_hover_after": 0,
+    "updated_at": "2026-02-19T00:57:01.012481+00:00"
+  },
+  "edge_type_counts": {
+    "APPLIES_AMENDMENT": 810,
+    "APPLIES_PLAIN_MEANING": 2,
+    "BROADENS_STATUTE": 6,
+    "CLARIFIES_DOCTRINE": 36,
+    "DISTINGUISHES_STATUTE": 5,
+    "EXPLAINS_AMENDMENT": 5,
+    "EXTENDS_AMENDMENT": 2,
+    "EXTENDS_STATUTE": 18,
+    "INTERPRETS_STATUTE": 9119,
+    "INVALIDATES_STATUTE": 1,
+    "INVALIDATES_STATUTE_UNDER": 1,
+    "NARROWS_STATUTE": 3,
+    "OVERRULES_PRECEDENT_UNDER": 8,
+    "QUESTIONS_PRECEDENT_UNDER": 10,
+    "SEVERS_PROVISION": 23,
+    "USES_LEGISLATIVE_HISTORY": 2
+  },
+  "authority_type_counts": {
+    "CONSTITUTION": 831,
+    "FEDERAL_RULE": 19,
+    "PRIOR_CASE": 18,
+    "REGULATION": 8,
+    "STATUTE": 9175
+  },
+  "sample_changed_files": [
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Cheetam, Christopher v. State Farm Fire & Casualty Co, 506 U.S. 1 (2011).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Judulang v. Holder, Attorney General, Unknown citation (2011).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Kpmg Llp v. Robert Cocchi et al, 565 U.S. ____ (2011) [us.scotus.2011.kpmg_llp.101521].md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Marcus Hardy, Warden v. Irving L. Cross, 565 U.S. ____ (2011).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Mims v. Arrow Financial Services, Llc, Unknown citation (2012).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Mohamad v. Palestinian Authority, 565 U.S. 449 (2012).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Nitro-lift Technologies, L. L. C. v. Eddie Lee Howard et al, 546 U.S. 440 (2012) [us.scotus.2012.nitro_lift_technologies_l_l_c.546us440].md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Taylor, Kenneth L. v. Ayers, Warden, 506 U.S. 1 (2012).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Kirtsaeng, Dba Bluechristine99 v. John Wiley & Sons, Inc, 200 U.S. 321 (2016).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Melene James v. City of Boise, Idaho, et al, 449 U.S. 5 (2016) [us.scotus.2016.melene_james.449us5].md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/State Farm Fire & Casualty Co. v. United States Ex Rel. Rigsby et al, 200 U.S. 321 (2016) [us.scotus.2016.state_farm_fire_casualty_co.200us321].md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Sessions, Attorney General v. Morales\u00ad Santana, 200 U.S. 321 (2017).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Hughes v. United States, 200 U.S. 321 (2018).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Michael Sexton, Warden v. Nicholas Beaudreaux, 562 U.S. 86 (2018).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2019/Stokeling v. United States, 200 U.S. 321 (2019).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2019/Tim Shoop, Warden v. Danny Hill, 507 U.S. 1007 (2019).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Atlantic Richfield Co. v. Christian et al, 200 U.S. 321 (2020) [us.scotus.2020.atlantic_richfield_co.200us321].md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2022/Babcock v. Kijakazi, Acting Commissioner of Social Security, 200 U.S. 321 (2022).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2022/Zf Automotive Us, Inc., et al. v. Luxshare, Ltd, 200 U.S. 321 (2022).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Twitter, Inc. v. Taamneh et al, 200 U.S. 321 (2023) [us.scotus.2023.twitter_inc.200us321].md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Pulsifer v. United States, 200 U.S. 321 (2024).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2026/Bowe v. United States, 200 U.S. 321 (2026).md"
+  ]
+}

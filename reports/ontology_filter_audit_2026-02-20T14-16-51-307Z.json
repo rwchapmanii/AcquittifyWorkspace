@@ -1,0 +1,680 @@
+{
+  "generated_at": "2026-02-20T14:16:51.306Z",
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court",
+  "limit": 20000,
+  "graph": {
+    "nodes": 1218,
+    "edges": 5910,
+    "node_type_counts": {
+      "case": 1195,
+      "constitution": 23
+    },
+    "edge_type_counts": {
+      "case_citation": 142,
+      "constitution_citation": 643,
+      "shared_authority_bundle": 5125
+    },
+    "canonical_relation_counts": {
+      "none": 5910
+    },
+    "citation_type_counts": {
+      "persuasive": 5208,
+      "controlling": 688,
+      "background": 14
+    },
+    "court_bucket_counts": {
+      "supreme": 1145,
+      "none": 73
+    },
+    "circuit_counts": {
+      "ca2": 70,
+      "ca3": 50,
+      "ca7": 48,
+      "ca11": 77,
+      "none": 304,
+      "ca6": 86,
+      "ca8": 58,
+      "ca4": 62,
+      "cadc": 51,
+      "ca1": 30,
+      "ca9": 201,
+      "ca5": 115,
+      "ca10": 43
+    }
+  },
+  "baseline_rendered": {
+    "nodes": 1218,
+    "edges": 5910
+  },
+  "summary": {
+    "total": 22,
+    "pass": 15,
+    "fail": 0,
+    "skipped": 7
+  },
+  "tests": [
+    {
+      "id": "baseline_full",
+      "description": "Full ontology baseline returns non-empty graph",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1218,
+        "edges": 5910
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "node_types_source",
+      "description": "Node type filter isolates source nodes",
+      "status": "skipped",
+      "reason": "no_source_nodes"
+    },
+    {
+      "id": "node_types_case_external",
+      "description": "Node type filter isolates case/external_case nodes",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1195,
+        "edges": 5267
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "external_case"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "relation_only_applies",
+      "description": "Relation filter keeps only applies canonical edges",
+      "status": "skipped",
+      "reason": "no_applies_edges"
+    },
+    {
+      "id": "relation_exclude_ace",
+      "description": "Relation filter excluding applies/clarifies/extends removes those canonical types",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1218,
+        "edges": 0
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "citation_type_controlling",
+      "description": "Citation type filter keeps only controlling edges",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1218,
+        "edges": 688
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "controlling",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "court_level_supreme",
+      "description": "Court level filter keeps supreme-level nodes",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1145,
+        "edges": 4922
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "supreme",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "originating_circuit",
+      "description": "Originating circuit filter keeps case nodes in ca9",
+      "status": "pass",
+      "rendered": {
+        "nodes": 201,
+        "edges": 204
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "ca9",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "normative_strength",
+      "description": "Normative strength filter isolates holding.unknown",
+      "status": "skipped",
+      "reason": "no_holding_normative_strength"
+    },
+    {
+      "id": "fact_dimension",
+      "description": "Fact dimension filter matches ''",
+      "status": "skipped",
+      "reason": "no_fact_dimensions"
+    },
+    {
+      "id": "min_edge_strength",
+      "description": "Minimum edge strength threshold enforces edge strength floor",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1218,
+        "edges": 985
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": 0.9,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "min_case_importance",
+      "description": "Minimum case importance threshold enforces case-importance floor",
+      "status": "pass",
+      "rendered": {
+        "nodes": 291,
+        "edges": 2198
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": 0.6,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "max_edges_per_node",
+      "description": "Max edges per node reduces or maintains edge count",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1218,
+        "edges": 5256
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": 5,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      },
+      "baselineEdges": 5910
+    },
+    {
+      "id": "relation_confidence_min",
+      "description": "Relation confidence threshold keeps only high-confidence edges",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1218,
+        "edges": 176
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": 0.9,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "max_nodes",
+      "description": "Max node cap is honored",
+      "status": "pass",
+      "rendered": {
+        "nodes": 500,
+        "edges": 3971
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 500
+      }
+    },
+    {
+      "id": "search_query",
+      "description": "Search filter token 'barrett' restricts node search text",
+      "status": "pass",
+      "rendered": {
+        "nodes": 7,
+        "edges": 1
+      },
+      "filters": {
+        "viewPreset": "full_ontology",
+        "query": "barrett",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": null,
+        "minCaseImportance": null,
+        "maxEdgesPerNode": null,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "pf_min",
+      "description": "PF minimum filter enforces PF threshold on PF-bearing nodes",
+      "status": "skipped",
+      "reason": "no_pf_values"
+    },
+    {
+      "id": "consensus_min",
+      "description": "Consensus minimum filter enforces issue consensus threshold",
+      "status": "skipped",
+      "reason": "no_issue_consensus_values"
+    },
+    {
+      "id": "drift_max",
+      "description": "Drift maximum filter enforces issue drift threshold",
+      "status": "skipped",
+      "reason": "no_issue_drift_values"
+    },
+    {
+      "id": "preset_constitutional",
+      "description": "Constitutional preset only allows constitutional/core edge families",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1192,
+        "edges": 785
+      },
+      "filters": {
+        "viewPreset": "constitutional",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": 0.66,
+        "minCaseImportance": 0.2,
+        "maxEdgesPerNode": 20,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "preset_statutory_regulatory",
+      "description": "Statutory/regulatory preset only allows statutory/regulatory/core edge families",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1188,
+        "edges": 1048
+      },
+      "filters": {
+        "viewPreset": "statutory_regulatory",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": 0.58,
+        "minCaseImportance": 0.14,
+        "maxEdgesPerNode": 24,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    },
+    {
+      "id": "preset_core_precedent",
+      "description": "Core precedent preset only allows core precedent edge families",
+      "status": "pass",
+      "rendered": {
+        "nodes": 1202,
+        "edges": 1664
+      },
+      "filters": {
+        "viewPreset": "core_precedent",
+        "query": "",
+        "nodeTypes": [
+          "case",
+          "constitution"
+        ],
+        "relationTypes": [
+          "applies",
+          "clarifies",
+          "extends",
+          "distinguishes",
+          "limits",
+          "overrules",
+          "questions"
+        ],
+        "citationType": "all",
+        "courtLevel": "all",
+        "originatingCircuit": "all",
+        "normativeStrength": "all",
+        "factDimension": "",
+        "minEdgeStrength": 0.62,
+        "minCaseImportance": 0.18,
+        "maxEdgesPerNode": 28,
+        "pfMin": null,
+        "consensusMin": null,
+        "driftMax": null,
+        "relationConfidenceMin": null,
+        "maxNodes": 20000
+      }
+    }
+  ]
+}

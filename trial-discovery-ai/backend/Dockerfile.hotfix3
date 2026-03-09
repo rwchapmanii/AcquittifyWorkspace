@@ -1,0 +1,4 @@
+FROM 444284889609.dkr.ecr.us-east-1.amazonaws.com/acquittify-prod-api:b97f4416266d9f32e179378abaf8a8234586b3d7
+WORKDIR /app
+RUN python -m pip install --no-cache-dir pyotp cryptography
+COPY app ./app

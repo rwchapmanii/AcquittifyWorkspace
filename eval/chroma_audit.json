@@ -1,0 +1,109 @@
+{
+  "collection": "acquittify_corpus",
+  "total": 10773,
+  "sample_size": 1000,
+  "missing_metadata": {
+    "document_type": 1000,
+    "court": 1000,
+    "year": 1000,
+    "date_filed": 1000,
+    "citation": 1000
+  },
+  "source_type_distribution": {
+    "Treatise": 1000
+  },
+  "document_type_distribution": {
+    "UNKNOWN": 1000
+  },
+  "length_stats": {
+    "min": 181,
+    "max": 800,
+    "avg": 798.7,
+    "median": 800.0,
+    "p90": 800.0,
+    "p95": 800.0,
+    "histogram": {
+      "800-1000": 997,
+      "0-200": 1,
+      "200-400": 1,
+      "400-600": 1
+    }
+  },
+  "histograms": {
+    "citation_count": {
+      "0": 932,
+      "1": 44,
+      "2": 10,
+      "5": 3,
+      "3": 5,
+      "4": 2,
+      "7": 1,
+      "8": 2,
+      "6": 1
+    },
+    "statute_count": {
+      "0": 959,
+      "1": 37,
+      "2": 3,
+      "3": 1
+    },
+    "rule_count": {
+      "0": 982,
+      "1": 15,
+      "2": 3
+    },
+    "authority_weight": {
+      "2": 918,
+      "3": 81,
+      "4": 1
+    }
+  },
+  "taxonomy_coverage": {
+    "total_nodes": 254,
+    "covered_nodes": 41,
+    "coverage_ratio": 0.16141732283464566
+  },
+  "taxonomy_codes_sampled": [
+    "FCD.AUTH.CASELAW.SCOTUS",
+    "FCD.AUTH.CONST.1A",
+    "FCD.AUTH.CONST.5A",
+    "FCD.AUTH.CONST.6A",
+    "FCD.AUTH.RULE.FRCP",
+    "FCD.AUTH.RULE.FRE",
+    "FCD.AUTH.SECONDARY.TREATISE",
+    "FCD.AUTH.STAT.USC.<title>.<section>",
+    "FCD.CTX.CAPITAL",
+    "FCD.CTX.NONCITIZEN",
+    "FCD.ISS.CHARGING.ELEMENTS_MENS_REA",
+    "FCD.ISS.CHARGING.STATUTE_LIMITATIONS",
+    "FCD.ISS.DEFENSES.MENTAL_HEALTH",
+    "FCD.ISS.DEFENSES.SELF_DEFENSE",
+    "FCD.ISS.DISCOVERY.BRADY",
+    "FCD.ISS.EVIDENCE.PRIVILEGES",
+    "FCD.ISS.GRAND_JURY.PRIVILEGES",
+    "FCD.ISS.JURISDICTION_VENUE.SUBJECT_MATTER",
+    "FCD.ISS.JURISDICTION_VENUE.TERRITORIAL",
+    "FCD.ISS.JURISDICTION_VENUE.VENUE",
+    "FCD.ISS.POSTCONVICTION.2255",
+    "FCD.ISS.POSTCONVICTION.DIRECT_APPEAL",
+    "FCD.ISS.PROSECUTORIAL_MISCONDUCT.IMPROPER_ARGUMENT",
+    "FCD.ISS.SENTENCING.MANDATORY_MIN",
+    "FCD.ISS.SUPPRESSION.STATEMENTS",
+    "FCD.ISS.TRIAL_RIGHTS.CONFRONTATION",
+    "FCD.ISS.TRIAL_RIGHTS.DOUBLE_JEOPARDY",
+    "FCD.ISS.TRIAL_RIGHTS.DUE_PROCESS",
+    "FCD.OFF.FRAUD_FINANCIAL.BANK",
+    "FCD.OFF.FRAUD_FINANCIAL.IDENTITY",
+    "FCD.OFF.FRAUD_FINANCIAL.MAIL_WIRE",
+    "FCD.OFF.FRAUD_FINANCIAL.PROGRAM_FRAUD",
+    "FCD.OFF.FRAUD_FINANCIAL.SECURITIES",
+    "FCD.OFF.FRAUD_FINANCIAL.TAX",
+    "FCD.OFF.IMMIGRATION_BORDER.ENTRY_REENTRY",
+    "FCD.OFF.NATSEC.TERRORISM",
+    "FCD.OFF.VIOLENT_PERSON.THREATS_STALKING",
+    "FCD.PRAC.TRIAL_ADVOCACY",
+    "FCD.STG.TRIAL.EVIDENCE",
+    "FCD.STG.TRIAL.JURY_SELECTION",
+    "FCD.STG.TRIAL.VERDICT"
+  ]
+}

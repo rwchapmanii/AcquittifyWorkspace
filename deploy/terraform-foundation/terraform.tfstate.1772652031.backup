@@ -1,0 +1,872 @@
+{
+  "version": 4,
+  "terraform_version": "1.5.7",
+  "serial": 25,
+  "lineage": "e5aa676d-10b7-b397-8cd7-87e4248dec3b",
+  "outputs": {
+    "acm_certificate_arn": {
+      "value": "arn:aws:acm:us-east-1:444284889609:certificate/ab3ef387-0e29-4476-a97b-f2eff9f2f6ad",
+      "type": "string"
+    },
+    "auth_secret_arn": {
+      "value": "arn:aws:secretsmanager:us-east-1:444284889609:secret:acquittify-auth-secret-iAC1qE",
+      "type": "string"
+    },
+    "private_subnet_ids": {
+      "value": [
+        "subnet-0f95e2c039f09393f",
+        "subnet-0b5bc6e39510b9548"
+      ],
+      "type": [
+        "tuple",
+        [
+          "string",
+          "string"
+        ]
+      ]
+    },
+    "public_subnet_ids": {
+      "value": [
+        "subnet-0f09e425044bbdec1",
+        "subnet-0c88ebeb415985c7a"
+      ],
+      "type": [
+        "tuple",
+        [
+          "string",
+          "string"
+        ]
+      ]
+    },
+    "route53_zone_id": {
+      "value": "Z02109862W9E40LEVM24",
+      "type": "string"
+    },
+    "vpc_id": {
+      "value": "vpc-0c365f92e38e6849c",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "data",
+      "type": "aws_availability_zones",
+      "name": "available",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "all_availability_zones": null,
+            "exclude_names": null,
+            "exclude_zone_ids": null,
+            "filter": null,
+            "group_names": [
+              "us-east-1-zg-1"
+            ],
+            "id": "us-east-1",
+            "names": [
+              "us-east-1a",
+              "us-east-1b",
+              "us-east-1c",
+              "us-east-1d",
+              "us-east-1e",
+              "us-east-1f"
+            ],
+            "state": "available",
+            "timeouts": null,
+            "zone_ids": [
+              "use1-az1",
+              "use1-az2",
+              "use1-az4",
+              "use1-az6",
+              "use1-az3",
+              "use1-az5"
+            ]
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "aws_route53_zone",
+      "name": "primary",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:route53:::hostedzone/Z02109862W9E40LEVM24",
+            "caller_reference": "acquittify-1772637356",
+            "comment": "",
+            "id": "Z02109862W9E40LEVM24",
+            "linked_service_description": null,
+            "linked_service_principal": null,
+            "name": "acquittify.ai",
+            "name_servers": [
+              "ns-1254.awsdns-28.org",
+              "ns-1935.awsdns-49.co.uk",
+              "ns-546.awsdns-04.net",
+              "ns-180.awsdns-22.com"
+            ],
+            "primary_name_server": "ns-1254.awsdns-28.org",
+            "private_zone": false,
+            "resource_record_set_count": 3,
+            "tags": {},
+            "vpc_id": null,
+            "zone_id": "Z02109862W9E40LEVM24"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_acm_certificate",
+      "name": "primary",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:acm:us-east-1:444284889609:certificate/ab3ef387-0e29-4476-a97b-f2eff9f2f6ad",
+            "certificate_authority_arn": "",
+            "certificate_body": null,
+            "certificate_chain": null,
+            "domain_name": "acquittify.ai",
+            "domain_validation_options": [
+              {
+                "domain_name": "*.acquittify.ai",
+                "resource_record_name": "_a26ef17d509d139524ddae10a5a35e2e.acquittify.ai.",
+                "resource_record_type": "CNAME",
+                "resource_record_value": "_46edaf2d0913bc3e0c5acfd3a999ceaf.jkddzztszm.acm-validations.aws."
+              },
+              {
+                "domain_name": "acquittify.ai",
+                "resource_record_name": "_a26ef17d509d139524ddae10a5a35e2e.acquittify.ai.",
+                "resource_record_type": "CNAME",
+                "resource_record_value": "_46edaf2d0913bc3e0c5acfd3a999ceaf.jkddzztszm.acm-validations.aws."
+              }
+            ],
+            "early_renewal_duration": "",
+            "id": "arn:aws:acm:us-east-1:444284889609:certificate/ab3ef387-0e29-4476-a97b-f2eff9f2f6ad",
+            "key_algorithm": "RSA_2048",
+            "not_after": "",
+            "not_before": "",
+            "options": [
+              {
+                "certificate_transparency_logging_preference": "ENABLED"
+              }
+            ],
+            "pending_renewal": false,
+            "private_key": null,
+            "renewal_eligibility": "INELIGIBLE",
+            "renewal_summary": [],
+            "status": "PENDING_VALIDATION",
+            "subject_alternative_names": [
+              "*.acquittify.ai",
+              "acquittify.ai"
+            ],
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-primary-certificate",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-primary-certificate",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "type": "AMAZON_ISSUED",
+            "validation_emails": [],
+            "validation_method": "DNS",
+            "validation_option": []
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "create_before_destroy": true
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_eip",
+      "name": "nat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address": null,
+            "allocation_id": "eipalloc-037e4cea04c289af5",
+            "arn": "arn:aws:ec2:us-east-1:444284889609:elastic-ip/eipalloc-037e4cea04c289af5",
+            "associate_with_private_ip": null,
+            "association_id": "eipassoc-0ef533a8a4e3d1291",
+            "carrier_ip": "",
+            "customer_owned_ip": "",
+            "customer_owned_ipv4_pool": "",
+            "domain": "vpc",
+            "id": "eipalloc-037e4cea04c289af5",
+            "instance": "",
+            "ipam_pool_id": null,
+            "network_border_group": "us-east-1",
+            "network_interface": "eni-079cb1fd71c3f6825",
+            "private_dns": "ip-10-20-14-66.ec2.internal",
+            "private_ip": "10.20.14.66",
+            "ptr_record": "",
+            "public_dns": "ec2-18-209-217-248.compute-1.amazonaws.com",
+            "public_ip": "18.209.217.248",
+            "public_ipv4_pool": "amazon",
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-foundation-nat",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-foundation-nat",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "timeouts": null,
+            "vpc": true
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjoxODAwMDAwMDAwMDAsInJlYWQiOjkwMDAwMDAwMDAwMCwidXBkYXRlIjozMDAwMDAwMDAwMDB9fQ=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_internet_gateway",
+      "name": "this",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:444284889609:internet-gateway/igw-0b715c163ec7c5a4a",
+            "id": "igw-0b715c163ec7c5a4a",
+            "owner_id": "444284889609",
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-foundation-igw",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-foundation-igw",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0c365f92e38e6849c"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "aws_vpc.primary"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_nat_gateway",
+      "name": "primary",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "status": "tainted",
+          "schema_version": 0,
+          "attributes": {
+            "allocation_id": "eipalloc-037e4cea04c289af5",
+            "association_id": null,
+            "connectivity_type": "public",
+            "id": "nat-0ff03af2f5d7fa69c",
+            "network_interface_id": null,
+            "private_ip": null,
+            "public_ip": null,
+            "secondary_allocation_ids": null,
+            "secondary_private_ip_address_count": null,
+            "secondary_private_ip_addresses": [],
+            "subnet_id": "subnet-0f09e425044bbdec1",
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-foundation-nat",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-foundation-nat",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTgwMDAwMDAwMDAwMCwidXBkYXRlIjo2MDAwMDAwMDAwMDB9fQ==",
+          "dependencies": [
+            "aws_eip.nat",
+            "aws_internet_gateway.this",
+            "aws_subnet.public",
+            "data.aws_availability_zones.available"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_route53_record",
+      "name": "acm_validation",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "index_key": "*.acquittify.ai",
+          "schema_version": 2,
+          "attributes": {
+            "alias": [],
+            "allow_overwrite": true,
+            "cidr_routing_policy": [],
+            "failover_routing_policy": [],
+            "fqdn": "_a26ef17d509d139524ddae10a5a35e2e.acquittify.ai",
+            "geolocation_routing_policy": [],
+            "geoproximity_routing_policy": [],
+            "health_check_id": "",
+            "id": "Z02109862W9E40LEVM24__a26ef17d509d139524ddae10a5a35e2e.acquittify.ai._CNAME",
+            "latency_routing_policy": [],
+            "multivalue_answer_routing_policy": false,
+            "name": "_a26ef17d509d139524ddae10a5a35e2e.acquittify.ai",
+            "records": [
+              "_46edaf2d0913bc3e0c5acfd3a999ceaf.jkddzztszm.acm-validations.aws."
+            ],
+            "set_identifier": "",
+            "timeouts": null,
+            "ttl": 60,
+            "type": "CNAME",
+            "weighted_routing_policy": [],
+            "zone_id": "Z02109862W9E40LEVM24"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMiJ9",
+          "dependencies": [
+            "aws_acm_certificate.primary",
+            "data.aws_route53_zone.primary"
+          ]
+        },
+        {
+          "index_key": "acquittify.ai",
+          "schema_version": 2,
+          "attributes": {
+            "alias": [],
+            "allow_overwrite": true,
+            "cidr_routing_policy": [],
+            "failover_routing_policy": [],
+            "fqdn": "_a26ef17d509d139524ddae10a5a35e2e.acquittify.ai",
+            "geolocation_routing_policy": [],
+            "geoproximity_routing_policy": [],
+            "health_check_id": "",
+            "id": "Z02109862W9E40LEVM24__a26ef17d509d139524ddae10a5a35e2e.acquittify.ai._CNAME",
+            "latency_routing_policy": [],
+            "multivalue_answer_routing_policy": false,
+            "name": "_a26ef17d509d139524ddae10a5a35e2e.acquittify.ai",
+            "records": [
+              "_46edaf2d0913bc3e0c5acfd3a999ceaf.jkddzztszm.acm-validations.aws."
+            ],
+            "set_identifier": "",
+            "timeouts": null,
+            "ttl": 60,
+            "type": "CNAME",
+            "weighted_routing_policy": [],
+            "zone_id": "Z02109862W9E40LEVM24"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMiJ9",
+          "dependencies": [
+            "aws_acm_certificate.primary",
+            "data.aws_route53_zone.primary"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_route_table",
+      "name": "private",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": []
+    },
+    {
+      "mode": "managed",
+      "type": "aws_route_table",
+      "name": "public",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:444284889609:route-table/rtb-0834b13c5a2bcbd8f",
+            "id": "rtb-0834b13c5a2bcbd8f",
+            "owner_id": "444284889609",
+            "propagating_vgws": [],
+            "route": [
+              {
+                "carrier_gateway_id": "",
+                "cidr_block": "0.0.0.0/0",
+                "core_network_arn": "",
+                "destination_prefix_list_id": "",
+                "egress_only_gateway_id": "",
+                "gateway_id": "igw-0b715c163ec7c5a4a",
+                "ipv6_cidr_block": "",
+                "local_gateway_id": "",
+                "nat_gateway_id": "",
+                "network_interface_id": "",
+                "transit_gateway_id": "",
+                "vpc_endpoint_id": "",
+                "vpc_peering_connection_id": ""
+              }
+            ],
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-public-rt",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-public-rt",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0c365f92e38e6849c"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "aws_internet_gateway.this",
+            "aws_vpc.primary"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_route_table_association",
+      "name": "private",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": []
+    },
+    {
+      "mode": "managed",
+      "type": "aws_route_table_association",
+      "name": "public",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "gateway_id": "",
+            "id": "rtbassoc-0379da65ceb30e911",
+            "route_table_id": "rtb-0834b13c5a2bcbd8f",
+            "subnet_id": "subnet-0f09e425044bbdec1",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "aws_internet_gateway.this",
+            "aws_route_table.public",
+            "aws_subnet.public",
+            "aws_vpc.primary",
+            "data.aws_availability_zones.available"
+          ]
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "gateway_id": "",
+            "id": "rtbassoc-0164fa2a613d97794",
+            "route_table_id": "rtb-0834b13c5a2bcbd8f",
+            "subnet_id": "subnet-0c88ebeb415985c7a",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "aws_internet_gateway.this",
+            "aws_route_table.public",
+            "aws_subnet.public",
+            "aws_vpc.primary",
+            "data.aws_availability_zones.available"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_secretsmanager_secret",
+      "name": "auth",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:secretsmanager:us-east-1:444284889609:secret:acquittify-auth-secret-iAC1qE",
+            "description": "",
+            "force_overwrite_replica_secret": false,
+            "id": "arn:aws:secretsmanager:us-east-1:444284889609:secret:acquittify-auth-secret-iAC1qE",
+            "kms_key_id": "",
+            "name": "acquittify-auth-secret",
+            "name_prefix": "",
+            "policy": "",
+            "recovery_window_in_days": 30,
+            "replica": [],
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-auth-secret",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-auth-secret",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            }
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_secretsmanager_secret_version",
+      "name": "auth",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:secretsmanager:us-east-1:444284889609:secret:acquittify-auth-secret-iAC1qE",
+            "has_secret_string_wo": null,
+            "id": "arn:aws:secretsmanager:us-east-1:444284889609:secret:acquittify-auth-secret-iAC1qE|terraform-20260304160023231100000003",
+            "secret_binary": "",
+            "secret_id": "arn:aws:secretsmanager:us-east-1:444284889609:secret:acquittify-auth-secret-iAC1qE",
+            "secret_string": "A0c({2aeC2O\u0026x76)]D7r12wYhm0O)G$%}U%hzSENQW5-bj?kdPfMDTcm2I]UkGMj",
+            "secret_string_wo": null,
+            "secret_string_wo_version": null,
+            "version_id": "terraform-20260304160023231100000003",
+            "version_stages": [
+              "AWSCURRENT"
+            ]
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "secret_string"
+              }
+            ]
+          ],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_secretsmanager_secret.auth",
+            "random_password.auth"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_subnet",
+      "name": "private",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:444284889609:subnet/subnet-0f95e2c039f09393f",
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "us-east-1a",
+            "availability_zone_id": "use1-az1",
+            "cidr_block": "10.20.128.0/20",
+            "customer_owned_ipv4_pool": "",
+            "enable_dns64": false,
+            "enable_lni_at_device_index": 0,
+            "enable_resource_name_dns_a_record_on_launch": false,
+            "enable_resource_name_dns_aaaa_record_on_launch": false,
+            "id": "subnet-0f95e2c039f09393f",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_association_id": "",
+            "ipv6_native": false,
+            "map_customer_owned_ip_on_launch": false,
+            "map_public_ip_on_launch": false,
+            "outpost_arn": "",
+            "owner_id": "444284889609",
+            "private_dns_hostname_type_on_launch": "ip-name",
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-private-us-east-1a",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation",
+              "Tier": "private"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-private-us-east-1a",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation",
+              "Tier": "private"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0c365f92e38e6849c"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "aws_vpc.primary",
+            "data.aws_availability_zones.available"
+          ]
+        },
+        {
+          "index_key": 1,
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:444284889609:subnet/subnet-0b5bc6e39510b9548",
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "us-east-1b",
+            "availability_zone_id": "use1-az2",
+            "cidr_block": "10.20.144.0/20",
+            "customer_owned_ipv4_pool": "",
+            "enable_dns64": false,
+            "enable_lni_at_device_index": 0,
+            "enable_resource_name_dns_a_record_on_launch": false,
+            "enable_resource_name_dns_aaaa_record_on_launch": false,
+            "id": "subnet-0b5bc6e39510b9548",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_association_id": "",
+            "ipv6_native": false,
+            "map_customer_owned_ip_on_launch": false,
+            "map_public_ip_on_launch": false,
+            "outpost_arn": "",
+            "owner_id": "444284889609",
+            "private_dns_hostname_type_on_launch": "ip-name",
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-private-us-east-1b",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation",
+              "Tier": "private"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-private-us-east-1b",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation",
+              "Tier": "private"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0c365f92e38e6849c"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "aws_vpc.primary",
+            "data.aws_availability_zones.available"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_subnet",
+      "name": "public",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:444284889609:subnet/subnet-0f09e425044bbdec1",
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "us-east-1a",
+            "availability_zone_id": "use1-az1",
+            "cidr_block": "10.20.0.0/20",
+            "customer_owned_ipv4_pool": "",
+            "enable_dns64": false,
+            "enable_lni_at_device_index": 0,
+            "enable_resource_name_dns_a_record_on_launch": false,
+            "enable_resource_name_dns_aaaa_record_on_launch": false,
+            "id": "subnet-0f09e425044bbdec1",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_association_id": "",
+            "ipv6_native": false,
+            "map_customer_owned_ip_on_launch": false,
+            "map_public_ip_on_launch": true,
+            "outpost_arn": "",
+            "owner_id": "444284889609",
+            "private_dns_hostname_type_on_launch": "ip-name",
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-public-us-east-1a",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation",
+              "Tier": "public"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-public-us-east-1a",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation",
+              "Tier": "public"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0c365f92e38e6849c"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "aws_vpc.primary",
+            "data.aws_availability_zones.available"
+          ]
+        },
+        {
+          "index_key": 1,
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:444284889609:subnet/subnet-0c88ebeb415985c7a",
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "us-east-1b",
+            "availability_zone_id": "use1-az2",
+            "cidr_block": "10.20.16.0/20",
+            "customer_owned_ipv4_pool": "",
+            "enable_dns64": false,
+            "enable_lni_at_device_index": 0,
+            "enable_resource_name_dns_a_record_on_launch": false,
+            "enable_resource_name_dns_aaaa_record_on_launch": false,
+            "id": "subnet-0c88ebeb415985c7a",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_association_id": "",
+            "ipv6_native": false,
+            "map_customer_owned_ip_on_launch": false,
+            "map_public_ip_on_launch": true,
+            "outpost_arn": "",
+            "owner_id": "444284889609",
+            "private_dns_hostname_type_on_launch": "ip-name",
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-public-us-east-1b",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation",
+              "Tier": "public"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-public-us-east-1b",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation",
+              "Tier": "public"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-0c365f92e38e6849c"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "aws_vpc.primary",
+            "data.aws_availability_zones.available"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_vpc",
+      "name": "primary",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:444284889609:vpc/vpc-0c365f92e38e6849c",
+            "assign_generated_ipv6_cidr_block": false,
+            "cidr_block": "10.20.0.0/16",
+            "default_network_acl_id": "acl-07be33accee2097c7",
+            "default_route_table_id": "rtb-0a4cb28bd9842bd6c",
+            "default_security_group_id": "sg-06136a18b24ba1edc",
+            "dhcp_options_id": "dopt-00dfcf70a2b4b2040",
+            "enable_dns_hostnames": true,
+            "enable_dns_support": true,
+            "enable_network_address_usage_metrics": false,
+            "id": "vpc-0c365f92e38e6849c",
+            "instance_tenancy": "default",
+            "ipv4_ipam_pool_id": null,
+            "ipv4_netmask_length": null,
+            "ipv6_association_id": "",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_network_border_group": "",
+            "ipv6_ipam_pool_id": "",
+            "ipv6_netmask_length": 0,
+            "main_route_table_id": "rtb-0a4cb28bd9842bd6c",
+            "owner_id": "444284889609",
+            "tags": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-foundation-vpc",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            },
+            "tags_all": {
+              "ManagedBy": "Terraform",
+              "Name": "acquittify-foundation-vpc",
+              "Project": "AcquittifyPeregrine",
+              "Stack": "foundation"
+            }
+          },
+          "sensitive_attributes": [],
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "random_password",
+      "name": "auth",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "schema_version": 3,
+          "attributes": {
+            "bcrypt_hash": "$2a$10$yzdwLz0FRxH6z7RJOaxck.PpbqM5p8wLlm6qLElB8IvhlBIxd8al.",
+            "id": "none",
+            "keepers": null,
+            "length": 64,
+            "lower": true,
+            "min_lower": 0,
+            "min_numeric": 0,
+            "min_special": 0,
+            "min_upper": 0,
+            "number": true,
+            "numeric": true,
+            "override_special": null,
+            "result": "A0c({2aeC2O\u0026x76)]D7r12wYhm0O)G$%}U%hzSENQW5-bj?kdPfMDTcm2I]UkGMj",
+            "special": true,
+            "upper": true
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-02-19T10:40:54.330441+00:00",
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "index_path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/indices/scotus_case_citation_index.json",
+  "dry_run": false,
+  "unresolved_unique_before": 3413,
+  "unresolved_anchor_instances_before": 7514,
+  "local_index_unique_resolved": 0,
+  "api_queries": 0,
+  "api_any_resolution_count": 0,
+  "api_local_remap_count": 0,
+  "resolved_unique_total": 0,
+  "files_changed": 0,
+  "anchors_updated": 0,
+  "unresolved_anchor_instances_after": 7514
+}

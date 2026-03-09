@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-02-19T15:49:55.265108+00:00",
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "cases": 1194,
+  "case_files_scanned": 1212,
+  "parse_failures": 18,
+  "coverage": {
+    "cases_with_citation_anchors": 1131,
+    "cases_with_authority_anchors": 1077,
+    "cases_with_interpretive_edges": 1076,
+    "resolved_anchor_instances": 1829,
+    "unresolved_anchor_instances": 7602,
+    "resolved_anchor_ratio_percent": 19.39
+  },
+  "projected_case_graph": {
+    "direct_case_citation_edges": 1613,
+    "interpretive_prior_case_edges": 282,
+    "shared_authority_case_edges": 5184,
+    "shared_constitution_case_edges": 4061,
+    "union_case_case_edges": 10542,
+    "linked_cases": 1137,
+    "linked_cases_percent": 95.23,
+    "avg_degree": 17.66,
+    "median_degree": 15.0,
+    "cases_degree_le_1": 120,
+    "cases_degree_le_1_percent": 10.05
+  }
+}

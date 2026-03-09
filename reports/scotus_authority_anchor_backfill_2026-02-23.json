@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-02-23T17:21:11.800077+00:00",
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "dry_run": false,
+  "scanned_files": 100,
+  "changed_files": 3,
+  "parse_failures": 0,
+  "total_authority_anchors": 895,
+  "authority_type_counts": {
+    "constitution": 327,
+    "reg": 30,
+    "rule": 74,
+    "statute": 389,
+    "statutes_at_large": 75
+  },
+  "anchor_scope_counts": {
+    "full_opinion_fallback_sparse_syllabus": 33,
+    "full_opinion_no_syllabus": 35,
+    "syllabus": 32
+  },
+  "files_changed": [
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Commonwealth of Puerto Rico v. Sanchez Valle et Al, 15-108 (2016).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Ray White, et al. v. Daniel T. Pauly, As Personal Representative of the Estate of Samuel Pauly, Deceased et Al, 16-67 (2017).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Corrections v. Jones, 22-982 (2024).md"
+  ]
+}

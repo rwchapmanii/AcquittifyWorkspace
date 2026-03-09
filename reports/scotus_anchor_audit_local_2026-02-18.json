@@ -1,0 +1,1504 @@
+{
+  "generated_at": "2026-02-18T23:28:18.636580+00:00",
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "case_count": 1196,
+  "cases_with_anchors": 1104,
+  "cases_without_anchors": 92,
+  "anchors_total": 28088,
+  "anchors_resolved": 3556,
+  "anchors_unresolved": 24532,
+  "anchor_resolution_rate": 0.126602,
+  "anchors_with_local_case_id": 3556,
+  "anchors_with_courtlistener_case_id": 0,
+  "primary_citation_stats": {
+    "us_reporter": 5,
+    "non_us_or_docket": 1191,
+    "empty": 0
+  },
+  "citation_index_summary": {
+    "case_count": 1196,
+    "unique_citation_count": 191,
+    "ambiguous_citation_count": 53
+  },
+  "top_unresolved_citations": [
+    {
+      "citation": "544 U.S. 709",
+      "count": 72
+    },
+    {
+      "citation": "504 U.S. 555",
+      "count": 67
+    },
+    {
+      "citation": "530 U.S. 466",
+      "count": 55
+    },
+    {
+      "citation": "561 U.S. 477",
+      "count": 48
+    },
+    {
+      "citation": "531 U.S. 457",
+      "count": 45
+    },
+    {
+      "citation": "546 U.S. 500",
+      "count": 38
+    },
+    {
+      "citation": "464 U.S. 16",
+      "count": 35
+    },
+    {
+      "citation": "494 U.S. 872",
+      "count": 35
+    },
+    {
+      "citation": "462 U.S. 919",
+      "count": 35
+    },
+    {
+      "citation": "559 U.S. 460",
+      "count": 35
+    },
+    {
+      "citation": "533 U.S. 218",
+      "count": 34
+    },
+    {
+      "citation": "515 U.S. 819",
+      "count": 34
+    },
+    {
+      "citation": "555 U.S. 555",
+      "count": 33
+    },
+    {
+      "citation": "559 U.S. 133",
+      "count": 33
+    },
+    {
+      "citation": "543 U.S. 1",
+      "count": 32
+    },
+    {
+      "citation": "515 U.S. 900",
+      "count": 32
+    },
+    {
+      "citation": "539 U.S. 306",
+      "count": 31
+    },
+    {
+      "citation": "509 U.S. 630",
+      "count": 31
+    },
+    {
+      "citation": "514 U.S. 549",
+      "count": 30
+    },
+    {
+      "citation": "505 U.S. 144",
+      "count": 30
+    },
+    {
+      "citation": "515 U.S. 200",
+      "count": 30
+    },
+    {
+      "citation": "562 U.S. 428",
+      "count": 30
+    },
+    {
+      "citation": "539 U.S. 510",
+      "count": 29
+    },
+    {
+      "citation": "556 U.S. 662",
+      "count": 29
+    },
+    {
+      "citation": "529 U.S. 120",
+      "count": 29
+    },
+    {
+      "citation": "468 U.S. 737",
+      "count": 29
+    },
+    {
+      "citation": "489 U.S. 288",
+      "count": 28
+    },
+    {
+      "citation": "488 U.S. 361",
+      "count": 28
+    },
+    {
+      "citation": "498 U.S. 89",
+      "count": 26
+    },
+    {
+      "citation": "532 U.S. 275",
+      "count": 26
+    },
+    {
+      "citation": "520 U.S. 154",
+      "count": 26
+    },
+    {
+      "citation": "501 U.S. 868",
+      "count": 26
+    },
+    {
+      "citation": "438 U.S. 265",
+      "count": 26
+    },
+    {
+      "citation": "422 U.S. 490",
+      "count": 26
+    },
+    {
+      "citation": "544 U.S. 13",
+      "count": 26
+    },
+    {
+      "citation": "319 U.S. 624",
+      "count": 26
+    },
+    {
+      "citation": "521 U.S. 898",
+      "count": 25
+    },
+    {
+      "citation": "511 U.S. 600",
+      "count": 25
+    },
+    {
+      "citation": "323 U.S. 134",
+      "count": 25
+    },
+    {
+      "citation": "534 U.S. 19",
+      "count": 25
+    },
+    {
+      "citation": "389 U.S. 347",
+      "count": 25
+    },
+    {
+      "citation": "547 U.S. 332",
+      "count": 25
+    },
+    {
+      "citation": "343 U.S. 579",
+      "count": 25
+    },
+    {
+      "citation": "528 U.S. 167",
+      "count": 25
+    },
+    {
+      "citation": "418 U.S. 683",
+      "count": 25
+    },
+    {
+      "citation": "551 U.S. 701",
+      "count": 24
+    },
+    {
+      "citation": "533 U.S. 289",
+      "count": 23
+    },
+    {
+      "citation": "545 U.S. 677",
+      "count": 23
+    },
+    {
+      "citation": "501 U.S. 452",
+      "count": 23
+    },
+    {
+      "citation": "481 U.S. 739",
+      "count": 23
+    },
+    {
+      "citation": "542 U.S. 692",
+      "count": 23
+    },
+    {
+      "citation": "342 U.S. 246",
+      "count": 23
+    },
+    {
+      "citation": "542 U.S. 296",
+      "count": 23
+    },
+    {
+      "citation": "559 U.S. 662",
+      "count": 23
+    },
+    {
+      "citation": "347 U.S. 483",
+      "count": 23
+    },
+    {
+      "citation": "561 U.S. 358",
+      "count": 23
+    },
+    {
+      "citation": "553 U.S. 137",
+      "count": 23
+    },
+    {
+      "citation": "564 U.S. 552",
+      "count": 23
+    },
+    {
+      "citation": "568 U.S. 398",
+      "count": 23
+    },
+    {
+      "citation": "384 U.S. 436",
+      "count": 22
+    },
+    {
+      "citation": "463 U.S. 29",
+      "count": 22
+    },
+    {
+      "citation": "552 U.S. 491",
+      "count": 22
+    },
+    {
+      "citation": "552 U.S. 130",
+      "count": 22
+    },
+    {
+      "citation": "553 U.S. 285",
+      "count": 22
+    },
+    {
+      "citation": "545 U.S. 967",
+      "count": 22
+    },
+    {
+      "citation": "552 U.S. 38",
+      "count": 22
+    },
+    {
+      "citation": "272 U.S. 52",
+      "count": 22
+    },
+    {
+      "citation": "326 U.S. 310",
+      "count": 22
+    },
+    {
+      "citation": "558 U.S. 310",
+      "count": 22
+    },
+    {
+      "citation": "563 U.S. 333",
+      "count": 22
+    },
+    {
+      "citation": "540 U.S. 712",
+      "count": 22
+    },
+    {
+      "citation": "429 U.S. 252",
+      "count": 21
+    },
+    {
+      "citation": "457 U.S. 800",
+      "count": 21
+    },
+    {
+      "citation": "534 U.S. 61",
+      "count": 21
+    },
+    {
+      "citation": "523 U.S. 224",
+      "count": 21
+    },
+    {
+      "citation": "514 U.S. 211",
+      "count": 21
+    },
+    {
+      "citation": "442 U.S. 330",
+      "count": 21
+    },
+    {
+      "citation": "561 U.S. 1",
+      "count": 21
+    },
+    {
+      "citation": "564 U.S. 462",
+      "count": 21
+    },
+    {
+      "citation": "576 U.S. 155",
+      "count": 21
+    }
+  ],
+  "top_resolved_case_ids": [
+    {
+      "resolved_case_id": "us.scotus.2023.acheson_hotels_llc.200us321",
+      "count": 748
+    },
+    {
+      "resolved_case_id": "us.scotus.2014.douglas_f_whitman.467us837",
+      "count": 112
+    },
+    {
+      "resolved_case_id": "us.scotus.2014.anthony_ray_hinton.466us668",
+      "count": 74
+    },
+    {
+      "resolved_case_id": "us.scotus.2015.arie_s_friedman_et_al.554us570",
+      "count": 52
+    },
+    {
+      "resolved_case_id": "us.scotus.2023.stanley_waleski.523us83",
+      "count": 48
+    },
+    {
+      "resolved_case_id": "us.scotus.2021.samuel_alex_gann.495us575",
+      "count": 47
+    },
+    {
+      "resolved_case_id": "us.scotus.2015.espanola_jackson_et_al.561us742",
+      "count": 47
+    },
+    {
+      "resolved_case_id": "us.scotus.2013.lloyd_rapelje.501us722",
+      "count": 43
+    },
+    {
+      "resolved_case_id": "us.scotus.2025.brenda_evers_andrew.501us808",
+      "count": 41
+    },
+    {
+      "resolved_case_id": "us.scotus.2018.thilo_brown.543us220",
+      "count": 40
+    },
+    {
+      "resolved_case_id": "us.scotus.2016.jeffrey_woods_warden.562us86",
+      "count": 40
+    },
+    {
+      "resolved_case_id": "us.scotus.2012.benny_lee_hodge.529us362",
+      "count": 39
+    },
+    {
+      "resolved_case_id": "us.scotus.2015.lloyd_rapelje_warden.541us36",
+      "count": 39
+    },
+    {
+      "resolved_case_id": "us.scotus.2016.stormans_inc_dba_ralph_s_thriftw.508us520",
+      "count": 38
+    },
+    {
+      "resolved_case_id": "us.scotus.2017.jesus_c_hernandez_et_al_petition.403us388",
+      "count": 36
+    },
+    {
+      "resolved_case_id": "us.scotus.2017.matthew_reeves.536us304",
+      "count": 34
+    },
+    {
+      "resolved_case_id": "us.scotus.2018.human_services_et_al.505us833",
+      "count": 33
+    },
+    {
+      "resolved_case_id": "us.scotus.2018.michael_gordon_reynolds.536us584",
+      "count": 32
+    },
+    {
+      "resolved_case_id": "us.scotus.2016.delaware_strong_families.424us1",
+      "count": 31
+    },
+    {
+      "resolved_case_id": "us.scotus.2016.lamondre_tucker.543us551",
+      "count": 31
+    },
+    {
+      "resolved_case_id": "us.scotus.2024.donald_j_trump_petitioner.517us44",
+      "count": 29
+    },
+    {
+      "resolved_case_id": "us.scotus.2014.creek_corrections_center.527us1",
+      "count": 29
+    },
+    {
+      "resolved_case_id": "us.scotus.2016.curtis_giovanni_flowers.476us79",
+      "count": 29
+    },
+    {
+      "resolved_case_id": "us.scotus.2017.robert_perez.505us377",
+      "count": 28
+    },
+    {
+      "resolved_case_id": "us.scotus.2012.department_of_corrections_et_al.373us83",
+      "count": 28
+    },
+    {
+      "resolved_case_id": "us.scotus.2022.gordon_college_et_al.565us171",
+      "count": 27
+    },
+    {
+      "resolved_case_id": "us.scotus.2021.city_of_tahlequah_oklahoma_et_al.555us223",
+      "count": 27
+    },
+    {
+      "resolved_case_id": "us.scotus.2012.darin_ryburn_et_al.547us398",
+      "count": 27
+    },
+    {
+      "resolved_case_id": "us.scotus.2018.keith_tharpe.507us619",
+      "count": 26
+    },
+    {
+      "resolved_case_id": "us.scotus.2022.in_whole_woman_s_health.410us113",
+      "count": 26
+    },
+    {
+      "resolved_case_id": "us.scotus.2013.mike_stanton_petitioner.392us1",
+      "count": 26
+    },
+    {
+      "resolved_case_id": "us.scotus.2016.15_584.555us460",
+      "count": 25
+    },
+    {
+      "resolved_case_id": "us.scotus.2020.anthony_robinson.527us706",
+      "count": 24
+    },
+    {
+      "resolved_case_id": "us.scotus.2023.city_of_ocala_florida.403us602",
+      "count": 24
+    },
+    {
+      "resolved_case_id": "us.scotus.2014.elmbrook_school_district.491us781",
+      "count": 24
+    },
+    {
+      "resolved_case_id": "us.scotus.2012.william_smoak_fairey_jr_aka_doak.537us322",
+      "count": 23
+    },
+    {
+      "resolved_case_id": "us.scotus.2015.charles_f_warner_et_al.553us35",
+      "count": 23
+    },
+    {
+      "resolved_case_id": "us.scotus.2017.16_1436.555us7",
+      "count": 23
+    },
+    {
+      "resolved_case_id": "us.scotus.2023.jody_lombardo_et_al.490us386",
+      "count": 22
+    },
+    {
+      "resolved_case_id": "us.scotus.2021.national_coalition_for_men_et_al.518us515",
+      "count": 22
+    },
+    {
+      "resolved_case_id": "us.scotus.2017.damion_st_patrick_baston.545us1",
+      "count": 22
+    },
+    {
+      "resolved_case_id": "us.scotus.2017.marcus_deshaw_hicks.507us725",
+      "count": 22
+    },
+    {
+      "resolved_case_id": "us.scotus.2015.maryland_petitioner.372us335",
+      "count": 21
+    },
+    {
+      "resolved_case_id": "us.scotus.2015.richard_gerald_jordan.428us153",
+      "count": 21
+    },
+    {
+      "resolved_case_id": "us.scotus.2014.jeremy_carroll.483us635",
+      "count": 20
+    },
+    {
+      "resolved_case_id": "us.scotus.2018.vanessa_stuart.557us305",
+      "count": 20
+    },
+    {
+      "resolved_case_id": "us.scotus.2013.elrick_j_gallow_petitioner.566us1",
+      "count": 20
+    },
+    {
+      "resolved_case_id": "us.scotus.2022.tim_shoop_warden.563us170",
+      "count": 20
+    },
+    {
+      "resolved_case_id": "us.scotus.2024.christopher_l_wilson.597us1",
+      "count": 20
+    },
+    {
+      "resolved_case_id": "us.scotus.2019.kathrine_mae_mckee.376us254",
+      "count": 19
+    }
+  ],
+  "ambiguous_case_id_us_tokens": {
+    "count": 53,
+    "examples": [
+      {
+        "citation_token": "200 U.S. 321",
+        "cases": [
+          {
+            "case_id": "us.scotus.2023.acheson_hotels_llc.200us321",
+            "title": "ACHESON HOTELS, LLC v. LAUFER",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Acheson Hotels, Llc v. Laufer, 200 U.S. 321 (2023) [us.scotus.2023.acheson_hotels_llc.200us321], Unknown citation (0000), Unknown citation (0000).md"
+          },
+          {
+            "case_id": "us.scotus.2025.advocate_christ_medical_center_e.200us321",
+            "title": "ADVOCATE CHRIST MEDICAL CENTER ET AL. v. KENNEDY, SECRETARY OF HEALTH AND HUMAN SERVICES",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Advocate Christ Medical Center et al. v. Kennedy, Secretary of Health and Human Services, 200 U.S. 321 (2025) [us.scotus.2025.advocate_christ_medical_center_e.200us321], Unknown citation (0000), Unknown citation (0000).md"
+          },
+          {
+            "case_id": "us.scotus.2015.arizona_state_legislature.200us321",
+            "title": "ARIZONA STATE LEGISLATURE v. ARIZONA INDEPENDENT REDISTRICTING COMMISSION ET AL",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Arizona State Legislature v. Arizona Independent Redistricting Commission et Al, 200 U.S. 321 (2015) [us.scotus.2015.arizona_state_legislature.200us321], Unknown citation (0000), Unknown citation (0000).md"
+          },
+          {
+            "case_id": "us.scotus.2014.chadbourne_parke_llp.200us321",
+            "title": "CHADBOURNE & PARKE LLP v. TROICE ET AL",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Chadbourne & Parke Llp v. Troice et Al, 200 U.S. 321 (2014) [us.scotus.2014.chadbourne_parke_llp.200us321], Unknown citation (0000), Unknown citation (0000).md"
+          },
+          {
+            "case_id": "us.scotus.2015.13_485.200us321",
+            "title": "13-485",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Comptroller of Treasury of Md. v. Wynne, 200 U.S. 321 (2015), Unknown citation (0000), Unknown citation (0000).md"
+          }
+        ],
+        "case_count": 734
+      },
+      {
+        "citation_token": "466 U.S. 668",
+        "cases": [
+          {
+            "case_id": "us.scotus.2014.anthony_ray_hinton.466us668",
+            "title": "Anthony Ray Hinton v. Alabama",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Anthony Ray Hinton v. Alabama, 466 U.S. 668 (2014).md"
+          },
+          {
+            "case_id": "us.scotus.2018.todd_wessinger.466us668",
+            "title": "Todd Wessinger v. Darrel Vannoy, Warden",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Todd Wessinger v. Darrel Vannoy, Warden, 466 U.S. 668 (2018).md"
+          },
+          {
+            "case_id": "us.scotus.2019.donnie_cleveland_lance.466us668",
+            "title": "Donnie Cleveland Lance v. Eric Sellers, Warden",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2019/Donnie Cleveland Lance v. Eric Sellers, Warden, 466 U.S. 668 (2019).md"
+          },
+          {
+            "case_id": "us.scotus.2020.terence_tramaine_andrus.466us668",
+            "title": "Terence Tramaine Andrus v. Texas",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Terence Tramaine Andrus v. Texas, 466 U.S. 668 (2020).md"
+          },
+          {
+            "case_id": "us.scotus.2021.frederick_r_whatley.466us668",
+            "title": "Frederick R. Whatley v. Warden, Georgia Diagnostic and Classification Prison",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2021/Frederick R. Whatley v. Warden, Georgia Diagnostic and Classification Prison, 466 U.S. 668 (2021).md"
+          }
+        ],
+        "case_count": 9
+      },
+      {
+        "citation_token": "340 U.S. 135",
+        "cases": [
+          {
+            "case_id": "us.scotus.2013.estate_of_eric_k_lanus.340us135",
+            "title": "Estate of Eric K. Lanus v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2013/Estate of Eric K. Lanus v. United States, 340 U.S. 135 (2013).md"
+          },
+          {
+            "case_id": "us.scotus.2019.daniel.340us135",
+            "title": "Daniel v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2019/Daniel v. United States, 340 U.S. 135 (2019).md"
+          },
+          {
+            "case_id": "us.scotus.2021.jane_doe.340us135",
+            "title": "Jane Doe v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2021/Jane Doe v. United States, 340 U.S. 135 (2021).md"
+          },
+          {
+            "case_id": "us.scotus.2022.carol.340us135",
+            "title": "Carol v. Clendening, As Personal Representative of the Estate of Gary J. Clendening v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2022/Carol v. Clendening, As Personal Representative of the Estate of Gary J. Clendening v. United States, 340 U.S. 135 (2022).md"
+          },
+          {
+            "case_id": "us.scotus.2025.of_cameron_gayle_beck_et_al.340us135",
+            "title": "Of Cameron Gayle Beck, et al. v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/Of Cameron Gayle Beck, et al. v. United States, 340 U.S. 135 (2025).md"
+          }
+        ],
+        "case_count": 6
+      },
+      {
+        "citation_token": "506 U.S. 1",
+        "cases": [
+          {
+            "case_id": "us.scotus.2011.10_9647.506us1",
+            "title": "Cheetam, Christopher v. State Farm Fire & Casualty Co",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Cheetam, Christopher v. State Farm Fire & Casualty Co, 506 U.S. 1 (2011).md"
+          },
+          {
+            "case_id": "us.scotus.2011.11_393.506us1",
+            "title": "Habermann, Charles T. v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Habermann, Charles T. v. United States, 506 U.S. 1 (2011).md"
+          },
+          {
+            "case_id": "us.scotus.2011.10_1115.506us1",
+            "title": "Lee, Yong I., et al. v. Central Presbytery",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Lee, Yong I., et al. v. Central Presbytery, 506 U.S. 1 (2011).md"
+          },
+          {
+            "case_id": "us.scotus.2012.10_1548.506us1",
+            "title": "Taylor, Kenneth L. v. Ayers, Warden",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Taylor, Kenneth L. v. Ayers, Warden, 506 U.S. 1 (2012).md"
+          },
+          {
+            "case_id": "us.scotus.2026.indiana_ex_rel_danny_w_howell.506us1",
+            "title": "Indiana, Ex Rel. Danny W. Howell v. Circuit Court of Indiana, Wells County, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2026/Indiana, Ex Rel. Danny W. Howell v. Circuit Court of Indiana, Wells County, et al, 506 U.S. 1 (2026) [us.scotus.2026.indiana_ex_rel_danny_w_howell.506us1].md"
+          }
+        ],
+        "case_count": 5
+      },
+      {
+        "citation_token": "373 U.S. 83",
+        "cases": [
+          {
+            "case_id": "us.scotus.2012.department_of_corrections_et_al.373us83",
+            "title": "Department of Corrections, et al. v. James Lambert",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Department of Corrections, et al. v. James Lambert, 373 U.S. 83 (2012).md"
+          },
+          {
+            "case_id": "us.scotus.2019.kenneth_r_isom.373us83",
+            "title": "Kenneth R. Isom v. Arkansas",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2019/Kenneth R. Isom v. Arkansas, 373 U.S. 83 (2019).md"
+          },
+          {
+            "case_id": "us.scotus.2020.brandon_bernard.373us83",
+            "title": "Brandon Bernard v. United States on Application for Stay and Petition for Writ of",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Brandon Bernard v. United States on Application for Stay and Petition for Writ of, 373 U.S. 83 (2020).md"
+          },
+          {
+            "case_id": "us.scotus.2020.rodney_reed.373us83",
+            "title": "Rodney Reed v. Texas",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Rodney Reed v. Texas, 373 U.S. 83 (2020).md"
+          },
+          {
+            "case_id": "us.scotus.2022.davel_chinn.373us83",
+            "title": "Davel Chinn v. Tim Shoop, Warden",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2022/Davel Chinn v. Tim Shoop, Warden, 373 U.S. 83 (2022).md"
+          }
+        ],
+        "case_count": 5
+      },
+      {
+        "citation_token": "467 U.S. 837",
+        "cases": [
+          {
+            "case_id": "us.scotus.2014.douglas_f_whitman.467us837",
+            "title": "Douglas F. Whitman v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Douglas F. Whitman v. United States, 467 U.S. 837 (2014).md"
+          },
+          {
+            "case_id": "us.scotus.2017.scenic_america_inc.467us837",
+            "title": "Scenic America, Inc. v. Department of Transportation, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Scenic America, Inc. v. Department of Transportation, et al, 467 U.S. 837 (2017) [us.scotus.2017.scenic_america_inc.467us837].md"
+          },
+          {
+            "case_id": "us.scotus.2020.damien_guedes_et_al.467us837",
+            "title": "Damien Guedes, et al. v. Bureau of Alcohol, Tobacco, Firearms and Explosives, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Damien Guedes, et al. v. Bureau of Alcohol, Tobacco, Firearms and Explosives, et al, 467 U.S. 837 (2020) [us.scotus.2020.damien_guedes_et_al.467us837].md"
+          },
+          {
+            "case_id": "us.scotus.2020.howard_l_baldwin_et_ux.467us837",
+            "title": "Howard L. Baldwin, et Ux. v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Howard L. Baldwin, et Ux. v. United States, 467 U.S. 837 (2020).md"
+          },
+          {
+            "case_id": "us.scotus.2022.thomas_h_buffington.467us837",
+            "title": "Thomas H. Buffington v. Denis R. Mcdonough, Secretary of Veteran Affairs",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2022/Thomas H. Buffington v. Denis R. Mcdonough, Secretary of Veteran Affairs, 467 U.S. 837 (2022).md"
+          }
+        ],
+        "case_count": 5
+      },
+      {
+        "citation_token": "476 U.S. 79",
+        "cases": [
+          {
+            "case_id": "us.scotus.2016.curtis_giovanni_flowers.476us79",
+            "title": "Curtis Giovanni Flowers v. Mississippi",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Curtis Giovanni Flowers v. Mississippi, 476 U.S. 79 (2016).md"
+          },
+          {
+            "case_id": "us.scotus.2016.jabari_williams.476us79",
+            "title": "Jabari Williams v. Louisiana",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Jabari Williams v. Louisiana, 476 U.S. 79 (2016).md"
+          },
+          {
+            "case_id": "us.scotus.2016.michael_wearry.476us79",
+            "title": "Michael Wearry v. Burl Cain, Warden",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Michael Wearry v. Burl Cain, Warden, 476 U.S. 79 (2016).md"
+          },
+          {
+            "case_id": "us.scotus.2017.christopher_anthony_floyd.476us79",
+            "title": "Christopher Anthony Floyd v. Alabama",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Christopher Anthony Floyd v. Alabama, 476 U.S. 79 (2017).md"
+          },
+          {
+            "case_id": "us.scotus.2023.tony_terrell_clark.476us79",
+            "title": "Tony Terrell Clark v. Mississippi",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Tony Terrell Clark v. Mississippi, 476 U.S. 79 (2023).md"
+          }
+        ],
+        "case_count": 5
+      },
+      {
+        "citation_token": "576 U.S. 863",
+        "cases": [
+          {
+            "case_id": "us.scotus.2020.warren_k_henness.576us863",
+            "title": "Warren K. Henness v. Mike Dewine, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Warren K. Henness v. Mike Dewine, et al, 576 U.S. 863 (2020) [us.scotus.2020.warren_k_henness.576us863].md"
+          },
+          {
+            "case_id": "us.scotus.2021.carl_wayne_buntion.576us863",
+            "title": "Carl Wayne Buntion v. Bobby Lumpkin, Director, Texas Department of Criminal Justice, Correctional Institutions Division",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2021/Carl Wayne Buntion v. Bobby Lumpkin, Director, Texas Department of Criminal Justice, Correctional Institutions Division, 576 U.S. 863 (2021).md"
+          },
+          {
+            "case_id": "us.scotus.2021.ernest_johnson.576us863",
+            "title": "Ernest Johnson v. Anne L. Precythe, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2021/Ernest Johnson v. Anne L. Precythe, et al, 576 U.S. 863 (2021) [us.scotus.2021.ernest_johnson.576us863].md"
+          },
+          {
+            "case_id": "us.scotus.2021.united_states.576us863",
+            "title": "United States v. Dustin John Higgs",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2021/United States v. Dustin John Higgs, 576 U.S. 863 (2021).md"
+          },
+          {
+            "case_id": "us.scotus.2022.carl_wayne_buntion.576us863",
+            "title": "Carl Wayne Buntion v. Bobby Lumpkin, Director, Texas Department of Criminal Justice, Correctional Institutions Division",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2022/Carl Wayne Buntion v. Bobby Lumpkin, Director, Texas Department of Criminal Justice, Correctional Institutions Division, 576 U.S. 863 (2022).md"
+          }
+        ],
+        "case_count": 5
+      },
+      {
+        "citation_token": "554 U.S. 570",
+        "cases": [
+          {
+            "case_id": "us.scotus.2015.arie_s_friedman_et_al.554us570",
+            "title": "Arie S. Friedman, et al. v. City of Highland Park, Illinois",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Arie S. Friedman, et al. v. City of Highland Park, Illinois, 554 U.S. 570 (2015).md"
+          },
+          {
+            "case_id": "us.scotus.2016.jaime_caetano.554us570",
+            "title": "Jaime Caetano v. Massachusetts",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Jaime Caetano v. Massachusetts, 554 U.S. 570 (2016).md"
+          },
+          {
+            "case_id": "us.scotus.2017.edward_peruta_et_al.554us570",
+            "title": "Edward Peruta, et al. v. California, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Edward Peruta, et al. v. California, et al, 554 U.S. 570 (2017) [us.scotus.2017.edward_peruta_et_al.554us570].md"
+          },
+          {
+            "case_id": "us.scotus.2025.david_snope_et_al.554us570",
+            "title": "David Snope, et al. v. Anthony G. Brown, in His Official Capacity As Attorney General of Maryland, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/David Snope, et al. v. Anthony G. Brown, in His Official Capacity As Attorney General of Maryland, et al, 554 U.S. 570 (2025) [us.scotus.2025.david_snope_et_al.554us570].md"
+          }
+        ],
+        "case_count": 4
+      },
+      {
+        "citation_token": "553 U.S. 35",
+        "cases": [
+          {
+            "case_id": "us.scotus.2015.charles_f_warner_et_al.553us35",
+            "title": "Charles F. Warner, et Al., v. Kevin J. Gross, et al. on Application for Stay",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Charles F. Warner, et al., v. Kevin J. Gross, et al. on Application for Stay, 553 U.S. 35 (2015) [us.scotus.2015.charles_f_warner_et_al.553us35].md"
+          },
+          {
+            "case_id": "us.scotus.2017.thomas_d_arthur.553us35",
+            "title": "Thomas D. Arthur v. Jefferson S. Dunn, Commissioner, Alabama Department of Corrections, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Thomas D. Arthur v. Jefferson S. Dunn, Commissioner, Alabama Department of Corrections, et al, 553 U.S. 35 (2017) [us.scotus.2017.thomas_d_arthur.553us35].md"
+          },
+          {
+            "case_id": "us.scotus.2023.22_580.553us35",
+            "title": "22-580",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Hamm v. Smith, 553 U.S. 35 (2023) [us.scotus.2023.22_580.553us35].md"
+          },
+          {
+            "case_id": "us.scotus.2023.22_58.553us35",
+            "title": "22-58",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Hamm v. Smith, 553 U.S. 35 (2023).md"
+          }
+        ],
+        "case_count": 4
+      },
+      {
+        "citation_token": "514 U.S. 1045",
+        "cases": [
+          {
+            "case_id": "us.scotus.2015.jerry_william_correll.514us1045",
+            "title": "Jerry William Correll v. Florida on Application for Stay and Petition for Writ of",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Jerry William Correll v. Florida on Application for Stay and Petition for Writ of, 514 U.S. 1045 (2015).md"
+          },
+          {
+            "case_id": "us.scotus.2016.john_wayne_conner.514us1045",
+            "title": "John Wayne Conner v. Eric Sellers, Warden on Application for Stay and Petition for Writ of",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/John Wayne Conner v. Eric Sellers, Warden on Application for Stay and Petition for Writ of, 514 U.S. 1045 (2016).md"
+          },
+          {
+            "case_id": "us.scotus.2018.17_7153.514us1045",
+            "title": "17-7153",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Jordan v. Mississippi, 514 U.S. 1045 (2018) [us.scotus.2018.17_7153.514us1045].md"
+          },
+          {
+            "case_id": "us.scotus.2018.17_71.514us1045",
+            "title": "17-71",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Jordan v. Mississippi, 514 U.S. 1045 (2018).md"
+          }
+        ],
+        "case_count": 4
+      },
+      {
+        "citation_token": "562 U.S. 86",
+        "cases": [
+          {
+            "case_id": "us.scotus.2016.jeffrey_woods_warden.562us86",
+            "title": "Jeffrey Woods, Warden v. Timothy Etherton",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Jeffrey Woods, Warden v. Timothy Etherton, 562 U.S. 86 (2016).md"
+          },
+          {
+            "case_id": "us.scotus.2018.michael_sexton_warden.562us86",
+            "title": "Michael Sexton, Warden v. Nicholas Beaudreaux",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Michael Sexton, Warden v. Nicholas Beaudreaux, 562 U.S. 86 (2018).md"
+          },
+          {
+            "case_id": "us.scotus.2020.of_corrections.562us86",
+            "title": "Of Corrections v. George Russell Kayer",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Of Corrections v. George Russell Kayer, 562 U.S. 86 (2020).md"
+          },
+          {
+            "case_id": "us.scotus.2025.cynthia_davis_warden.562us86",
+            "title": "Cynthia Davis, Warden v. David M. Smith",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/Cynthia Davis, Warden v. David M. Smith, 562 U.S. 86 (2025).md"
+          }
+        ],
+        "case_count": 4
+      },
+      {
+        "citation_token": "536 U.S. 304",
+        "cases": [
+          {
+            "case_id": "us.scotus.2017.matthew_reeves.536us304",
+            "title": "Matthew Reeves v. Alabama",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Matthew Reeves v. Alabama, 536 U.S. 304 (2017).md"
+          },
+          {
+            "case_id": "us.scotus.2019.bobby_james_moore.536us304",
+            "title": "Bobby James Moore v. Texas",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2019/Bobby James Moore v. Texas, 536 U.S. 304 (2019).md"
+          },
+          {
+            "case_id": "us.scotus.2021.wesley_paul_coonce_jr.536us304",
+            "title": "Wesley Paul Coonce, Jr. v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2021/Wesley Paul Coonce, Jr. v. United States, 536 U.S. 304 (2021).md"
+          },
+          {
+            "case_id": "us.scotus.2024.department_of_corrections.536us304",
+            "title": "Department of Corrections v. Joseph Clifton Smith",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Department of Corrections v. Joseph Clifton Smith, 536 U.S. 304 (2024).md"
+          }
+        ],
+        "case_count": 4
+      },
+      {
+        "citation_token": "340 U.S. 36",
+        "cases": [
+          {
+            "case_id": "us.scotus.2021.states_et_al.340us36",
+            "title": "States, et al. v. Knight First Amendment Institute At Columbia University, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2021/States, et al. v. Knight First Amendment Institute At Columbia University, et al, 340 U.S. 36 (2021) [us.scotus.2021.states_et_al.340us36].md"
+          },
+          {
+            "case_id": "us.scotus.2023.missouri_randolph_county.340us36",
+            "title": "Missouri, Randolph County v. Jane Doe, By Next Friend Anthony E. Rothert",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Missouri, Randolph County v. Jane Doe, By Next Friend Anthony E. Rothert, 340 U.S. 36 (2023).md"
+          },
+          {
+            "case_id": "us.scotus.2024.speech_first_inc.340us36",
+            "title": "Speech First, Inc. v. Timothy Sands, Individually and in His Official Capacity As President of Virginia Poly-",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Speech First, Inc. v. Timothy Sands and in His Official Capacity As President of Virginia Poly-, 340 U.S. 36 (2024).md"
+          },
+          {
+            "case_id": "us.scotus.2025.speech_first_inc.340us36",
+            "title": "Speech First, Inc. v. Pamela Whitten, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/Speech First, Inc. v. Pamela Whitten, et al, 340 U.S. 36 (2025) [us.scotus.2025.speech_first_inc.340us36].md"
+          }
+        ],
+        "case_count": 4
+      },
+      {
+        "citation_token": "565 U.S. 171",
+        "cases": [
+          {
+            "case_id": "us.scotus.2022.gordon_college_et_al.565us171",
+            "title": "Gordon College, et Al., v. Margaret Deweese-boyd",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2022/Gordon College, et al., v. Margaret Deweese-boyd, 565 U.S. 171 (2022) [us.scotus.2022.gordon_college_et_al.565us171].md"
+          },
+          {
+            "case_id": "us.scotus.2022.seattle_s_union_gospel_mission.565us171",
+            "title": "Seattle’s Union Gospel Mission v. Matthew S. Woods",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2022/Seattle’s Union Gospel Mission v. Matthew S. Woods, 565 U.S. 171 (2022).md"
+          },
+          {
+            "case_id": "us.scotus.2023.gordon_college_et_al.565us171",
+            "title": "Gordon College, et Al., v. Margaret Deweese-boyd",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Gordon College, et al., v. Margaret Deweese-boyd, 565 U.S. 171 (2023) [us.scotus.2023.gordon_college_et_al.565us171].md"
+          },
+          {
+            "case_id": "us.scotus.2023.seattle_s_union_gospel_mission.565us171",
+            "title": "Seattle’s Union Gospel Mission v. Matthew S. Woods",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Seattle’s Union Gospel Mission v. Matthew S. Woods, 565 U.S. 171 (2023).md"
+          }
+        ],
+        "case_count": 4
+      },
+      {
+        "citation_token": "537 U.S. 322",
+        "cases": [
+          {
+            "case_id": "us.scotus.2012.william_smoak_fairey_jr_aka_doak.537us322",
+            "title": "William Smoak Fairey, Jr., Aka Doak Fairey v. Kenneth S. Tucker, Secretary, Florida Department of Corrections, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/William Smoak Fairey, Jr., Aka Doak Fairey v. Kenneth S. Tucker, Secretary, Florida Department of Corrections, et al, 537 U.S. 322 (2012) [us.scotus.2012.william_smoak_fairey_jr_aka_doak.537us322].md"
+          },
+          {
+            "case_id": "us.scotus.2024.warren_king.537us322",
+            "title": "Warren King v. Shawn Emmons, Warden",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Warren King v. Shawn Emmons, Warden, 537 U.S. 322 (2024).md"
+          },
+          {
+            "case_id": "us.scotus.2025.lance_shockley.537us322",
+            "title": "Lance Shockley v. David Vandergriff, Warden",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/Lance Shockley v. David Vandergriff, Warden, 537 U.S. 322 (2025).md"
+          }
+        ],
+        "case_count": 3
+      },
+      {
+        "citation_token": "561 U.S. 742",
+        "cases": [
+          {
+            "case_id": "us.scotus.2015.espanola_jackson_et_al.561us742",
+            "title": "Espanola Jackson, et al. v. City and County of San Francisco, California, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Espanola Jackson, et al. v. City and County of San Francisco, California, et al, 561 U.S. 742 (2015) [us.scotus.2015.espanola_jackson_et_al.561us742].md"
+          },
+          {
+            "case_id": "us.scotus.2018.jeff_silvester_et_al.561us742",
+            "title": "Jeff Silvester, et al. v. Xavier Becerra, Attorney General of California",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Jeff Silvester, et al. v. Xavier Becerra, Attorney General of California, 561 U.S. 742 (2018).md"
+          },
+          {
+            "case_id": "us.scotus.2020.thomas_rogers_et_al.561us742",
+            "title": "Thomas Rogers, et al. v. Gurbir Grewal, Attorney General of New Jersey, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Thomas Rogers, et al. v. Gurbir Grewal, Attorney General of New Jersey, et al, 561 U.S. 742 (2020) [us.scotus.2020.thomas_rogers_et_al.561us742].md"
+          }
+        ],
+        "case_count": 3
+      },
+      {
+        "citation_token": "134 U.S. 160",
+        "cases": [
+          {
+            "case_id": "us.scotus.2016.henry_perry_sireci.134us160",
+            "title": "Henry Perry Sireci v. Florida",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Henry Perry Sireci v. Florida, 134 U.S. 160 (2016).md"
+          },
+          {
+            "case_id": "us.scotus.2017.joe_clarence_smith.134us160",
+            "title": "Joe Clarence Smith v. Charles L. Ryan, Director, Department of Corrections, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Joe Clarence Smith v. Charles L. Ryan, Director, Department of Corrections, et al, 134 U.S. 160 (2017) [us.scotus.2017.joe_clarence_smith.134us160].md"
+          },
+          {
+            "case_id": "us.scotus.2017.rolando_ruiz.134us160",
+            "title": "Rolando Ruiz v. Texas on Application for Stay [march 7, 2017]",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Rolando Ruiz v. Texas on Application for Stay [march 7, 2017], 134 U.S. 160 (2017).md"
+          }
+        ],
+        "case_count": 3
+      },
+      {
+        "citation_token": "509 U.S. 602",
+        "cases": [
+          {
+            "case_id": "us.scotus.2017.lisa_olivia_leonard.509us602",
+            "title": "Lisa Olivia Leonard v. Texas",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Lisa Olivia Leonard v. Texas, 509 U.S. 602 (2017).md"
+          },
+          {
+            "case_id": "us.scotus.2018.lisa_olivia_leonard.509us602",
+            "title": "Lisa Olivia Leonard v. Texas",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Lisa Olivia Leonard v. Texas, 509 U.S. 602 (2018).md"
+          },
+          {
+            "case_id": "us.scotus.2023.monica_toth.509us602",
+            "title": "Monica Toth v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Monica Toth v. United States, 509 U.S. 602 (2023).md"
+          }
+        ],
+        "case_count": 3
+      },
+      {
+        "citation_token": "472 U.S. 320",
+        "cases": [
+          {
+            "case_id": "us.scotus.2017.16_9448.472us320",
+            "title": "16-9448",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Truehill v. Florida, 472 U.S. 320 (2017).md"
+          },
+          {
+            "case_id": "us.scotus.2018.17_7171.472us320",
+            "title": "17-7171",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Guardado v. Jones, 472 U.S. 320 (2018).md"
+          },
+          {
+            "case_id": "us.scotus.2018.leo_louis_kaczmar_iii.472us320",
+            "title": "Leo Louis Kaczmar, Iii v. Florida",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Leo Louis Kaczmar, Iii v. Florida, 472 U.S. 320 (2018).md"
+          }
+        ],
+        "case_count": 3
+      },
+      {
+        "citation_token": "555 U.S. 7",
+        "cases": [
+          {
+            "case_id": "us.scotus.2017.16_1436.555us7",
+            "title": "16-1436",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Trump v. International Refugee Assistance Project, 555 U.S. 7 (2017).md"
+          },
+          {
+            "case_id": "us.scotus.2018.north_carolina_et_al_appellants.555us7",
+            "title": "North Carolina, et Al., Appellants v. Sandra Little Covington, et al. on Appeal From the United States District Court for",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/North Carolina, et al., Appellants v. Sandra Little Covington, et al. on Appeal From the United States District Court for, 555 U.S. 7 (2018) [us.scotus.2018.north_carolina_et_al_appellants.555us7].md"
+          },
+          {
+            "case_id": "us.scotus.2018.o_john_benisek_et_al_appellants.555us7",
+            "title": "O. John Benisek, et Al., Appellants v. Linda H. Lamone, Administrator, Maryland State Board of",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/O. John Benisek, et al., Appellants v. Linda H. Lamone, Administrator, Maryland State Board of, 555 U.S. 7 (2018) [us.scotus.2018.o_john_benisek_et_al_appellants.555us7].md"
+          }
+        ],
+        "case_count": 3
+      },
+      {
+        "citation_token": "547 U.S. 410",
+        "cases": [
+          {
+            "case_id": "us.scotus.2019.joseph_a_kennedy.547us410",
+            "title": "Joseph A. Kennedy v. Bremerton School District",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2019/Joseph A. Kennedy v. Bremerton School District, 547 U.S. 410 (2019).md"
+          },
+          {
+            "case_id": "us.scotus.2020.joseph_a_kennedy.547us410",
+            "title": "Joseph A. Kennedy v. Bremerton School District",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Joseph A. Kennedy v. Bremerton School District, 547 U.S. 410 (2020).md"
+          },
+          {
+            "case_id": "us.scotus.2021.joseph_a_kennedy.547us410",
+            "title": "Joseph A. Kennedy v. Bremerton School District",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2021/Joseph A. Kennedy v. Bremerton School District, 547 U.S. 410 (2021).md"
+          }
+        ],
+        "case_count": 3
+      },
+      {
+        "citation_token": "530 U.S. 57",
+        "cases": [
+          {
+            "case_id": "us.scotus.2024.parents_protecting_our_children_.530us57",
+            "title": "Parents Protecting Our Children, Ua v. Eau Claire Area School District, Wisconsin, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Parents Protecting Our Children, Ua v. Eau Claire Area School District, Wisconsin, et al, 530 U.S. 57 (2024) [us.scotus.2024.parents_protecting_our_children_.530us57].md"
+          },
+          {
+            "case_id": "us.scotus.2025.jonathan_lee_et_al.530us57",
+            "title": "Jonathan Lee, et al. v. Poudre School District R–1",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/Jonathan Lee, et al. v. Poudre School District R–1, 530 U.S. 57 (2025).md"
+          },
+          {
+            "case_id": "us.scotus.2025.montana_et_al.530us57",
+            "title": "Montana, et al. v. Planned Parenthood of Montana, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/Montana, et al. v. Planned Parenthood of Montana, et al, 530 U.S. 57 (2025) [us.scotus.2025.montana_et_al.530us57].md"
+          }
+        ],
+        "case_count": 3
+      },
+      {
+        "citation_token": "443 U.S. 307",
+        "cases": [
+          {
+            "case_id": "us.scotus.2012.11_1053.443us307",
+            "title": "11-1053",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Coleman v. Johnson, 443 U.S. 307 (2012).md"
+          },
+          {
+            "case_id": "us.scotus.2014.paul_h_volkman.443us307",
+            "title": "Paul H. v. Olkman v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Paul H. v. Olkman v. United States, 443 U.S. 307 (2014).md"
+          }
+        ],
+        "case_count": 2
+      },
+      {
+        "citation_token": "547 U.S. 398",
+        "cases": [
+          {
+            "case_id": "us.scotus.2012.darin_ryburn_et_al.547us398",
+            "title": "Darin Ryburn, et al. v. George R. Huff, et Al",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Darin Ryburn, et al. v. George R. Huff, et al, 547 U.S. 398 (2012) [us.scotus.2012.darin_ryburn_et_al.547us398].md"
+          },
+          {
+            "case_id": "us.scotus.2021.kenneth_lamont_sanders.547us398",
+            "title": "Kenneth Lamont Sanders v. United States",
+            "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2021/Kenneth Lamont Sanders v. United States, 547 U.S. 398 (2021).md"
+          }
+        ],
+        "case_count": 2
+      }
+    ]
+  },
+  "cases_highest_unresolved": [
+    {
+      "case_id": "us.scotus.2022.mississippi_department_of_health.200us321",
+      "title": "MISSISSIPPI DEPARTMENT OF HEALTH, ET AL. v. JACKSON WOMEN’S HEALTH ORGANIZATION ET AL",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Mississippi Department of Health, et al. v. Jackson Women’s Health Organization et Al, 200 U.S. 321 (2022) [us.scotus.2022.mississippi_department_of_health.200us321], Unknown citation (0000), Unknown citation (0000).md",
+      "anchor_count": 376,
+      "resolved_count": 52,
+      "unresolved_count": 324
+    },
+    {
+      "case_id": "us.scotus.2020.ramos.200us321",
+      "title": "Ramos v. Louisiana",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Ramos v. Louisiana, 200 U.S. 321 (2020).md",
+      "anchor_count": 255,
+      "resolved_count": 52,
+      "unresolved_count": 203
+    },
+    {
+      "case_id": "us.scotus.2024.loper_bright_enterprises_et_al.200us321",
+      "title": "Loper Bright Enterprises et al. v. Raimondo, Secretary of Commerce, et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Loper Bright Enterprises et al. v. Raimondo, Secretary of Commerce, et al, 200 U.S. 321 (2024) [us.scotus.2024.loper_bright_enterprises_et_al.200us321].md",
+      "anchor_count": 195,
+      "resolved_count": 16,
+      "unresolved_count": 179
+    },
+    {
+      "case_id": "us.scotus.2012.business_et_al.200us321",
+      "title": "Business et al. v. Sebelius, Secretary of Health and Human Services, et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Business et al. v. Sebelius, Secretary of Health and Human Services, et al, 200 U.S. 321 (2012) [us.scotus.2012.business_et_al.200us321].md",
+      "anchor_count": 185,
+      "resolved_count": 12,
+      "unresolved_count": 173
+    },
+    {
+      "case_id": "us.scotus.2023.students_for_fair_admissions_inc.200us321",
+      "title": "Students for Fair Admissions, Inc. v. President and Fellows of Harvard College",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Students for Fair Admissions, Inc. v. President and Fellows of Harvard College, 200 U.S. 321 (2023).md",
+      "anchor_count": 180,
+      "resolved_count": 9,
+      "unresolved_count": 171
+    },
+    {
+      "case_id": "us.scotus.2023.haaland_secretary_of_the_interio.200us321",
+      "title": "Haaland, Secretary of the Interior, et al. v. Brackeen et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Haaland, Secretary of the Interior, et al. v. Brackeen et al, 200 U.S. 321 (2023) [us.scotus.2023.haaland_secretary_of_the_interio.200us321].md",
+      "anchor_count": 178,
+      "resolved_count": 11,
+      "unresolved_count": 167
+    },
+    {
+      "case_id": "us.scotus.2025.united_states.200us321",
+      "title": "United States v. Skrmetti, Attorney General and Reporter for Tennessee, et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/United States v. Skrmetti, Attorney General and Reporter for Tennessee, et al, 200 U.S. 321 (2025) [us.scotus.2025.united_states.200us321].md",
+      "anchor_count": 166,
+      "resolved_count": 17,
+      "unresolved_count": 149
+    },
+    {
+      "case_id": "us.scotus.2021.edwards.200us321",
+      "title": "EDWARDS v. VANNOY, WARDEN",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Edwards v. Vannoy, Warden, 200 U.S. 321 (2021) [us.scotus.2021.edwards.200us321], Unknown citation (0000), Unknown citation (0000).md",
+      "anchor_count": 161,
+      "resolved_count": 19,
+      "unresolved_count": 142
+    },
+    {
+      "case_id": "us.scotus.2018.carpenter.200us321",
+      "title": "Carpenter v. United States",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Carpenter v. United States, 200 U.S. 321 (2018).md",
+      "anchor_count": 141,
+      "resolved_count": 7,
+      "unresolved_count": 134
+    },
+    {
+      "case_id": "us.scotus.2015.13_485.200us321",
+      "title": "13-485",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Comptroller of Treasury of Md. v. Wynne, 200 U.S. 321 (2015), Unknown citation (0000), Unknown citation (0000).md",
+      "anchor_count": 134,
+      "resolved_count": 2,
+      "unresolved_count": 132
+    },
+    {
+      "case_id": "us.scotus.2024.securities_and_exchange_commissi.200us321",
+      "title": "Securities and Exchange Commission v. Jarkesy et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Securities and Exchange Commission v. Jarkesy et al, 200 U.S. 321 (2024) [us.scotus.2024.securities_and_exchange_commissi.200us321].md",
+      "anchor_count": 133,
+      "resolved_count": 6,
+      "unresolved_count": 127
+    },
+    {
+      "case_id": "us.scotus.2019.american_legion_et_al.200us321",
+      "title": "American Legion et al. v. American Humanist Assn. et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2019/American Legion et al. v. American Humanist Assn. et al, 200 U.S. 321 (2019) [us.scotus.2019.american_legion_et_al.200us321].md",
+      "anchor_count": 138,
+      "resolved_count": 20,
+      "unresolved_count": 118
+    },
+    {
+      "case_id": "us.scotus.2018.janus.200us321",
+      "title": "Janus v. American Federation of State, County, and Municipal Employees, Council 31, et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Janus v. American Federation of State, County, and Municipal Employees, Council 31, et al, 200 U.S. 321 (2018) [us.scotus.2018.janus.200us321].md",
+      "anchor_count": 128,
+      "resolved_count": 10,
+      "unresolved_count": 118
+    },
+    {
+      "case_id": "us.scotus.2024.trump.200us321",
+      "title": "Trump v. United States",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Trump v. United States, 200 U.S. 321 (2024).md",
+      "anchor_count": 119,
+      "resolved_count": 4,
+      "unresolved_count": 115
+    },
+    {
+      "case_id": "us.scotus.2024.erlinger.200us321",
+      "title": "Erlinger v. United States",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Erlinger v. United States, 200 U.S. 321 (2024).md",
+      "anchor_count": 126,
+      "resolved_count": 12,
+      "unresolved_count": 114
+    },
+    {
+      "case_id": "us.scotus.2017.ziglar.200us321",
+      "title": "Ziglar v. Abbasi et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2017/Ziglar v. Abbasi et al, 200 U.S. 321 (2017) [us.scotus.2017.ziglar.200us321].md",
+      "anchor_count": 130,
+      "resolved_count": 21,
+      "unresolved_count": 109
+    },
+    {
+      "case_id": "us.scotus.2023.allen_alabama_secretary_of_state.200us321",
+      "title": "Allen, Alabama Secretary of State, et al. v. Milligan et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Allen, Alabama Secretary of State, et al. v. Milligan et al, 200 U.S. 321 (2023) [us.scotus.2023.allen_alabama_secretary_of_state.200us321].md",
+      "anchor_count": 111,
+      "resolved_count": 5,
+      "unresolved_count": 106
+    },
+    {
+      "case_id": "us.scotus.2018.sessions_attorney_general.200us321",
+      "title": "Sessions, Attorney General v. Dimaya",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Sessions, Attorney General v. Dimaya, 200 U.S. 321 (2018).md",
+      "anchor_count": 115,
+      "resolved_count": 10,
+      "unresolved_count": 105
+    },
+    {
+      "case_id": "us.scotus.2023.mallory.200us321",
+      "title": "Mallory v. Norfolk Southern Railway Co",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Mallory v. Norfolk Southern Railway Co, 200 U.S. 321 (2023).md",
+      "anchor_count": 108,
+      "resolved_count": 3,
+      "unresolved_count": 105
+    },
+    {
+      "case_id": "us.scotus.2021.fulton_et_al.200us321",
+      "title": "FULTON ET AL. v. CITY OF PHILADELPHIA, PENNSYLVANIA, ET AL",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Fulton et al. v. City of Philadelphia, Pennsylvania, et Al, 200 U.S. 321 (2021) [us.scotus.2021.fulton_et_al.200us321], Unknown citation (0000), Unknown citation (0000).md",
+      "anchor_count": 110,
+      "resolved_count": 12,
+      "unresolved_count": 98
+    },
+    {
+      "case_id": "us.scotus.2023.jones.200us321",
+      "title": "Jones v. Hendrix, Warden",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Jones v. Hendrix, Warden, 200 U.S. 321 (2023).md",
+      "anchor_count": 103,
+      "resolved_count": 6,
+      "unresolved_count": 97
+    },
+    {
+      "case_id": "us.scotus.2025.federal_communications_commissio.200us321",
+      "title": "Federal Communications Commission et al. v. Consumers’ Research et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/Federal Communications Commission et al. v. Consumers’ Research et al, 200 U.S. 321 (2025) [us.scotus.2025.federal_communications_commissio.200us321].md",
+      "anchor_count": 100,
+      "resolved_count": 5,
+      "unresolved_count": 95
+    },
+    {
+      "case_id": "us.scotus.2024.united_states.200us321",
+      "title": "United States v. Rahimi",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/United States v. Rahimi, 200 U.S. 321 (2024).md",
+      "anchor_count": 129,
+      "resolved_count": 36,
+      "unresolved_count": 93
+    },
+    {
+      "case_id": "us.scotus.2025.23_1275.200us321",
+      "title": "23-1275",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Medina v. Planned Parenthood South Atlantic, 200 U.S. 321 (2025), Unknown citation (0000), Unknown citation (0000).md",
+      "anchor_count": 94,
+      "resolved_count": 1,
+      "unresolved_count": 93
+    },
+    {
+      "case_id": "us.scotus.2014.schuette_attorney_general_of_mic.200us321",
+      "title": "Schuette, Attorney General of Michigan v. Coalition to Defend Affirmative Action, Integration and Immigration Rights and",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Schuette, Attorney General of Michigan v. Coalition to Defend Affirmative Action, Integration and Immigration Rights and, 200 U.S. 321 (2014).md",
+      "anchor_count": 96,
+      "resolved_count": 4,
+      "unresolved_count": 92
+    },
+    {
+      "case_id": "us.scotus.2020.espinoza_et_al.200us321",
+      "title": "Espinoza et al. v. Montana Department of Revenue et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Espinoza et al. v. Montana Department of Revenue et al, 200 U.S. 321 (2020) [us.scotus.2020.espinoza_et_al.200us321].md",
+      "anchor_count": 112,
+      "resolved_count": 22,
+      "unresolved_count": 90
+    },
+    {
+      "case_id": "us.scotus.2018.epic_systems_corp.200us321",
+      "title": "Epic Systems Corp. v. Lewis",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Epic Systems Corp. v. Lewis, 200 U.S. 321 (2018).md",
+      "anchor_count": 90,
+      "resolved_count": 3,
+      "unresolved_count": 87
+    },
+    {
+      "case_id": "us.scotus.2025.medical_marijuana_inc_et_al.200us321",
+      "title": "Medical Marijuana, Inc., et al. v. Horn",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/Medical Marijuana, Inc., et al. v. Horn, 200 U.S. 321 (2025).md",
+      "anchor_count": 88,
+      "resolved_count": 1,
+      "unresolved_count": 87
+    },
+    {
+      "case_id": "us.scotus.2023.counterman.200us321",
+      "title": "Counterman v. Colorado",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/Counterman v. Colorado, 200 U.S. 321 (2023).md",
+      "anchor_count": 104,
+      "resolved_count": 18,
+      "unresolved_count": 86
+    },
+    {
+      "case_id": "us.scotus.2022.brown_acting_warden.200us321",
+      "title": "Brown, Acting Warden v. Davenport",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2022/Brown, Acting Warden v. Davenport, 200 U.S. 321 (2022).md",
+      "anchor_count": 98,
+      "resolved_count": 12,
+      "unresolved_count": 86
+    },
+    {
+      "case_id": "us.scotus.2014.michigan.200us321",
+      "title": "Michigan v. Bay Mills Indian Community et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Michigan v. Bay Mills Indian Community et al, 200 U.S. 321 (2014) [us.scotus.2014.michigan.200us321].md",
+      "anchor_count": 96,
+      "resolved_count": 11,
+      "unresolved_count": 85
+    },
+    {
+      "case_id": "us.scotus.2015.johnson.200us321",
+      "title": "Johnson v. United States",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Johnson v. United States, 200 U.S. 321 (2015).md",
+      "anchor_count": 100,
+      "resolved_count": 16,
+      "unresolved_count": 84
+    },
+    {
+      "case_id": "us.scotus.2012.arizona_et_al.200us321",
+      "title": "Arizona et al. v. United States",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Arizona et al. v. United States, 200 U.S. 321 (2012).md",
+      "anchor_count": 87,
+      "resolved_count": 3,
+      "unresolved_count": 84
+    },
+    {
+      "case_id": "us.scotus.2023.national_pork_producers_council_.200us321",
+      "title": "National Pork Producers Council et al. v. Ross, Secretary of the California Department of Food and Agriculture, et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/National Pork Producers Council et al. v. Ross, Secretary of the California Department of Food and Agriculture, et al, 200 U.S. 321 (2023) [us.scotus.2023.national_pork_producers_council_.200us321].md",
+      "anchor_count": 86,
+      "resolved_count": 2,
+      "unresolved_count": 84
+    },
+    {
+      "case_id": "us.scotus.2024.corner_post_inc.200us321",
+      "title": "Corner Post, Inc. v. Board of Governors of the Federal Reserve System",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2024/Corner Post, Inc. v. Board of Governors of the Federal Reserve System, 200 U.S. 321 (2024).md",
+      "anchor_count": 82,
+      "resolved_count": 1,
+      "unresolved_count": 81
+    },
+    {
+      "case_id": "us.scotus.2015.community_affairs_et_al.200us321",
+      "title": "Community Affairs et al. v. Inclusive Communities Project, Inc., et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Community Affairs et al. v. Inclusive Communities Project, Inc., et al, 200 U.S. 321 (2015) [us.scotus.2015.community_affairs_et_al.200us321].md",
+      "anchor_count": 83,
+      "resolved_count": 5,
+      "unresolved_count": 78
+    },
+    {
+      "case_id": "us.scotus.2023.county_et_al.200us321",
+      "title": "County et al. v. Talevski, As Personal Representative of the Estate of Talevski",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2023/County et al. v. Talevski, As Personal Representative of the Estate of Talevski, 200 U.S. 321 (2023).md",
+      "anchor_count": 80,
+      "resolved_count": 2,
+      "unresolved_count": 78
+    },
+    {
+      "case_id": "us.scotus.2025.mahmoud_et_al.200us321",
+      "title": "Mahmoud et al. v. Taylor et Al",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2025/Mahmoud et al. v. Taylor et al, 200 U.S. 321 (2025) [us.scotus.2025.mahmoud_et_al.200us321].md",
+      "anchor_count": 86,
+      "resolved_count": 10,
+      "unresolved_count": 76
+    },
+    {
+      "case_id": "us.scotus.2012.united_states.11210",
+      "title": "United States v. Alvarez",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/United States v. Alvarez, Unknown citation (2012).md",
+      "anchor_count": 85,
+      "resolved_count": 9,
+      "unresolved_count": 76
+    },
+    {
+      "case_id": "us.scotus.2018.collins.200us321",
+      "title": "Collins v. Virginia",
+      "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Collins v. Virginia, 200 U.S. 321 (2018).md",
+      "anchor_count": 83,
+      "resolved_count": 7,
+      "unresolved_count": 76
+    }
+  ]
+}

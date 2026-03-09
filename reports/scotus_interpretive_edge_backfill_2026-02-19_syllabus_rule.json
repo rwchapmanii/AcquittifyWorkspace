@@ -1,0 +1,69 @@
+{
+  "stats": {
+    "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+    "scanned": 1196,
+    "changed": 540,
+    "with_interpretive_edges_before": 1062,
+    "with_interpretive_edges_after": 1077,
+    "interpretive_edges_added_total": 5847,
+    "missing_hover_before": 0,
+    "missing_hover_after": 0,
+    "updated_at": "2026-02-19T01:58:29.002465+00:00"
+  },
+  "edge_type_counts": {
+    "APPLIES_AMENDMENT": 618,
+    "APPLIES_PLAIN_MEANING": 1,
+    "BROADENS_STATUTE": 3,
+    "CLARIFIES_DOCTRINE": 313,
+    "DISTINGUISHES_STATUTE": 2,
+    "EXPLAINS_AMENDMENT": 4,
+    "EXTENDS_AMENDMENT": 1,
+    "EXTENDS_STATUTE": 5,
+    "INTERPRETS_STATUTE": 4875,
+    "INVALIDATES_STATUTE": 2,
+    "INVALIDATES_STATUTE_UNDER": 1,
+    "NARROWS_STATUTE": 1,
+    "OVERRULES_PRECEDENT_UNDER": 2,
+    "QUESTIONS_PRECEDENT_UNDER": 5,
+    "SEVERS_PROVISION": 13,
+    "USES_LEGISLATIVE_HISTORY": 1
+  },
+  "authority_type_counts": {
+    "CONSTITUTION": 631,
+    "FEDERAL_RULE": 14,
+    "PRIOR_CASE": 295,
+    "REGULATION": 6,
+    "STATUTE": 4901
+  },
+  "authority_scope_counts": {
+    "full_opinion_fallback_sparse_syllabus": 376,
+    "full_opinion_no_syllabus": 420,
+    "syllabus": 400
+  },
+  "sample_changed_files": [
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Acheson Hotels, Llc v. Laufer, 200 U.S. 321 (2023) [us.scotus.2023.acheson_hotels_llc.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Arizona State Legislature v. Arizona Independent Redistricting Commission et Al, 200 U.S. 321 (2015) [us.scotus.2015.arizona_state_legislature.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Chadbourne & Parke Llp v. Troice et Al, 200 U.S. 321 (2014) [us.scotus.2014.chadbourne_parke_llp.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Comptroller of Treasury of Md. v. Wynne, 200 U.S. 321 (2015), Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Decker, Oregon State Forester, et al. v. Northwest Environmental Defense Center, 200 U.S. 321 (2013) [us.scotus.2013.decker_oregon_state_forester_et_.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Estate of Barnes, Deceased v. Felix et Al, 200 U.S. 321 (2025) [us.scotus.2025.estate_of_barnes_deceased.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Et al. v. Alliance for Open Society International, Inc., et Al, 200 U.S. 321 (2013), Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Kennedy v. Bremerton School District, 200 U.S. 321 (2022) [us.scotus.2022.kennedy.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Knox et al. v. Service Employees International Union, Local 1000, 200 U.S. 321 (2012) [us.scotus.2012.knox_et_al.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Mahanoy Area School District v. B. L., a Minor, By and Through Her Father, Levy, et Al, 200 U.S. 321 (2021) [us.scotus.2021.mahanoy_area_school_district.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Medina v. Planned Parenthood South Atlantic, 200 U.S. 321 (2025), Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Mississippi Department of Health, et al. v. Jackson Women\u2019s Health Organization et Al, 200 U.S. 321 (2022) [us.scotus.2022.mississippi_department_of_health.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Rjr Nabisco, Inc., et al. v. European Community et Al, 200 U.S. 321 (2016) [us.scotus.2016.rjr_nabisco_inc_et_al.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Shurtleff et al. v. City of Boston et Al, 200 U.S. 321 (2022) [us.scotus.2022.shurtleff_et_al.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case United States v. Arthrex, Inc. et Al, 200 U.S. 321 (2021), Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Young v. United Parcel Service, Inc, 200 U.S. 321 (2015) [us.scotus.2015.young.200us321], Unknown citation (0000), Unknown citation (0000).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Greene, Aka Trice v. Fisher, Superintendent, State Correctional Institution At Smithfield, et al, 565 U.S. ____ (2011) [us.scotus.2011.greene_aka_trice.10637].md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Habermann, Charles T. v. United States, 506 U.S. 1 (2011).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Javier Cavazos, Acting Warden v. Shirley Ree Smith, 565 U.S. ____ (2011).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Judulang v. Holder, Attorney General, Unknown citation (2011).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Lee, Yong I., et al. v. Central Presbytery, 506 U.S. 1 (2011).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Arizona et al. v. United States, 200 U.S. 321 (2012).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Astrue, Commissioner of Social Security v. Capato, on Behalf of B. N. C. et al, 200 U.S. 321 (2012) [us.scotus.2012.astrue_commissioner_of_social_se.200us321].md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Brenda Cash, Acting Warden v. Bobby Joe Maxwell, 565 U.S. ____ (2012).md"
+  ]
+}

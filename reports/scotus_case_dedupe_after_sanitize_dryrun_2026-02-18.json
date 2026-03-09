@@ -1,0 +1,954 @@
+{
+  "cases_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus",
+  "dry_run": true,
+  "duplicate_group_count": 27,
+  "remove_candidate_count": 27,
+  "removed_count": 0,
+  "groups": [
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1121.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Knox et al. v. Service Employees International Union, Local 1000, 200 U.S. 321 (2012) [us.scotus.2012.knox_et_al.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2012.knox_et_al.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1121.txt",
+        "primary_citation": "10-1121",
+        "case_summary": "No. 10–1121. Argued January 10, 2012—Decided June 21, 2012 California law permits public-sector employees in a bargaining unit to decide by majority vote to create an “agency shop” arrangement un- der which all the employees are represented by a union. Even em- ployees who do not join the union must pay an annual fee for “chargeable expenses,” i.e., the cost of nonpolitical union services re- lated to collective bargaining. Under Abood v. Detroit Bd. of Ed., 431 U. S. 209, a public-sector union can bill nonmembers for chargeable expenses but may not require them to fund its political or ideological projects. Teachers v. Hudson, 475 U. S. 292, 302–311, sets out re- quirem…",
+        "citation_anchor_count": 64,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Knox et al. v. Service Employees International Union, Local 1000, 10-1121 (2012), Unknown citation (0000).md",
+          "case_id": "us.scotus.2012.knox_et_al.101121",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1121.txt",
+          "primary_citation": "10-1121",
+          "case_summary": "No. 10–1121. Argued January 10, 2012—Decided June 21, 2012 California law permits public-sector employees in a bargaining unit to decide by majority vote to create an “agency shop” arrangement un- der which all the employees are represented by a union. Even em- ployees who do not join the union must pay an annual fee for “chargeable expenses,” i.e., the cost of nonpolitical union services re- lated to collective bargaining. Under Abood v. Detroit Bd. of Ed., 431 U. S. 209, a public-sector union can bill nonmembers for chargeable expenses but may not require them to fund its political or ideological projects. Teachers v. Hudson, 475 U. S. 292, 302–311, sets out re- quirem…",
+          "citation_anchor_count": 64,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1491.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Husband Kiobel, et al. v. Royal Dutch Petroleum Co. et Al, 200 U.S. 321 (2013) [us.scotus.2013.husband_kiobel_et_al.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2013.husband_kiobel_et_al.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1491.txt",
+        "primary_citation": "10-1491",
+        "case_summary": "The presumption against extraterritoriality applies to claims un- der the ATS, and nothing in the statute rebuts that presumption.",
+        "citation_anchor_count": 20,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Husband Kiobel, et al. v. Royal Dutch Petroleum Co. et Al, 10-1491 (2013), Unknown citation (0000).md",
+          "case_id": "us.scotus.2013.husband_kiobel_et_al.101491",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1491.txt",
+          "primary_citation": "10-1491",
+          "case_summary": "The presumption against extraterritoriality applies to claims un- der the ATS, and nothing in the statute rebuts that presumption.",
+          "citation_anchor_count": 20,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-338.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Decker, Oregon State Forester, et al. v. Northwest Environmental Defense Center, 200 U.S. 321 (2013) [us.scotus.2013.decker_oregon_state_forester_et_.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2013.decker_oregon_state_forester_et_.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-338.txt",
+        "primary_citation": "11-338",
+        "case_summary": "DECKER, OREGON STATE FORESTER, ET AL. v. NORTHWEST ENVIRONMENTAL DEFENSE CENTER",
+        "citation_anchor_count": 25,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Decker, Oregon State Forester, et al. v. Northwest Environmental Defense Center, 11-338 (2013), Unknown citation (0000).md",
+          "case_id": "us.scotus.2013.decker_oregon_state_forester_et_.11338",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-338.txt",
+          "primary_citation": "11-338",
+          "case_summary": "DECKER, OREGON STATE FORESTER, ET AL. v. NORTHWEST ENVIRONMENTAL DEFENSE CENTER",
+          "citation_anchor_count": 25,
+          "score": [
+            6,
+            [
+              -1,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-10.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Et al. v. Alliance for Open Society International, Inc., et Al, 200 U.S. 321 (2013), Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2013.et_al.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-10.txt",
+        "primary_citation": "12-10",
+        "case_summary": "The Policy Requirement violates the First Amendment by com- pelling as a condition of federal funding the affirmation of a belief that by its nature cannot be confined within the scope of the Gov-",
+        "citation_anchor_count": 23,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Et al. v. Alliance for Open Society International, Inc., et Al, 12-10 (2013), Unknown citation (0000).md",
+          "case_id": "us.scotus.2013.et_al.1210",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-10.txt",
+          "primary_citation": "12-10",
+          "case_summary": "The Policy Requirement violates the First Amendment by com- pelling as a condition of federal funding the affirmation of a belief that by its nature cannot be confined within the scope of the Gov-",
+          "citation_anchor_count": 23,
+          "score": [
+            6,
+            [
+              -1,
+              4
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-1226.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Young v. United Parcel Service, Inc, 200 U.S. 321 (2015) [us.scotus.2015.young.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2015.young.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-1226.txt",
+        "primary_citation": "12-1226",
+        "case_summary": "No. 12–1226. Argued December 3, 2014—Decided March 25, 2015 The Pregnancy Discrimination Act added new language to the defini- tions subsection of Title VII of the Civil Rights Act of 1964. The first clause of the Pregnancy Discrimination Act specifies that Title VII’s prohibition against sex discrimination applies to discrimination “be- cause of or on the basis of pregnancy, childbirth, or related medical conditions.” 42 U. S. C §2000e(k). The Act’s second clause says that employers must treat “women affected by pregnancy . . . the same for all employment-related purposes . . . as other persons not so affected but similar in their ability or inability to work.” Ibid. Th…",
+        "citation_anchor_count": 39,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Young v. United Parcel Service, Inc, 12-1226 (2015), Unknown citation (0000).md",
+          "case_id": "us.scotus.2015.young.121226",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-1226.txt",
+          "primary_citation": "12-1226",
+          "case_summary": "No. 12–1226. Argued December 3, 2014—Decided March 25, 2015 The Pregnancy Discrimination Act added new language to the defini- tions subsection of Title VII of the Civil Rights Act of 1964. The first clause of the Pregnancy Discrimination Act specifies that Title VII’s prohibition against sex discrimination applies to discrimination “be- cause of or on the basis of pregnancy, childbirth, or related medical conditions.” 42 U. S. C §2000e(k). The Act’s second clause says that employers must treat “women affected by pregnancy . . . the same for all employment-related purposes . . . as other persons not so affected but similar in their ability or inability to work.” Ibid. Th…",
+          "citation_anchor_count": 39,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-246.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Salinas v. Texas, 200 U.S. 321 (2017) [us.scotus.2017.salinas.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2017.salinas.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-246.txt",
+        "primary_citation": "12-246",
+        "case_summary": "The judgment is affirmed. 369 S. W. 3d 176, affirmed. JUSTICE ALITO, joined by THE CHIEF JUSTICE and JUSTICE KENNEDY, concluded that petitioner’s Fifth Amendment claim fails because he did not expressly invoke the privilege in response to the officer’s question. Pp. 3−12. (a) To prevent the privilege against self-incrimination from shield- ing information not properly within its scope, a witness who “ ‘desires the protection of the privilege . . . must claim it’ ” at the time he relies",
+        "citation_anchor_count": 68,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Salinas v. Texas, 12-246 (2017), Unknown citation (0000).md",
+          "case_id": "us.scotus.2017.salinas.12246",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-246.txt",
+          "primary_citation": "12-246",
+          "case_summary": "The judgment is affirmed. 369 S. W. 3d 176, affirmed. JUSTICE ALITO, joined by THE CHIEF JUSTICE and JUSTICE KENNEDY, concluded that petitioner’s Fifth Amendment claim fails because he did not expressly invoke the privilege in response to the officer’s question. Pp. 3−12. (a) To prevent the privilege against self-incrimination from shield- ing information not properly within its scope, a witness who “ ‘desires the protection of the privilege . . . must claim it’ ” at the time he relies",
+          "citation_anchor_count": 69,
+          "score": [
+            6,
+            [
+              -1,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-79.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Chadbourne & Parke Llp v. Troice et Al, 200 U.S. 321 (2014) [us.scotus.2014.chadbourne_parke_llp.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2014.chadbourne_parke_llp.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-79.txt",
+        "primary_citation": "12-79",
+        "case_summary": "The Litigation Act does not preclude the plaintiffs’ state-law class —————— * Together with No. 12–86, Willis of Colorado Inc. et al. v. Troice et al., and No. 12–88, Proskauer Rose LLP v. Troice et al., also on certio- rari to the same court.",
+        "citation_anchor_count": 23,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Chadbourne & Parke Llp v. Troice et Al, 12-79 (2014), Unknown citation (0000).md",
+          "case_id": "us.scotus.2014.chadbourne_parke_llp.1279",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-12-79.txt",
+          "primary_citation": "12-79",
+          "case_summary": "The Litigation Act does not preclude the plaintiffs’ state-law class —————— * Together with No. 12–86, Willis of Colorado Inc. et al. v. Troice et al., and No. 12–88, Proskauer Rose LLP v. Troice et al., also on certio- rari to the same court.",
+          "citation_anchor_count": 23,
+          "score": [
+            6,
+            [
+              -1,
+              4
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-13-1314.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Arizona State Legislature v. Arizona Independent Redistricting Commission et Al, 200 U.S. 321 (2015) [us.scotus.2015.arizona_state_legislature.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2015.arizona_state_legislature.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-13-1314.txt",
+        "primary_citation": "13-1314",
+        "case_summary": "ARIZONA STATE LEGISLATURE v. ARIZONA INDEPENDENT REDISTRICTING COMMISSION ET AL.",
+        "citation_anchor_count": 76,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Arizona State Legislature v. Arizona Independent Redistricting Commission et Al, 13-1314 (2015), Unknown citation (0000).md",
+          "case_id": "us.scotus.2015.arizona_state_legislature.131314",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-13-1314.txt",
+          "primary_citation": "13-1314",
+          "case_summary": "ARIZONA STATE LEGISLATURE v. ARIZONA INDEPENDENT REDISTRICTING COMMISSION ET AL.",
+          "citation_anchor_count": 77,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-13-485.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Comptroller of Treasury of Md. v. Wynne, 200 U.S. 321 (2015), Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2015.13_485.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-13-485.txt",
+        "primary_citation": "13-485",
+        "case_summary": "Maryland’s personal income tax scheme violates the dormant Commerce Clause. (a) The Commerce Clause, which grants Congress power to “regu- late Commerce . . . among the several States,” Art I, §8, cl. 3, also has “a further, negative command, known as the dormant Commerce Clause,” Oklahoma Tax Comm’n v. Jefferson Lines, Inc., 514 U. S.",
+        "citation_anchor_count": 134,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case 13-485, 13-485 (2015), Unknown citation (0000).md",
+          "case_id": "us.scotus.2015.13_485.13485",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-13-485.txt",
+          "primary_citation": "13-485",
+          "case_summary": "Maryland’s personal income tax scheme violates the dormant Commerce Clause. (a) The Commerce Clause, which grants Congress power to “regu- late Commerce . . . among the several States,” Art I, §8, cl. 3, also has “a further, negative command, known as the dormant Commerce Clause,” Oklahoma Tax Comm’n v. Jefferson Lines, Inc., 514 U. S.",
+          "citation_anchor_count": 134,
+          "score": [
+            6,
+            [
+              -1,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-14-1513.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Halo Electronics, Inc. v. Pulse Electronics, Inc., et Al, 200 U.S. 321 (2016) [us.scotus.2016.halo_electronics_inc.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2016.halo_electronics_inc.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-14-1513.txt",
+        "primary_citation": "14-1513",
+        "case_summary": "The Seagate test is not consistent with §284. (a) The pertinent language of §284 contains no explicit limit or condition on when enhanced damages are appropriate, and this Court has emphasized that the “word ‘may’ clearly connotes discretion.” Martin v. Franklin Capital Corp., 546 U. S. 132, 136. At the same time, however, “[d]iscretion is not whim.” Id., at 139. Although there —————— * Together with No. 14–1520, Stryker Corp. et al. v. Zimmer, Inc., et al., also on certiorari to the same court.",
+        "citation_anchor_count": 20,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Halo Electronics, Inc. v. Pulse Electronics, Inc., et Al, 14-1513 (2016), Unknown citation (0000).md",
+          "case_id": "us.scotus.2016.halo_electronics_inc.141513",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-14-1513.txt",
+          "primary_citation": "14-1513",
+          "case_summary": "The Seagate test is not consistent with §284. (a) The pertinent language of §284 contains no explicit limit or condition on when enhanced damages are appropriate, and this Court has emphasized that the “word ‘may’ clearly connotes discretion.” Martin v. Franklin Capital Corp., 546 U. S. 132, 136. At the same time, however, “[d]iscretion is not whim.” Id., at 139. Although there —————— * Together with No. 14–1520, Stryker Corp. et al. v. Zimmer, Inc., et al., also on certiorari to the same court.",
+          "citation_anchor_count": 20,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-15-138.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Rjr Nabisco, Inc., et al. v. European Community et Al, 200 U.S. 321 (2016) [us.scotus.2016.rjr_nabisco_inc_et_al.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2016.rjr_nabisco_inc_et_al.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-15-138.txt",
+        "primary_citation": "15-138",
+        "case_summary": "No. 15–138. Argued March 21, 2016—Decided June 20, 2016 The Racketeer Influenced and Corrupt Organizations Act (RICO) pro- hibits certain activities of organized crime groups in relation to an enterprise. RICO makes it a crime to invest income derived from a pattern of racketeering activity in an enterprise “which is engaged in, or the activities of which affect, interstate or foreign commerce,” 18 U. S. C. §1962(a); to acquire or maintain an interest in an enterprise through a pattern of racketeering activity, §1962(b); to conduct an enterprise’s affairs through a pattern of racketeering activity, §1962(c); and to conspire to violate any of the other three prohibi- tion…",
+        "citation_anchor_count": 42,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Rjr Nabisco, Inc., et al. v. European Community et Al, 15-138 (2016), Unknown citation (0000).md",
+          "case_id": "us.scotus.2016.rjr_nabisco_inc_et_al.15138",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-15-138.txt",
+          "primary_citation": "15-138",
+          "case_summary": "No. 15–138. Argued March 21, 2016—Decided June 20, 2016 The Racketeer Influenced and Corrupt Organizations Act (RICO) pro- hibits certain activities of organized crime groups in relation to an enterprise. RICO makes it a crime to invest income derived from a pattern of racketeering activity in an enterprise “which is engaged in, or the activities of which affect, interstate or foreign commerce,” 18 U. S. C. §1962(a); to acquire or maintain an interest in an enterprise through a pattern of racketeering activity, §1962(b); to conduct an enterprise’s affairs through a pattern of racketeering activity, §1962(c); and to conspire to violate any of the other three prohibi- tion…",
+          "citation_anchor_count": 42,
+          "score": [
+            6,
+            [
+              -1,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-15-458.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Dietz v. Bouldin, 200 U.S. 321 (2016) [us.scotus.2016.dietz.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2016.dietz.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-15-458.txt",
+        "primary_citation": "15-458",
+        "case_summary": "A federal district court has a limited inherent power to rescind a jury discharge order and recall a jury in a civil case for further delib- erations after identifying an error in the jury’s verdict. The District Court did not abuse that power here. (a) The inherent powers that district courts possess “to manage",
+        "citation_anchor_count": 23,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Dietz v. Bouldin, 15-458 (2016), Unknown citation (0000).md",
+          "case_id": "us.scotus.2016.dietz.15458",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-15-458.txt",
+          "primary_citation": "15-458",
+          "case_summary": "A federal district court has a limited inherent power to rescind a jury discharge order and recall a jury in a civil case for further delib- erations after identifying an error in the jury’s verdict. The District Court did not abuse that power here. (a) The inherent powers that district courts possess “to manage",
+          "citation_anchor_count": 23,
+          "score": [
+            6,
+            [
+              -1,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-17-7855.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Doyle Lee Hamm v. Jefferson S. Dunn, Commissioner, Alabama Depart- Ment of Corrections, et Al, 553 U.S. 2 (2018), Unknown citation (0000).md",
+        "case_id": "us.scotus.2018.doyle_lee_hamm.553us2",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-17-7855.txt",
+        "primary_citation": "17-7855",
+        "case_summary": "DOYLE LEE HAMM v. JEFFERSON S. DUNN, COMMISSIONER, ALABAMA DEPART- MENT OF CORRECTIONS, ET AL. ON APPLICATION FOR STAY AND ON PETITION FOR A WRIT OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE ELEVENTH CIRCUIT [February 22, 2018]",
+        "citation_anchor_count": 1,
+        "score": [
+          6,
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Doyle Lee Hamm v. Jefferson S. Dunn, Commissioner, Alabama Depart- Ment of Corrections, et Al, 17-7855 (2018).md",
+          "case_id": "us.scotus.2018.doyle_lee_hamm.177855",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-17-7855.txt",
+          "primary_citation": "17-7855",
+          "case_summary": "DOYLE LEE HAMM v. JEFFERSON S. DUNN, COMMISSIONER, ALABAMA DEPART- MENT OF CORRECTIONS, ET AL. ON APPLICATION FOR STAY AND ON PETITION FOR A WRIT OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE ELEVENTH CIRCUIT [February 22, 2018]",
+          "citation_anchor_count": 1,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-18-1501.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Liu et al. v. Securities and Exchange Commission, 200 U.S. 321 (2020) [us.scotus.2020.liu_et_al.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2020.liu_et_al.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-18-1501.txt",
+        "primary_citation": "18-1501",
+        "case_summary": "A disgorgement award that does not exceed a wrongdoer’s net prof- its and is awarded for victims is equitable relief permissible under §78u(d)(5). (a) In interpreting statutes that provide for “equitable relief,” this Court analyzes whether a particular remedy falls into “those catego- ries of relief that were typically available in equity.” Mertens v. Hewitt Associates, 508 U. S. 248, 256. Relevant here are two principles of eq- uity jurisprudence. Equity practice has long authorized courts to strip wrongdoers of their ill-gotten gains. And to avoid transforming that",
+        "citation_anchor_count": 48,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Liu et al. v. Securities and Exchange Commission, 18-1501 (2020), Unknown citation (0000).md",
+          "case_id": "us.scotus.2020.liu_et_al.181501",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-18-1501.txt",
+          "primary_citation": "18-1501",
+          "case_summary": "A disgorgement award that does not exceed a wrongdoer’s net prof- its and is awarded for victims is equitable relief permissible under §78u(d)(5). (a) In interpreting statutes that provide for “equitable relief,” this Court analyzes whether a particular remedy falls into “those catego- ries of relief that were typically available in equity.” Mertens v. Hewitt Associates, 508 U. S. 248, 256. Relevant here are two principles of eq- uity jurisprudence. Equity practice has long authorized courts to strip wrongdoers of their ill-gotten gains. And to avoid transforming that",
+          "citation_anchor_count": 48,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-123.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Fulton et al. v. City of Philadelphia, Pennsylvania, et Al, 200 U.S. 321 (2021) [us.scotus.2021.fulton_et_al.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2021.fulton_et_al.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-123.txt",
+        "primary_citation": "19-123",
+        "case_summary": "The refusal of Philadelphia to contract with CSS for the provision of foster care services unless CSS agrees to certify same-sex couples as foster parents violates the Free Exercise Clause of the First Amend- ment. (a) The City’s actions burdened CSS’s religious exercise by forcing it either to curtail its mission or to certify same-sex couples as foster par- ents in violation of its religious beliefs. Smith held that laws inci- dentally burdening religion are ordinarily not subject to strict scrutiny under the Free Exercise Clause so long as they are both neutral and",
+        "citation_anchor_count": 110,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Fulton et al. v. City of Philadelphia, Pennsylvania, et Al, 19-123 (2021), Unknown citation (0000).md",
+          "case_id": "us.scotus.2021.fulton_et_al.19123",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-123.txt",
+          "primary_citation": "19-123",
+          "case_summary": "The refusal of Philadelphia to contract with CSS for the provision of foster care services unless CSS agrees to certify same-sex couples as foster parents violates the Free Exercise Clause of the First Amend- ment. (a) The City’s actions burdened CSS’s religious exercise by forcing it either to curtail its mission or to certify same-sex couples as foster par- ents in violation of its religious beliefs. Smith held that laws inci- dentally burdening religion are ordinarily not subject to strict scrutiny under the Free Exercise Clause so long as they are both neutral and",
+          "citation_anchor_count": 110,
+          "score": [
+            6,
+            [
+              -1,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-1392.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Mississippi Department of Health, et al. v. Jackson Women’s Health Organization et Al, 200 U.S. 321 (2022) [us.scotus.2022.mississippi_department_of_health.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2022.mississippi_department_of_health.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-1392.txt",
+        "primary_citation": "19-1392",
+        "case_summary": "The Constitution does not confer a right to abortion; Roe and Casey are overruled; and the authority to regulate abortion is returned to the people and their elected representatives. (a) The critical question is whether the Constitution, properly un- derstood, confers a right to obtain an abortion. Casey’s controlling opinion skipped over that question and reaffirmed Roe solely on the basis of stare decisis. A proper application of stare decisis, however, requires an assessment of the strength of the grounds on which Roe",
+        "citation_anchor_count": 376,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Mississippi Department of Health, et al. v. Jackson Women’s Health Organization et Al, 19-1392 (2022), Unknown citation (0000).md",
+          "case_id": "us.scotus.2022.mississippi_department_of_health.191392",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-1392.txt",
+          "primary_citation": "19-1392",
+          "case_summary": "The Constitution does not confer a right to abortion; Roe and Casey are overruled; and the authority to regulate abortion is returned to the people and their elected representatives. (a) The critical question is whether the Constitution, properly un- derstood, confers a right to obtain an abortion. Casey’s controlling opinion skipped over that question and reaffirmed Roe solely on the basis of stare decisis. A proper application of stare decisis, however, requires an assessment of the strength of the grounds on which Roe",
+          "citation_anchor_count": 376,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-1434.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case United States v. Arthrex, Inc. et Al, 200 U.S. 321 (2021), Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2021.united_states.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-1434.txt",
+        "primary_citation": "19-1434",
+        "case_summary": "The judgment is vacated, and the case is remanded. 941 F. 3d 1320, vacated and remanded. THE CHIEF JUSTICE delivered the opinion of the Court with respect to Parts I and II, concluding that the unreviewable authority wielded by APJs during inter partes review is incompatible with their appoint- ment by the Secretary of Commerce to an inferior office. (a) The Appointments Clause provides that only the President, with the advice and consent of the Senate, can appoint principal officers. With respect to inferior officers, the Clause permits Congress to vest",
+        "citation_anchor_count": 53,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case United States v. Arthrex, Inc. et Al, 19-1434 (2021), Unknown citation (0000).md",
+          "case_id": "us.scotus.2021.united_states.191434",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-1434.txt",
+          "primary_citation": "19-1434",
+          "case_summary": "The judgment is vacated, and the case is remanded. 941 F. 3d 1320, vacated and remanded. THE CHIEF JUSTICE delivered the opinion of the Court with respect to Parts I and II, concluding that the unreviewable authority wielded by APJs during inter partes review is incompatible with their appoint- ment by the Secretary of Commerce to an inferior office. (a) The Appointments Clause provides that only the President, with the advice and consent of the Senate, can appoint principal officers. With respect to inferior officers, the Clause permits Congress to vest",
+          "citation_anchor_count": 53,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-5807.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Edwards v. Vannoy, Warden, 200 U.S. 321 (2021) [us.scotus.2021.edwards.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2021.edwards.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-5807.txt",
+        "primary_citation": "19-5807",
+        "case_summary": "The Ramos jury-unanimity rule does not apply retroactively on federal collateral review. (a) A new rule of criminal procedure applies to cases on direct re- view, even if the defendant’s trial has already concluded. But the Court has stated that new rules of criminal procedure ordinarily do not apply retroactively on federal collateral review. The Court has stated that a new procedural rule will apply retroactively on federal collateral review only if the new rule constitutes a “watershed” rule of criminal procedure. Teague v. Lane, 489 U. S. 288, 311 (plurality opinion).",
+        "citation_anchor_count": 161,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Edwards v. Vannoy, Warden, 19-5807 (2021), Unknown citation (0000).md",
+          "case_id": "us.scotus.2021.edwards.195807",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-19-5807.txt",
+          "primary_citation": "19-5807",
+          "case_summary": "The Ramos jury-unanimity rule does not apply retroactively on federal collateral review. (a) A new rule of criminal procedure applies to cases on direct re- view, even if the defendant’s trial has already concluded. But the Court has stated that new rules of criminal procedure ordinarily do not apply retroactively on federal collateral review. The Court has stated that a new procedural rule will apply retroactively on federal collateral review only if the new rule constitutes a “watershed” rule of criminal procedure. Teague v. Lane, 489 U. S. 288, 311 (plurality opinion).",
+          "citation_anchor_count": 161,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-20-1800.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Shurtleff et al. v. City of Boston et Al, 200 U.S. 321 (2022) [us.scotus.2022.shurtleff_et_al.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2022.shurtleff_et_al.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-20-1800.txt",
+        "primary_citation": "20-1800",
+        "case_summary": "1. Boston’s flag-raising program does not express government speech. (a) The Free Speech Clause does not prevent the government from declining to express a view. See Pleasant Grove City v. Summum, 555 U. S. 460, 467–469. The government must be able to decide what to say and what not to say when it states an opinion, speaks for the com- munity, formulates policies, or implements programs. The boundary between government speech and private expression can blur when, as here, the government invites the people to participate in a program.",
+        "citation_anchor_count": 67,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Shurtleff et al. v. City of Boston et Al, 20-1800 (2022), Unknown citation (0000).md",
+          "case_id": "us.scotus.2022.shurtleff_et_al.201800",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-20-1800.txt",
+          "primary_citation": "20-1800",
+          "case_summary": "1. Boston’s flag-raising program does not express government speech. (a) The Free Speech Clause does not prevent the government from declining to express a view. See Pleasant Grove City v. Summum, 555 U. S. 460, 467–469. The government must be able to decide what to say and what not to say when it states an opinion, speaks for the com- munity, formulates policies, or implements programs. The boundary between government speech and private expression can blur when, as here, the government invites the people to participate in a program.",
+          "citation_anchor_count": 67,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-20-255.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Mahanoy Area School District v. B. L., a Minor, By and Through Her Father, Levy, et Al, 200 U.S. 321 (2021) [us.scotus.2021.mahanoy_area_school_district.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2021.mahanoy_area_school_district.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-20-255.txt",
+        "primary_citation": "20-255",
+        "case_summary": "While public schools may have a special interest in regulating some off-campus student speech, the special interests offered by the school are not sufficient to overcome B. L.’s interest in free expression in this case. (a) In Tinker, we indicated that schools have a special interest in regulating on-campus student speech that “materially disrupts class-",
+        "citation_anchor_count": 45,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Mahanoy Area School District v. B. L., a Minor, By and Through Her Father, Levy, et Al, 20-255 (2021), Unknown citation (0000).md",
+          "case_id": "us.scotus.2021.mahanoy_area_school_district.20255",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-20-255.txt",
+          "primary_citation": "20-255",
+          "case_summary": "While public schools may have a special interest in regulating some off-campus student speech, the special interests offered by the school are not sufficient to overcome B. L.’s interest in free expression in this case. (a) In Tinker, we indicated that schools have a special interest in regulating on-campus student speech that “materially disrupts class-",
+          "citation_anchor_count": 45,
+          "score": [
+            6,
+            [
+              -1,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-21-418.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Kennedy v. Bremerton School District, 200 U.S. 321 (2022) [us.scotus.2022.kennedy.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2022.kennedy.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-21-418.txt",
+        "primary_citation": "21-418",
+        "case_summary": "The Free Exercise and Free Speech Clauses of the First Amend- ment protect an individual engaging in a personal religious observance from government reprisal; the Constitution neither mandates nor per- mits the government to suppress such religious expression. (a) Mr. Kennedy contends that the District’s conduct violated both the Free Exercise and Free Speech Clauses of the First Amendment. Where the Free Exercise Clause protects religious exercises, the Free Speech Clause provides overlapping protection for expressive religious",
+        "citation_anchor_count": 77,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Kennedy v. Bremerton School District, 21-418 (2022), Unknown citation (0000).md",
+          "case_id": "us.scotus.2022.kennedy.21418",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-21-418.txt",
+          "primary_citation": "21-418",
+          "case_summary": "The Free Exercise and Free Speech Clauses of the First Amend- ment protect an individual engaging in a personal religious observance from government reprisal; the Constitution neither mandates nor per- mits the government to suppress such religious expression. (a) Mr. Kennedy contends that the District’s conduct violated both the Free Exercise and Free Speech Clauses of the First Amendment. Where the Free Exercise Clause protects religious exercises, the Free Speech Clause provides overlapping protection for expressive religious",
+          "citation_anchor_count": 78,
+          "score": [
+            6,
+            [
+              -1,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-22-429.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Acheson Hotels, Llc v. Laufer, 200 U.S. 321 (2023) [us.scotus.2023.acheson_hotels_llc.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2023.acheson_hotels_llc.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-22-429.txt",
+        "primary_citation": "22-429",
+        "case_summary": "This case is vacated as moot. The Court has the authority to ad- dress jurisdictional issues of mootness and standing in any order it chooses. See Sinochem Int’l Co. v. Malaysia Int’l Shipping Corp., 549 U. S. 422, 431. And while the Court is sensitive to Acheson’s concern about litigants manipulating this Court’s jurisdiction, the Court is not convinced that Laufer abandoned her case in an effort to evade the Court’s review. 50 F. 4th 259, vacated and remanded.",
+        "citation_anchor_count": 34,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Acheson Hotels, Llc v. Laufer, 22-429 (2023), Unknown citation (0000).md",
+          "case_id": "us.scotus.2023.acheson_hotels_llc.22429",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-22-429.txt",
+          "primary_citation": "22-429",
+          "case_summary": "This case is vacated as moot. The Court has the authority to ad- dress jurisdictional issues of mootness and standing in any order it chooses. See Sinochem Int’l Co. v. Malaysia Int’l Shipping Corp., 549 U. S. 422, 431. And while the Court is sensitive to Acheson’s concern about litigants manipulating this Court’s jurisdiction, the Court is not convinced that Laufer abandoned her case in an effort to evade the Court’s review. 50 F. 4th 259, vacated and remanded.",
+          "citation_anchor_count": 35,
+          "score": [
+            6,
+            [
+              -1,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-1229.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Environmental Protection Agency v. Calumet Shreveport Refining, L.l.c., et Al, 200 U.S. 321 (2025) [us.scotus.2025.environmental_protection_agency.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2025.environmental_protection_agency.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-1229.txt",
+        "primary_citation": "23-1229",
+        "case_summary": "EPA’s denials of small refinery exemption petitions are locally or regionally applicable actions that fall within the “nationwide scope or effect” exception, requiring venue in the D. C. Circuit. (a) Section 7607(b)(1) creates a two-step inquiry for determining venue. First, courts assess whether an EPA action is nationally appli- cable or only locally or regionally applicable. If nationally applicable, the case belongs in the D. C. Circuit. If locally or regionally applicable, courts proceed to the second step to determine whether the “nation- wide scope or effect” exception applies to override the default rule of",
+        "citation_anchor_count": 24,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Environmental Protection Agency v. Calumet Shreveport Refining, L.l.c., et Al, 23-1229 (2025), Unknown citation (0000).md",
+          "case_id": "us.scotus.2025.environmental_protection_agency.231229",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-1229.txt",
+          "primary_citation": "23-1229",
+          "case_summary": "EPA’s denials of small refinery exemption petitions are locally or regionally applicable actions that fall within the “nationwide scope or effect” exception, requiring venue in the D. C. Circuit. (a) Section 7607(b)(1) creates a two-step inquiry for determining venue. First, courts assess whether an EPA action is nationally appli- cable or only locally or regionally applicable. If nationally applicable, the case belongs in the D. C. Circuit. If locally or regionally applicable, courts proceed to the second step to determine whether the “nation- wide scope or effect” exception applies to override the default rule of",
+          "citation_anchor_count": 24,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-1239.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Estate of Barnes, Deceased v. Felix et Al, 200 U.S. 321 (2025) [us.scotus.2025.estate_of_barnes_deceased.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2025.estate_of_barnes_deceased.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-1239.txt",
+        "primary_citation": "23-1239",
+        "case_summary": "A claim that a law enforcement officer used excessive force during a stop or arrest is analyzed under the Fourth Amendment, which re- quires that the force deployed be objectively reasonable from “the per- spective of a reasonable officer at the scene.” Graham v. Connor, 490 U. S. 386, 396. The inquiry into the reasonableness of police force re- quires analyzing the “totality of the circumstances.” County of Los An- geles v. Mendez, 581 U. S. 420, 427–428; Tennessee v. Garner, 471 U. S.",
+        "citation_anchor_count": 21,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Estate of Barnes, Deceased v. Felix et Al, 23-1239 (2025), Unknown citation (0000).md",
+          "case_id": "us.scotus.2025.estate_of_barnes_deceased.231239",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-1239.txt",
+          "primary_citation": "23-1239",
+          "case_summary": "A claim that a law enforcement officer used excessive force during a stop or arrest is analyzed under the Fourth Amendment, which re- quires that the force deployed be objectively reasonable from “the per- spective of a reasonable officer at the scene.” Graham v. Connor, 490 U. S. 386, 396. The inquiry into the reasonableness of police force re- quires analyzing the “totality of the circumstances.” County of Los An- geles v. Mendez, 581 U. S. 420, 427–428; Tennessee v. Garner, 471 U. S.",
+          "citation_anchor_count": 21,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-1275.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Medina v. Planned Parenthood South Atlantic, 200 U.S. 321 (2025), Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2025.23_1275.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-1275.txt",
+        "primary_citation": "23-1275",
+        "case_summary": "Section 1396a(a)(23)(A) does not clearly and unambiguously confer individual rights enforceable under §1983. (a) Congress sometimes allows private enforcement through §1983, which authorizes suits against state actors who deprive individuals of federal “rights, privileges, or immunities.” But statutes create indi- vidual rights only in “atypical case[s].” Talevski, 599 U. S., at 183. Section 1983 provides causes of action for deprivation of “ ‘rights,’ ” not mere “ ‘benefits’ or ‘interests.’ ” Gonzaga, 536 U. S., at 283. To prove an enforceable right, plaintiffs must show the statute",
+        "citation_anchor_count": 94,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case 23-1275, 23-1275 (2025), Unknown citation (0000).md",
+          "case_id": "us.scotus.2025.23_1275.231275",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-1275.txt",
+          "primary_citation": "23-1275",
+          "case_summary": "Section 1396a(a)(23)(A) does not clearly and unambiguously confer individual rights enforceable under §1983. (a) Congress sometimes allows private enforcement through §1983, which authorizes suits against state actors who deprive individuals of federal “rights, privileges, or immunities.” But statutes create indi- vidual rights only in “atypical case[s].” Talevski, 599 U. S., at 183. Section 1983 provides causes of action for deprivation of “ ‘rights,’ ” not mere “ ‘benefits’ or ‘interests.’ ” Gonzaga, 536 U. S., at 283. To prove an enforceable right, plaintiffs must show the statute",
+          "citation_anchor_count": 94,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-6573.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Brenda Evers Andrew v. Tamika White, Warden, 501 U.S. 808 (2025) [us.scotus.2025.brenda_evers_andrew.501us808], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2025.brenda_evers_andrew.501us808",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-6573.txt",
+        "primary_citation": "23-6573",
+        "case_summary": "PER CURIAM. An Oklahoma jury convicted Brenda Andrew of murder- ing her husband, Rob Andrew, and sentenced her to death. The State spent significant time at trial introducing evi- dence about Andrew’s sex life and about her failings as a mother and wife, much of which it later conceded was irrel- evant. In a federal habeas petition, Andrew argued that this evidence had been so prejudicial as to violate the Due Process Clause. The Court of Appeals rejected that claim because, it thought, no holding of this Court established a general rule that the erroneous admission of prejudicial ev- idence could violate due process. That was wrong. By the time of Andrew’s trial, this C…",
+        "citation_anchor_count": 41,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Brenda Evers Andrew v. Tamika White, Warden, 23-6573 (2025), Unknown citation (0000).md",
+          "case_id": "us.scotus.2025.brenda_evers_andrew.236573",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-6573.txt",
+          "primary_citation": "23-6573",
+          "case_summary": "PER CURIAM. An Oklahoma jury convicted Brenda Andrew of murder- ing her husband, Rob Andrew, and sentenced her to death. The State spent significant time at trial introducing evi- dence about Andrew’s sex life and about her failings as a mother and wife, much of which it later conceded was irrel- evant. In a federal habeas petition, Andrew argued that this evidence had been so prejudicial as to violate the Due Process Clause. The Court of Appeals rejected that claim because, it thought, no holding of this Court established a general rule that the erroneous admission of prejudicial ev- idence could violate due process. That was wrong. By the time of Andrew’s trial, this C…",
+          "citation_anchor_count": 44,
+          "score": [
+            6,
+            [
+              -1,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-715.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Case Advocate Christ Medical Center et al. v. Kennedy, Secretary of Health and Human Services, 200 U.S. 321 (2025) [us.scotus.2025.advocate_christ_medical_center_e.200us321], Unknown citation (0000), Unknown citation (0000).md",
+        "case_id": "us.scotus.2025.advocate_christ_medical_center_e.200us321",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-715.txt",
+        "primary_citation": "23-715",
+        "case_summary": "In calculating the Medicare fraction, an individual is “entitled to [SSI] benefits” for purposes of the Medicare fraction when she is eligi- ble to receive an SSI cash payment during the month of her hospitali- zation. (a) SSI benefits are cash benefits. See 42 U. S. C. ch. 7, subch. XVI. Section 1381a, which describes the basic entitlement to benefits, pro- vides that “[e]very . . . individual who is determined . . . to be eligible on the basis of his income and resources shall . . . be paid benefits.” (Emphasis added.) The word “paid” connotes cash. Section 1382(b)(1),",
+        "citation_anchor_count": 20,
+        "score": [
+          6,
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/0000/Case Advocate Christ Medical Center et al. v. Kennedy, Secretary of Health and Human Services, 23-715 (2025), Unknown citation (0000).md",
+          "case_id": "us.scotus.2025.advocate_christ_medical_center_e.23715",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-23-715.txt",
+          "primary_citation": "23-715",
+          "case_summary": "In calculating the Medicare fraction, an individual is “entitled to [SSI] benefits” for purposes of the Medicare fraction when she is eligi- ble to receive an SSI cash payment during the month of her hospitali- zation. (a) SSI benefits are cash benefits. See 42 U. S. C. ch. 7, subch. XVI. Section 1381a, which describes the basic entitlement to benefits, pro- vides that “[e]very . . . individual who is determined . . . to be eligible on the basis of his income and resources shall . . . be paid benefits.” (Emphasis added.) The word “paid” connotes cash. Section 1382(b)(1),",
+          "citation_anchor_count": 20,
+          "score": [
+            6,
+            [
+              -1,
+              5
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acquittify Admin Review UI</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Acquittify Admin Review UI</div>
+    <div class="user">
+      {{ user.username }} ({{ user.role }})
+      <form method="post" action="/logout" class="logout">
+        <button type="submit">Sign out</button>
+      </form>
+    </div>
+  </header>
+  <nav class="nav">
+    <a href="/dashboard">Dashboard</a>
+    <a href="/taxonomy">Taxonomy Explorer</a>
+    <a href="/taxonomy-heatmap">Taxonomy Heatmap</a>
+    <a href="/legal-units">Legal Unit Browser</a>
+    <a href="/intent-audit">Intent Audit Viewer</a>
+    <a href="/taxonomy-gaps">Taxonomy Gap Dashboard</a>
+    <a href="/taxonomy-gap-events">Taxonomy Gap Events</a>
+    <a href="/ingestion">Ingestion</a>
+    <a href="/courtlistener-ingest">CourtListener Ingest</a>
+    <a href="/corpus">Corpus</a>
+    <a href="/embeddings">Embeddings</a>
+    <a href="/activity">Activity</a>
+    <a href="/agent-trace">Agent Trace</a>
+    <a href="/chats">Chats</a>
+  </nav>
+  <main class="content">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="footer">
+    Read-only by default. Review actions are logged as events only.
+  </footer>
+</body>
+</html>

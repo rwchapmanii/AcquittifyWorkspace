@@ -1,0 +1,467 @@
+{
+  "total": 200,
+  "hits": 2,
+  "recall_at_k": 0.01,
+  "mrr": 0.0022500000000000003,
+  "hit_at_1": 0.0,
+  "required_target_hit_rate": null,
+  "k": 5,
+  "misses": [
+    {
+      "id": "eval_00000",
+      "question": "What did Moab Partners allege that Macquarie had omitted to disclose?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Term Cases SCOTUS .pdf",
+      "chunk_index": "3"
+    },
+    {
+      "id": "eval_00001",
+      "question": "What is the tax loss if an individual failed to file a tax return and owed $50,000 in taxes?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        1797,
+        1798
+      ]
+    },
+    {
+      "id": "eval_00002",
+      "question": "What rule grants the power to order a new trial if it results in a miscarriage of justice?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+      "chunk_index": "1229"
+    },
+    {
+      "id": "eval_00003",
+      "question": "What were the years of Tague v. Louisiana and Bullington v. Missouri?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        5047,
+        4410
+      ]
+    },
+    {
+      "id": "eval_00004",
+      "question": "What might happen if a defendant objects to a mistrial declared due to an error that cannot be cured, and what are some common grounds for declaring such a mistrial?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf"
+      ],
+      "chunk_indices": [
+        1205,
+        1108
+      ]
+    },
+    {
+      "id": "eval_00005",
+      "question": "In which year was the case Arizona v. Gant decided?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+      "chunk_index": "1440"
+    },
+    {
+      "id": "eval_00006",
+      "question": "What happens if a defendant initially waives their Miranda rights but later invokes the right to remain silent or counsel during questioning?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf"
+      ],
+      "chunk_indices": [
+        2428,
+        459
+      ]
+    },
+    {
+      "id": "eval_00007",
+      "question": "What is often cited by police to justify a stop or an arrest according to the excerpt?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+      "chunk_index": "1748"
+    },
+    {
+      "id": "eval_00008",
+      "question": "What is the difference between 'cash in lieu' and 'substitute asset', and how does this distinction affect the process of forfeiting property under criminal forfeiture cases?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/Asset Forfeiture Policy Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/Asset Forfeiture Policy Manual.pdf"
+      ],
+      "chunk_indices": [
+        173,
+        200
+      ]
+    },
+    {
+      "id": "eval_00009",
+      "question": "What did Roberts say about the Texas Court's application of their decision?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2019 Term SCOTUS Cases .pdf",
+      "chunk_index": "31"
+    },
+    {
+      "id": "eval_00010",
+      "question": "What are the reasons some states preclude prosecutorial use of an accused's pretrial silence, and how can evidence of a defendant’s pretrial failure to avow innocence be used in court?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        2623,
+        2622
+      ]
+    },
+    {
+      "id": "eval_00011",
+      "question": "What standard do appellate courts use to review denials of continuances?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+      "chunk_index": "1114"
+    },
+    {
+      "id": "eval_00012",
+      "question": "What approval is required before forfeited assets can be shared internationally, and which section of the AFPM should prosecutors consult before providing forfeiture notice to individuals and entities abroad?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        806,
+        782
+      ]
+    },
+    {
+      "id": "eval_00013",
+      "question": "How does the effectiveness of a company's compliance program influence DOJ and SEC decisions, particularly in relation to high-risk transactions?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/DOJ Foreign Corrupt Practices Guide.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/DOJ Foreign Corrupt Practices Guide.pdf"
+      ],
+      "chunk_indices": [
+        49,
+        40
+      ]
+    },
+    {
+      "id": "eval_00014",
+      "question": "Which Justice authored the majority opinion in Cargill?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Term Cases SCOTUS .pdf",
+      "chunk_index": "24"
+    },
+    {
+      "id": "eval_00015",
+      "question": "What does the definition of 'routine governmental action' exclude, and what specific actions are included in this definition?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        436,
+        455
+      ]
+    },
+    {
+      "id": "eval_00016",
+      "question": "What does the health care fraud statute require in terms of intent?",
+      "source_path": null,
+      "chunk_index": "229"
+    },
+    {
+      "id": "eval_00017",
+      "question": "What indicates that an officer may not be telling the truth according to People v. Perry?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+      "chunk_index": "45"
+    },
+    {
+      "id": "eval_00018",
+      "question": "What unit shall cease cryptocurrency enforcement according to the memorandum?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/DOJ Regulating by Prosecution Memo.pdf",
+      "chunk_index": "7"
+    },
+    {
+      "id": "eval_00019",
+      "question": "What was Kate's level of involvement in the remodeling project?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2023 Term Scotus Cases .pdf",
+      "chunk_index": "32"
+    },
+    {
+      "id": "eval_00020",
+      "question": "What are the conditions under which a warrant or second search without a warrant can be invalidated, and how does the Fourth Amendment affect the specificity required in warrants?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf"
+      ],
+      "chunk_indices": [
+        378,
+        1887
+      ]
+    },
+    {
+      "id": "eval_00021",
+      "question": "What specific threat in Payne v. Arkansas rendered a confession involuntary and how does this relate to the principle established in Sims v. Georgia?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf"
+      ],
+      "chunk_indices": [
+        2310,
+        2311
+      ]
+    },
+    {
+      "id": "eval_00022",
+      "question": "What constitutional amendment and specific harms related to trial delay are mentioned in both excerpts?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        2743,
+        2744
+      ]
+    },
+    {
+      "id": "eval_00023",
+      "question": "What is the burden of proof required for a waiver of Miranda rights according to Colorado v. Connelly, and what does Edwards v. Arizona specify about further interrogation after an accused has invoked their right to counsel?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        5683,
+        5684
+      ]
+    },
+    {
+      "id": "eval_00024",
+      "question": "What specific advice should counsel give to a client regarding conversations with family members while at the police station and what precautions should be taken if there is any possibility of eavesdropping?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf"
+      ],
+      "chunk_indices": [
+        480,
+        447
+      ]
+    },
+    {
+      "id": "eval_00025",
+      "question": "In what type of trial is it advisable to conduct hearings outside the presence of the jury regarding objections to identification testimony, and when must an objection be made in a trial-objection jurisdiction?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        5665,
+        2648
+      ]
+    },
+    {
+      "id": "eval_00026",
+      "question": "What is the maximum time period within which an ng-device warrant must be executed?",
+      "source_path": null,
+      "chunk_index": "203"
+    },
+    {
+      "id": "eval_00027",
+      "question": "What are the requirements for obtaining valid consent to search from a homeowner during a 'knock and talk' scenario, and how does this differ when dealing with an individual in police custody?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf"
+      ],
+      "chunk_indices": [
+        1906,
+        1903
+      ]
+    },
+    {
+      "id": "eval_00028",
+      "question": "What is the significance of 'custody' under Miranda v. Arizona and how does it relate to the concept of 'arrests' requiring probable cause?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf"
+      ],
+      "chunk_indices": [
+        81,
+        2377
+      ]
+    },
+    {
+      "id": "eval_00029",
+      "question": "What are the key differences between the United States Supreme Court's interpretation of the automobile exception under the Fourth Amendment and New Jersey's standard as established in State v. Alston?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf"
+      ],
+      "chunk_indices": [
+        2042,
+        2037
+      ]
+    },
+    {
+      "id": "eval_00030",
+      "question": "In which case did the court discuss the nature or circumstances of the conviction bringing it within the category of prior offenses that are predicates for enhancement, and what type of offense was deemed to have little bearing on a convicted person's propensity to testify truthfully?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        3437,
+        4393
+      ]
+    },
+    {
+      "id": "eval_00031",
+      "question": "What did Hinton's trial attorney do that was considered constitutionally deficient performance?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+      "chunk_index": "1935"
+    },
+    {
+      "id": "eval_00032",
+      "question": "When was Jason Mont sentenced for his state drug trafficking charges?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2019 Term SCOTUS Cases .pdf",
+      "chunk_index": "75"
+    },
+    {
+      "id": "eval_00033",
+      "question": "What does Kavanaugh join in addition to the Court's opinion?",
+      "source_path": null,
+      "chunk_index": "139"
+    },
+    {
+      "id": "eval_00034",
+      "question": "What does People v. Thomas state about a lawyer's actions when they have not sought a missing witness instruction?",
+      "source_path": null,
+      "chunk_index": "2821"
+    },
+    {
+      "id": "eval_00035",
+      "question": "What is the key difference between a judicial decision on venue and a jury's general verdict of acquittal according to the text?",
+      "source_path": null,
+      "chunk_index": "147"
+    },
+    {
+      "id": "eval_00036",
+      "question": "What must counsel know before serious negotiation can begin, and what factors should they explain to the client regarding the probability of winning a favorable outcome at trial?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        5314,
+        5329
+      ]
+    },
+    {
+      "id": "eval_00037",
+      "question": "According to the U.S. Sentencing Guidelines and Compliance 101, what are some benefits of implementing a compliance program and what is required for evaluating its effectiveness?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        649,
+        669
+      ]
+    },
+    {
+      "id": "eval_00038",
+      "question": "In a case where the applicable guideline range is in Zone B and the defendant is convicted of a Class A or B felony, what are the specific conditions under which the court can impose a sentence that includes community confinement or home detention?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        1983,
+        1980
+      ]
+    },
+    {
+      "id": "eval_00039",
+      "question": "What was the Supreme Court's reasoning in Davis v. Alaska regarding the accused's right to cross-examine?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+      "chunk_index": "883"
+    },
+    {
+      "id": "eval_00040",
+      "question": "What is the purpose of the departure provision mentioned in relation to 18 U.S.C. § 521?",
+      "source_path": null,
+      "chunk_index": "1007"
+    },
+    {
+      "id": "eval_00041",
+      "question": "Who should you email to get an electronic copy of the booklet?",
+      "source_path": "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2020 Term Scotus Cases .pdf",
+      "chunk_index": "46"
+    },
+    {
+      "id": "eval_00042",
+      "question": "How can cross-examination be used to demonstrate the possibility of error or inaccuracy in a witness's perception and memory, and what argument could counsel make if the witness had no particular reason to scrutinize the stranger closely?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf"
+      ],
+      "chunk_indices": [
+        911,
+        909
+      ]
+    },
+    {
+      "id": "eval_00043",
+      "question": "When is the argument scheduled for Medical Marijuana v. Horn?",
+      "source_path": null,
+      "chunk_index": "237"
+    },
+    {
+      "id": "eval_00044",
+      "question": "What approvals are required before the Criminal Division or other Department component not partnering with the USAO can extend the 150-day deadline by 60 days and seize structured funds where no probable cause exists that they were generated by unlawful activity?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        848,
+        849
+      ]
+    },
+    {
+      "id": "eval_00045",
+      "question": "What can be done with the witness if the evidence is particularly damaging and issues raised by its admissibility are complex?",
+      "source_path": null,
+      "chunk_index": "3089"
+    },
+    {
+      "id": "eval_00046",
+      "question": "In which case did the DOJ coordinate with both Brazil and Switzerland, and what was the agreed-upon penalty?",
+      "source_paths": [
+        null,
+        null
+      ],
+      "chunk_indices": [
+        683,
+        682
+      ]
+    },
+    {
+      "id": "eval_00047",
+      "question": "According to the Edwards rule, what is required for a break in custody to dissipate coercive effects and how long must this break typically be?",
+      "source_paths": [
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf",
+        "/Users/ronaldchapman/Desktop/Acquittify/Corpus/Raw/Treatises/2024 Defense of Criminal Cases Manual.pdf"
+      ],
+      "chunk_indices": [
+        2489,
+        2488
+      ]
+    },
+    {
+      "id": "eval_00048",
+      "question": "What is required for departures based on circumstances identified as not ordinarily relevant?",
+      "source_path": null,
+      "chunk_index": "2082"
+    },
+    {
+      "id": "eval_00049",
+      "question": "What did Justice Thomas state about his belief regarding court jurisdiction before final orders of removal have been entered?",
+      "source_path": null,
+      "chunk_index": "105"
+    }
+  ]
+}

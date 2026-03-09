@@ -1,0 +1,39 @@
+{
+  "stats": {
+    "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+    "scanned": 1196,
+    "changed": 0,
+    "with_interpretive_edges_before": 1062,
+    "with_interpretive_edges_after": 1062,
+    "interpretive_edges_added_total": 10051,
+    "missing_hover_before": 0,
+    "missing_hover_after": 0,
+    "updated_at": "2026-02-19T01:11:43.859069+00:00"
+  },
+  "edge_type_counts": {
+    "APPLIES_AMENDMENT": 810,
+    "APPLIES_PLAIN_MEANING": 2,
+    "BROADENS_STATUTE": 6,
+    "CLARIFIES_DOCTRINE": 36,
+    "DISTINGUISHES_STATUTE": 5,
+    "EXPLAINS_AMENDMENT": 5,
+    "EXTENDS_AMENDMENT": 2,
+    "EXTENDS_STATUTE": 18,
+    "INTERPRETS_STATUTE": 9119,
+    "INVALIDATES_STATUTE": 1,
+    "INVALIDATES_STATUTE_UNDER": 1,
+    "NARROWS_STATUTE": 3,
+    "OVERRULES_PRECEDENT_UNDER": 8,
+    "QUESTIONS_PRECEDENT_UNDER": 10,
+    "SEVERS_PROVISION": 23,
+    "USES_LEGISLATIVE_HISTORY": 2
+  },
+  "authority_type_counts": {
+    "CONSTITUTION": 831,
+    "FEDERAL_RULE": 19,
+    "PRIOR_CASE": 18,
+    "REGULATION": 8,
+    "STATUTE": 9175
+  },
+  "sample_changed_files": []
+}

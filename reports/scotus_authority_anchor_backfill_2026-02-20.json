@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-02-20T14:17:58.533886+00:00",
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "dry_run": false,
+  "scanned_files": 1195,
+  "changed_files": 0,
+  "parse_failures": 0,
+  "total_authority_anchors": 12217,
+  "authority_type_counts": {
+    "constitution": 3244,
+    "guideline": 33,
+    "reg": 450,
+    "rule": 822,
+    "statute": 6522,
+    "statutes_at_large": 1146
+  },
+  "anchor_scope_counts": {
+    "full_opinion_fallback_sparse_syllabus": 376,
+    "full_opinion_no_syllabus": 419,
+    "syllabus": 400
+  },
+  "files_changed": []
+}

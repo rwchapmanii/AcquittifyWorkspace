@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>System Activity</h1>
+<p class="meta">Recent retrievals, empty searches, and LLM responses.</p>
+
+<h3>Recent Retrievals</h3>
+<table>
+  <thead>
+    <tr><th>Timestamp</th><th>Query</th><th>Legal Area</th><th>Results</th></tr>
+  </thead>
+  <tbody>
+    {% for row in retrieval_log %}
+      <tr>
+        <td>{{ row.ts }}</td>
+        <td>{{ row.query }}</td>
+        <td>{{ row.legal_area }}</td>
+        <td>{{ row.results|length }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3>Empty Retrievals</h3>
+<table>
+  <thead>
+    <tr><th>Timestamp</th><th>Query</th><th>Legal Area</th></tr>
+  </thead>
+  <tbody>
+    {% for row in empty_log %}
+      <tr>
+        <td>{{ row.ts }}</td>
+        <td>{{ row.query }}</td>
+        <td>{{ row.legal_area }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3>LLM Responses (debug)</h3>
+<table>
+  <thead>
+    <tr><th>Timestamp</th><th>Kind</th><th>Model</th><th>Length</th><th>Preview</th></tr>
+  </thead>
+  <tbody>
+    {% for row in llm_log %}
+      <tr>
+        <td>{{ row.ts }}</td>
+        <td>{{ row.kind }}</td>
+        <td>{{ row.model }}</td>
+        <td>{{ row.response_len }}</td>
+        <td class="mono">{{ row.preview }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

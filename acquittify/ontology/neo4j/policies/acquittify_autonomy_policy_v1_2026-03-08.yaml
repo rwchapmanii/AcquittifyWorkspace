@@ -1,0 +1,346 @@
+schema_version: 1
+policy_id: acquittify-autonomy-policy-v1
+policy_name: Acquittify Autonomous Ontology Improvement Policy
+status: active
+generated_on: 2026-03-08
+owner: Acquittify
+
+system:
+  mode: v1_strict
+  principles:
+    time_locked_evaluation: true
+    no_in_place_ontology_mutation: true
+    llm_proposes_symbolic_tests_decide: true
+    require_shadow_replay_for_non_safe_changes: true
+    production_only_uses_promoted_ontology_versions: true
+    all_changes_must_be_versioned_experiments: true
+  notes:
+    - Only time-valid authorities may be used in retrieval, graph traversal, feature generation, training, or prediction.
+    - Every ontology change must produce a child ontology version derived from a parent version.
+    - The first production policy is intentionally conservative.
+
+datasets:
+  required_sets:
+    - gold
+    - silver
+    - challenge
+    - perturbation
+    - shadow_recent
+  release_gate_sets:
+    - gold
+    - challenge
+    - shadow_recent
+  gold_priority_weight: 1.0
+  silver_priority_weight: 0.5
+  shadow_recent_priority_weight: 0.8
+
+change_vocabulary:
+  auto_promote:
+    - ADD_ALIAS
+    - ADD_LEAF_TOPIC
+    - ADD_LEAF_ISSUE
+    - ADD_PROVISION_ALIAS
+    - ADD_EDGE_INSTANCE
+    - ADD_CQ
+  shadow_only:
+    - ADD_DOCTRINE_MEMBERSHIP
+    - REWEIGHT_EDGE_SCORING
+    - REFINE_EXTRACTION_PROMPT
+    - SPLIT_CONCEPT
+    - MERGE_CONCEPT
+    - REPARENT_NODE
+    - ADD_RELATION_TYPE
+    - CHANGE_RELATION_CARDINALITY
+    - CHANGE_HOLDING_SEGMENTATION_RULE
+    - CHANGE_DOCTRINE_CLUSTERING_RULE
+  human_review:
+    - ADD_TOP_LEVEL_CLASS
+    - REMOVE_CLASS
+    - REMOVE_RELATION_TYPE
+    - DESTRUCTIVE_MERGE
+    - MAJOR_REPARENTING
+    - SEMANTICS_CHANGE_TO_BINDING_STATUS
+    - CHANGE_PRECEDENT_WEIGHTING_POLICY
+
+proposal_scoring:
+  formula_name: bounded_utility_v1
+  weights:
+    coverage_lift: 0.25
+    cq_lift: 0.20
+    retrieval_lift: 0.20
+    prediction_lift: 0.15
+    consistency_lift: 0.10
+    drift_reduction: 0.10
+    complexity_penalty: -0.15
+    regression_penalty: -0.20
+    semantic_risk: -0.25
+  range:
+    min: -1.0
+    max: 1.0
+
+thresholds:
+  proposal:
+    proposal_confidence_min_auto: 0.80
+    proposal_confidence_min_shadow: 0.60
+    evidence_support_min_auto: 0.75
+    evidence_support_min_shadow: 0.60
+    proposal_score_min_auto: 0.05
+    proposal_score_min_shadow: 0.00
+    semantic_risk_max_auto: 0.20
+    semantic_risk_max_shadow: 0.60
+    complexity_penalty_max_auto: 0.20
+    regression_penalty_max_auto: 0.05
+    material_improvement_min_abs: 0.005
+    tiny_tolerance_abs: 0.002
+  hard_invariants:
+    shape_pass_rate_min_gold: 1.00
+    shape_pass_rate_min_release_gate: 1.00
+    temporal_leakage_max: 0.00
+    duplicate_entity_rate_max: 0.00
+    merge_collision_rate_max: 0.00
+    namespace_reference_required: true
+    ontology_version_reference_required: true
+  coverage:
+    issue_mapping_coverage_regression_tolerance_abs: -0.002
+    provision_mapping_coverage_regression_tolerance_abs: -0.002
+    doctrine_mapping_coverage_regression_tolerance_abs: -0.002
+    unknown_phrase_rate_max_increase_abs: 0.005
+    alias_hit_rate_regression_tolerance_abs: -0.005
+  competency_questions:
+    critical_cq_regression_tolerance_abs: 0.00
+    overall_cq_regression_tolerance_abs: -0.005
+    cq_partial_credit_regression_tolerance_abs: -0.010
+    cq_latency_max_increase_pct: 25.0
+  retrieval:
+    precedent_recall_at_5_regression_tolerance_abs: -0.005
+    precedent_recall_at_20_regression_tolerance_abs: -0.005
+    passage_recall_at_20_regression_tolerance_abs: -0.005
+    treatment_macro_f1_regression_tolerance_abs: -0.005
+    holding_link_precision_regression_tolerance_abs: -0.005
+  prediction:
+    disposition_macro_f1_regression_tolerance_abs: -0.005
+    winner_macro_f1_regression_tolerance_abs: -0.005
+    remedy_macro_f1_regression_tolerance_abs: -0.005
+    direction_macro_f1_regression_tolerance_abs: -0.005
+    brier_score_max_increase_abs: 0.010
+    ece_max_increase_abs: 0.010
+    abstention_auc_regression_tolerance_abs: -0.005
+  drift:
+    recent_vs_historical_error_gap_max_abs: 0.020
+    unknown_term_growth_max_rel: 0.20
+    doctrine_cluster_instability_max_abs: 0.10
+    calibration_drift_max_abs: 0.020
+    citation_pattern_shift_max_abs: 0.15
+  evidence_by_change_type:
+    ADD_ALIAS:
+      min_evidence_case_count: 5
+      min_support_ratio: 0.80
+    ADD_LEAF_TOPIC:
+      min_evidence_case_count: 8
+      min_support_ratio: 0.75
+    ADD_LEAF_ISSUE:
+      min_evidence_case_count: 8
+      min_support_ratio: 0.75
+    ADD_PROVISION_ALIAS:
+      min_evidence_case_count: 5
+      min_support_ratio: 0.80
+    ADD_EDGE_INSTANCE:
+      min_evidence_case_count: 4
+      min_support_ratio: 0.85
+    ADD_CQ:
+      min_evidence_case_count: 3
+      min_support_ratio: 0.70
+    ADD_DOCTRINE_MEMBERSHIP:
+      min_evidence_case_count: 10
+      min_support_ratio: 0.75
+    REWEIGHT_EDGE_SCORING:
+      min_evidence_case_count: 25
+      min_support_ratio: 0.70
+    REFINE_EXTRACTION_PROMPT:
+      min_evidence_case_count: 20
+      min_support_ratio: 0.70
+
+hard_vetoes:
+  - temporal_leakage_detected
+  - shape_pass_rate_below_minimum
+  - critical_cq_regression
+  - retrieval_regression_beyond_tolerance
+  - calibration_regression_beyond_tolerance_on_protected_slices
+  - destructive_change_without_human_approval
+  - conflict_with_frozen_ontology_invariants
+  - missing_rollback_package
+
+promotion:
+  auto_promote_requires:
+    safe_change_type_only: true
+    no_hard_veto: true
+    parent_to_child_nonnegative_within_tolerance: true
+    at_least_one_material_improvement:
+      any_of:
+        - metric: issue_mapping_coverage
+          min_delta_abs: 0.010
+        - metric: provision_mapping_coverage
+          min_delta_abs: 0.010
+        - metric: doctrine_mapping_coverage
+          min_delta_abs: 0.010
+        - metric: cq_pass_rate
+          min_delta_abs: 0.005
+        - metric: precedent_recall_at_20
+          min_delta_abs: 0.005
+        - metric: treatment_macro_f1
+          min_delta_abs: 0.005
+        - metric: disposition_macro_f1
+          min_delta_abs: 0.005
+        - metric: winner_macro_f1
+          min_delta_abs: 0.005
+        - metric: remedy_macro_f1
+          min_delta_abs: 0.005
+        - metric: direction_macro_f1
+          min_delta_abs: 0.005
+  shadow_requires:
+    shadow_replay_complete: true
+    no_hard_veto: true
+    evidence_support_min: 0.60
+    proposal_confidence_min: 0.60
+  human_review_required_if:
+    semantic_risk_gt: 0.60
+    change_type_in:
+      - ADD_TOP_LEVEL_CLASS
+      - REMOVE_CLASS
+      - REMOVE_RELATION_TYPE
+      - DESTRUCTIVE_MERGE
+      - MAJOR_REPARENTING
+      - SEMANTICS_CHANGE_TO_BINDING_STATUS
+      - CHANGE_PRECEDENT_WEIGHTING_POLICY
+    affects_binding_semantics: true
+    affects_holding_vs_dicta_policy: true
+    affects_top_level_taxonomy: true
+
+shadow_replay:
+  enabled: true
+  compare_against_parent_version: true
+  reextract_affected_cases_only: true
+  rebuild_impacted_subgraph_only: true
+  expanded_benchmarks_for:
+    - SPLIT_CONCEPT
+    - MERGE_CONCEPT
+    - REPARENT_NODE
+    - ADD_RELATION_TYPE
+    - CHANGE_RELATION_CARDINALITY
+    - CHANGE_HOLDING_SEGMENTATION_RULE
+    - CHANGE_DOCTRINE_CLUSTERING_RULE
+
+nightly_pipeline:
+  phases:
+    - ingest_and_extract
+    - validate
+    - evaluate
+    - diagnose
+    - propose
+    - shadow_replay
+    - compare
+    - promote_stage_or_reject
+    - persist_metrics_and_decisions
+  diagnostics:
+    generate_failure_signatures: true
+    cluster_by:
+      - doctrine
+      - court
+      - provision
+      - treatment_type
+      - fact_pattern
+      - issue
+      - judge
+    classify_error_source:
+      - ontology
+      - model
+      - data
+
+error_classification_heuristics:
+  ontology_likely:
+    - repeated_unknown_issue_phrase
+    - repeated_cq_failure_same_relation
+    - holding_exists_but_cannot_be_represented
+    - graph_cannot_express_case_treatment
+    - repeated_mixed_or_null_mapping_for_same_fact_pattern
+  model_likely:
+    - ontology_coverage_high
+    - cq_passes
+    - retrieval_correct
+    - prediction_wrong
+  data_likely:
+    - source_text_corrupted
+    - bad_citation_normalization
+    - missing_opinion_segment
+    - duplicate_or_stale_metadata
+
+drift_detection:
+  enabled: true
+  signals:
+    - unknown_term_growth
+    - orphan_rate_growth
+    - cq_pass_rate_drop
+    - doctrine_cluster_instability
+    - calibration_drift
+    - citation_pattern_shift
+    - recent_vs_historical_error_gap
+  action_on_breach:
+    create_drift_signal_node: true
+    lower_auto_promotion_confidence_by: 0.05
+    force_shadow_for_related_change_types: true
+    enqueue_human_audit_if_consecutive_nights: 3
+
+canary_and_rollback:
+  canary_window_days: 7
+  rollback_if:
+    - shape_pass_rate_below_minimum
+    - critical_cq_regression
+    - recent_shadow_slice_regression_beyond_tolerance
+    - ece_increase_gt_0.02
+    - temporal_leakage_detected
+  on_rollback:
+    revert_to_parent_version: true
+    mark_proposal_family_high_risk: true
+    widen_human_review_for_similar_proposals: true
+
+frozen_invariants:
+  - time_validity_must_be_enforced
+  - no_future_case_may_influence_past_case_prediction
+  - holding_and_dicta_must_remain_distinct
+  - binding_force_semantics_may_not_change_without_human_review
+  - ontology_versions_must_be_immutable_after_promotion
+
+competency_question_families:
+  required:
+    - controlling_precedent
+    - treatment_and_overruling
+    - issue_provision_linkage
+    - procedural_posture_and_standard_of_review
+    - remedy_availability
+    - doctrine_membership
+    - holding_vs_dicta_discrimination
+
+operational_objects:
+  node_labels:
+    - OntologyVersion
+    - OntologyChangeProposal
+    - EvaluationRun
+    - BenchmarkDataset
+    - CompetencyQuestion
+    - MetricSnapshot
+    - FailureSignature
+    - ErrorCluster
+    - DriftSignal
+
+release_gate:
+  require_rollback_package: true
+  require_metric_snapshot_persistence: true
+  require_parent_child_diff_record: true
+  require_shadow_recent_non_regression: true
+  require_gold_and_challenge_pass: true
+
+monthly_audit:
+  enabled: true
+  review_all_auto_promoted_changes: true
+  sample_shadow_rejections: 0.25
+  sample_human_review_decisions: 0.10

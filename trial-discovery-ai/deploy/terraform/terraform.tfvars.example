@@ -1,0 +1,40 @@
+aws_region = "us-east-1"
+name_prefix = "peregrine"
+environment = "prod"
+
+# Existing network and DNS
+vpc_id             = "vpc-xxxxxxxx"
+public_subnet_ids  = ["subnet-public-a", "subnet-public-b"]
+private_subnet_ids = ["subnet-private-a", "subnet-private-b"]
+route53_zone_id    = "ZXXXXXXXXXXXXX"
+domain_name        = "example.com"
+# Use empty frontend_subdomain for apex hosting (https://example.com)
+frontend_subdomain = ""
+api_subdomain      = "api"
+acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+# Create this in Secrets Manager first (plain string value)
+auth_secret_arn = "arn:aws:secretsmanager:us-east-1:123456789012:secret:peregrine-auth-secret-xxxxx"
+
+# Optional secret ARNs
+dropbox_access_token_secret_arn = ""
+dropbox_refresh_token_secret_arn = ""
+dropbox_app_key_secret_arn = ""
+dropbox_app_secret_secret_arn = ""
+dropbox_team_member_id_secret_arn = ""
+openai_api_key_secret_arn = ""
+
+# Optional app overrides
+cors_allow_origins = ["https://example.com"]
+cookie_domain      = ".example.com"
+frontend_next_public_api_url = "https://api.example.com"
+
+# S3/KMS controls
+s3_enable_bucket_versioning = false
+enforce_user_document_scope = true
+upload_require_user_scoped_keys = true
+
+# Optional image tags (ECR repos are created by Terraform)
+api_image_tag      = "latest"
+worker_image_tag   = "latest"
+frontend_image_tag = "latest"

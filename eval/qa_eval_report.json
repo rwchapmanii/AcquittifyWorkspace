@@ -1,0 +1,261 @@
+{
+  "total": 200,
+  "hits": 41,
+  "recall_at_k": 0.205,
+  "mrr": 0.185,
+  "hit_at_1": 0.34,
+  "required_target_hit_rate": 1.0,
+  "k": 5,
+  "misses": [
+    {
+      "id": "eval_00000",
+      "question": "When did amendment 422 become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _2021"
+    },
+    {
+      "id": "eval_00001",
+      "question": "When did the guideline become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _549"
+    },
+    {
+      "id": "eval_00002",
+      "question": "When did the Commission submit its initial set of guidelines to Congress?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _54"
+    },
+    {
+      "id": "eval_00004",
+      "question": "What section discusses motions related to the charging paper?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_51"
+    },
+    {
+      "id": "eval_00005",
+      "question": "What constitutional provision supports the return to the Alston standard?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_2837"
+    },
+    {
+      "id": "eval_00006",
+      "question": "When did amendment 422 become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _2093"
+    },
+    {
+      "id": "eval_00007",
+      "question": "What does the excerpt state about the specific item mentioned?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_1758"
+    },
+    {
+      "id": "eval_00008",
+      "question": "What does the excerpt state about the specific item mentioned?",
+      "gold_chunk_id": "Asset Forfeiture Policy Manual_439"
+    },
+    {
+      "id": "eval_00012",
+      "question": "In which year did the People v. Colville case take place, where it was determined that the decision to seek a jury charge on lesser-included offenses is ultimately made by defense counsel?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_4662"
+    },
+    {
+      "id": "eval_00013",
+      "question": "What does the excerpt state about the specific item mentioned?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_5647"
+    },
+    {
+      "id": "eval_00014",
+      "question": "When did amendment 422 become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _2095"
+    },
+    {
+      "id": "eval_00015",
+      "question": "Which county was chosen for the trial and why?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_2111"
+    },
+    {
+      "id": "eval_00016",
+      "question": "What is the specific guideline mentioned for providing a decrease of two levels in offense level?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _239"
+    },
+    {
+      "id": "eval_00017",
+      "question": "When did amendment 701 become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _358"
+    },
+    {
+      "id": "eval_00018",
+      "question": "Who is responsible for any errors or opinions expressed in these materials?",
+      "gold_chunk_id": "2021 Term Scotus Cases _63"
+    },
+    {
+      "id": "eval_00021",
+      "question": "Which case carved out an exception to former Section 605 of the Federal Communications Act?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_2920"
+    },
+    {
+      "id": "eval_00023",
+      "question": "When is the Guidelines Manual mentioned in the text scheduled to be updated?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _2019"
+    },
+    {
+      "id": "eval_00024",
+      "question": "In which year did the case Santana take place, according to the text?",
+      "gold_chunk_id": "2021 Term Scotus Cases _77"
+    },
+    {
+      "id": "eval_00027",
+      "question": "What does the excerpt state about the specific item mentioned?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _449"
+    },
+    {
+      "id": "eval_00028",
+      "question": "What did the district court find regarding B.A.S.'s habitual residence and Golan's actions?",
+      "gold_chunk_id": "2022 Term Scotus Cases _240"
+    },
+    {
+      "id": "eval_00029",
+      "question": "Which Act provided directive to the Commission in section 730?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1375"
+    },
+    {
+      "id": "eval_00030",
+      "question": "Which section discusses the general structure of an expert's testimony?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_163"
+    },
+    {
+      "id": "eval_00031",
+      "question": "Which Supreme Court case, decided in 1966, is mentioned as part of the discussion on police behavior and its effects on an accused's psychological state?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_3071"
+    },
+    {
+      "id": "eval_00034",
+      "question": "What does the excerpt state about the specific item mentioned?",
+      "gold_chunk_id": "Asset Forfeiture Policy Manual_29"
+    },
+    {
+      "id": "eval_00035",
+      "question": "What does the excerpt state about the specific item mentioned?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _17"
+    },
+    {
+      "id": "eval_00036",
+      "question": "What does the excerpt state about the specific item mentioned?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1838"
+    },
+    {
+      "id": "eval_00037",
+      "question": "What does the excerpt state about the specific item mentioned?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1350"
+    },
+    {
+      "id": "eval_00039",
+      "question": "What motion was filed on July 22, 2019, in relation to New York State Rifle & Pistol Assn v. City of New York?",
+      "gold_chunk_id": "2019 Term SCOTUS Cases _224"
+    },
+    {
+      "id": "eval_00040",
+      "question": "In which year did Commonwealth v. Benn establish that admission to ARD is well established?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_2089"
+    },
+    {
+      "id": "eval_00043",
+      "question": "What section discusses procedures for setting bail?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_20"
+    },
+    {
+      "id": "eval_00045",
+      "question": "In which year was People v. Edwards decided?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_5436"
+    },
+    {
+      "id": "eval_00046",
+      "question": "In which year did the State v. Ish case occur?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_4702"
+    },
+    {
+      "id": "eval_00048",
+      "question": "In which case did the Supreme Court discuss issues related to jury instructions that could affect defense?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_4731"
+    },
+    {
+      "id": "eval_00050",
+      "question": "In which year did Huffman discuss the concept of conducting actions in bad faith?",
+      "gold_chunk_id": "2020 Term Scotus Cases _51"
+    },
+    {
+      "id": "eval_00052",
+      "question": "Which case is cited as an example in the excerpt?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_4206"
+    },
+    {
+      "id": "eval_00053",
+      "question": "When did the amendments become effective according to the Historical Note?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1316"
+    },
+    {
+      "id": "eval_00054",
+      "question": "In which year was United States v. Bryant decided by the Supreme Court?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_5554"
+    },
+    {
+      "id": "eval_00057",
+      "question": "According to which date is the Guidelines Manual mentioned in the excerpt?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1429"
+    },
+    {
+      "id": "eval_00058",
+      "question": "On what date did the provisions mentioned in the excerpt become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _334"
+    },
+    {
+      "id": "eval_00061",
+      "question": "In which year did the Cuyler v. Sullivan case take place?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_3919"
+    },
+    {
+      "id": "eval_00064",
+      "question": "When was t hired by DEC?",
+      "gold_chunk_id": "Effenbeim Petition for Cert_216"
+    },
+    {
+      "id": "eval_00065",
+      "question": "According to which manual and on what date was this guideline established?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1035"
+    },
+    {
+      "id": "eval_00066",
+      "question": "In which year did the Supreme Court rule in Peugh v. United States regarding ex post facto laws?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_4886"
+    },
+    {
+      "id": "eval_00067",
+      "question": "What is one of the primary goals mentioned for counsel when examining witnesses at a suppression hearing?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_94"
+    },
+    {
+      "id": "eval_00068",
+      "question": "Which case is mentioned as an example of First Amendment limitations on court closure?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_3882"
+    },
+    {
+      "id": "eval_00070",
+      "question": "According to which case in 2011 does counsel need to establish that the complainant has a severe bias or grudge against the defendant for making a false charge?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_4218"
+    },
+    {
+      "id": "eval_00071",
+      "question": "When is the Guidelines Manual mentioned in the text expected to be updated?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _768"
+    },
+    {
+      "id": "eval_00072",
+      "question": "When was amendment 143 effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _845"
+    },
+    {
+      "id": "eval_00075",
+      "question": "What section discusses the right to jury trial?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_138"
+    },
+    {
+      "id": "eval_00077",
+      "question": "Which act was enacted after the Supreme Court's holding in Smith v. Maryland?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_2924"
+    }
+  ]
+}

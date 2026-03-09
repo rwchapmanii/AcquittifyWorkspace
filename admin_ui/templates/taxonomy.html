@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Taxonomy Explorer</h1>
+<div class="meta">Version: {{ version }}</div>
+{% if notice %}
+  <div class="meta">{{ notice }}</div>
+{% endif %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Label</th>
+      <th>Version</th>
+      <th>Status</th>
+      <th>Deprecated At</th>
+      <th>Replaced By</th>
+      <th>Parent</th>
+      <th>Synonyms</th>
+      <th>Primary Count</th>
+      <th>Secondary Count</th>
+      <th>Primary %</th>
+      <th>Secondary %</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for node in nodes %}
+    <tr class="{% if node.deprecated %}row-deprecated{% elif node.experimental %}row-experimental{% endif %}">
+      <td class="indent" style="--depth: {{ node.depth }};">{{ node.code }}</td>
+      <td>{{ node.label }}</td>
+      <td>{{ node.version }}</td>
+      <td>
+        {% if node.status == "EXPERIMENTAL" %}
+          <span class="badge badge-experimental">Experimental</span>
+        {% elif node.status == "DEPRECATED" %}
+          <span class="badge badge-deprecated">Deprecated</span>
+        {% else %}
+          <span class="badge badge-active">Active</span>
+        {% endif %}
+      </td>
+      <td>{{ node.deprecated_at }}</td>
+      <td>{{ node.replaced_by_code }}</td>
+      <td>{{ node.parent_code }}</td>
+      <td>{{ node.synonyms }}</td>
+      <td>{{ node.primary_count }}</td>
+      <td>{{ node.secondary_count }}</td>
+      <td>{{ node.primary_pct }}%</td>
+      <td>{{ node.secondary_pct }}%</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

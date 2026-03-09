@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-02-19T02:31:59.404840Z",
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "counts": {
+    "case_files_scotus": 1196,
+    "holding_files": 9,
+    "issue_taxonomy_files": 4,
+    "relation_files": 0,
+    "source_files": 0,
+    "event_files": 1255
+  },
+  "quality": {
+    "cases_with_summary": 1196,
+    "cases_with_essential_holding": 1196,
+    "cases_with_primary_citation": 1196,
+    "cases_with_numeric_us_primary": 5,
+    "cases_with_citation_anchors": 1109,
+    "cases_with_authority_anchors": 1079,
+    "cases_with_interpretive_edges": 1077,
+    "cases_with_citations_in_text": 1156
+  },
+  "anchor": {
+    "total_citation_anchor_instances": 9411,
+    "resolved_local_case_anchor_instances": 1897,
+    "unresolved_anchor_instances": 7514,
+    "citation_scope_counts": {
+      "full_opinion_fallback_sparse_syllabus": 195,
+      "syllabus": 581,
+      "full_opinion_no_syllabus": 420
+    },
+    "authority_scope_counts": {
+      "full_opinion_fallback_sparse_syllabus": 376,
+      "syllabus": 400,
+      "full_opinion_no_syllabus": 420
+    },
+    "authority_anchor_type_counts": {
+      "statutes_at_large": 1146,
+      "statute": 6522,
+      "reg": 450,
+      "constitution": 3244,
+      "rule": 823,
+      "guideline": 33
+    }
+  },
+  "interpretive_edges": {
+    "authority_type_counts": {
+      "PRIOR_CASE": 295,
+      "STATUTE": 4901,
+      "CONSTITUTION": 631,
+      "REGULATION": 6,
+      "FEDERAL_RULE": 14
+    },
+    "edge_type_counts": {
+      "CLARIFIES_DOCTRINE": 313,
+      "INTERPRETS_STATUTE": 4875,
+      "APPLIES_AMENDMENT": 618,
+      "EXTENDS_STATUTE": 5,
+      "BROADENS_STATUTE": 3,
+      "SEVERS_PROVISION": 13,
+      "INVALIDATES_STATUTE": 2,
+      "EXPLAINS_AMENDMENT": 4,
+      "QUESTIONS_PRECEDENT_UNDER": 5,
+      "EXTENDS_AMENDMENT": 1,
+      "APPLIES_PLAIN_MEANING": 1,
+      "DISTINGUISHES_STATUTE": 2,
+      "OVERRULES_PRECEDENT_UNDER": 2,
+      "USES_LEGISLATIVE_HISTORY": 1,
+      "NARROWS_STATUTE": 1,
+      "INVALIDATES_STATUTE_UNDER": 1
+    }
+  },
+  "graph_connectivity_estimate": {
+    "case_to_case_edges_before_repair": 17062,
+    "isolated_cases_before_repair": 44,
+    "repair_edges_added": 44,
+    "case_to_case_edges_after_repair": 17106,
+    "isolated_cases_after_repair": 0,
+    "degree_mean_after_repair": 28.605351,
+    "edge_type_counts_after_repair": {
+      "case_citation": 1674,
+      "interpretive_prior_case": 295,
+      "shared_case_citation": 9624,
+      "shared_statute": 2697,
+      "shared_federal_rule": 490,
+      "shared_regulation": 27,
+      "shared_constitution": 2255,
+      "case_similarity_fallback": 44
+    }
+  }
+}

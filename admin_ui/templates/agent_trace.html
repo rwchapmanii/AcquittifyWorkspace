@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Agent Trace</h1>
+<p class="meta">Recent agentic runs (intent → rewrite → retrieval → memo → citation). Showing {{ events|length }} entries.</p>
+
+{% if events %}
+  {% for ev in events %}
+    <div class="card">
+      <div class="meta">{{ ev.timestamp }} · Case: {{ ev.case_display }} · Role: {{ ev.user_role or "unknown" }}</div>
+      <div><strong>Prompt</strong>: <span class="mono">{{ ev.prompt_preview }}</span></div>
+      <div><strong>Intent</strong>: {{ ev.intent or "Unclassified" }} · <strong>Legal Area</strong>: {{ ev.legal_area or "Unknown" }}</div>
+      {% if ev.query_display %}
+        <div><strong>Query</strong>: <span class="mono">{{ ev.query_display }}</span></div>
+      {% endif %}
+      <div><strong>Retrieval</strong>: {{ ev.retrieval_display }}</div>
+      <div><strong>Models</strong>: {{ ev.models_display }}</div>
+      <div><strong>Citation Checks</strong>: {{ ev.citation_display }}</div>
+      {% if ev.prompt_len %}
+        <div class="meta">Prompt length: {{ ev.prompt_len }} chars</div>
+      {% endif %}
+    </div>
+  {% endfor %}
+{% else %}
+  <p class="meta">No agent trace entries found. Generate a prompt in the main app to log a trace.</p>
+{% endif %}
+{% endblock %}

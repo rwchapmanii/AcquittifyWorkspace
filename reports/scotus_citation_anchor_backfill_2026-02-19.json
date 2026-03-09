@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-02-19T15:47:53.852715+00:00",
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "dry_run": false,
+  "scanned_files": 1212,
+  "changed_files": 0,
+  "parse_failures": 18,
+  "total_citation_anchors": 9431,
+  "anchor_scope_counts": {
+    "full_opinion_fallback_sparse_syllabus": 194,
+    "full_opinion_no_syllabus": 419,
+    "syllabus": 581
+  },
+  "selected_anchor_mentions_total": 12726,
+  "files_changed": []
+}

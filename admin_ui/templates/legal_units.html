@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Legal Unit Browser</h1>
+<form class="filters" method="get">
+  <label>Taxonomy Code
+    <input type="text" name="code" value="{{ filters.code }}" placeholder="DISC.BRADY" />
+  </label>
+  <label>Prefix
+    <input type="checkbox" name="code_prefix" value="true" {% if filters.code_prefix %}checked{% endif %} />
+  </label>
+  <label>Unit Type
+    <input type="text" name="unit_type" value="{{ filters.unit_type }}" placeholder="LEGAL_STANDARD,HOLDING" />
+  </label>
+  <label>Circuit
+    <input type="text" name="circuit" value="{{ filters.circuit }}" />
+  </label>
+  <label>Posture
+    <input type="text" name="posture" value="{{ filters.posture }}" />
+  </label>
+  <label>Created From
+    <input type="date" name="created_from" value="{{ filters.created_from }}" />
+  </label>
+  <label>Created To
+    <input type="date" name="created_to" value="{{ filters.created_to }}" />
+  </label>
+  <label>Reviewed
+    <select name="reviewed">
+      <option value="" {% if filters.reviewed == "" %}selected{% endif %}>All</option>
+      <option value="reviewed" {% if filters.reviewed == "reviewed" %}selected{% endif %}>Reviewed</option>
+      <option value="unreviewed" {% if filters.reviewed == "unreviewed" %}selected{% endif %}>Unreviewed</option>
+    </select>
+  </label>
+  <label>Taxonomy Status
+    <select name="taxonomy_status">
+      <option value="" {% if filters.taxonomy_status == "" %}selected{% endif %}>All</option>
+      <option value="ACTIVE" {% if filters.taxonomy_status == "ACTIVE" %}selected{% endif %}>Active</option>
+      <option value="EXPERIMENTAL" {% if filters.taxonomy_status == "EXPERIMENTAL" %}selected{% endif %}>Experimental</option>
+      <option value="DEPRECATED" {% if filters.taxonomy_status == "DEPRECATED" %}selected{% endif %}>Deprecated</option>
+    </select>
+  </label>
+  <label>Batch ID
+    <input type="text" name="ingestion_batch_id" value="{{ filters.ingestion_batch_id }}" />
+  </label>
+  <button type="submit">Apply</button>
+</form>
+<div class="meta">Total: {{ total }}</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Excerpt</th>
+      <th>Type</th>
+      <th>Court</th>
+      <th>Circuit</th>
+      <th>Year</th>
+      <th>Posture</th>
+      <th>Holding/Dicta</th>
+      <th>Favorability</th>
+      <th>Authority</th>
+      <th>Taxonomy</th>
+      <th>Secondary</th>
+      <th>Created</th>
+      <th>Batch</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for unit in units %}
+    <tr>
+      <td class="excerpt">{{ unit.excerpt }}</td>
+      <td>{{ unit.unit_type }}</td>
+      <td>{{ unit.court_level }}</td>
+      <td>{{ unit.circuit }}</td>
+      <td>{{ unit.year }}</td>
+      <td>{{ unit.posture }}</td>
+      <td>
+        {% if unit.is_holding %}
+          <span class="badge badge-holding">Holding</span>
+        {% endif %}
+        {% if unit.is_dicta %}
+          <span class="badge badge-dicta">Dicta</span>
+        {% endif %}
+      </td>
+      <td>{{ unit.favorability }}</td>
+      <td>{{ unit.authority_weight }}</td>
+      <td>{{ unit.taxonomy_code }} ({{ unit.taxonomy_version }})</td>
+      <td>{{ unit.secondary_taxonomy_ids }}</td>
+      <td>{{ unit.created_at }}</td>
+      <td>{{ unit.ingestion_batch_id }}</td>
+      <td>{{ unit.source_opinion_id }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

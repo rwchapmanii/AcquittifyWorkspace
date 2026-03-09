@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: acquittify-postgres
+    environment:
+      POSTGRES_DB: courtlistener
+      POSTGRES_USER: acquittify
+      POSTGRES_PASSWORD: acquittify
+    ports:
+      - "5432:5432"
+    volumes:
+      - acquittify_pgdata:/var/lib/postgresql/data
+
+  admin-ui:
+    build:
+      context: .
+      dockerfile: admin_ui/Dockerfile
+    container_name: acquittify-admin-ui
+    environment:
+      ACQUITTIFY_DB_DSN_READONLY: postgresql://acquittify:acquittify@postgres:5432/courtlistener
+      ACQUITTIFY_DB_DSN_WRITE: postgresql://acquittify:acquittify@postgres:5432/courtlistener
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+
+volumes:
+  acquittify_pgdata:

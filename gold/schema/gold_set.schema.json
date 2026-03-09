@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Minimum Viable Gold Opinion",
+  "type": "object",
+  "required": [
+    "opinion_id",
+    "court_id",
+    "decision_date",
+    "circuit",
+    "taxonomy_version",
+    "expected_units_total",
+    "expected_units_tolerance_pct",
+    "expected_holdings_count",
+    "holdings_tolerance",
+    "primary_taxonomy_codes",
+    "secondary_taxonomy_codes",
+    "favorability_distribution",
+    "adverse_authority_flags",
+    "circuit_split_indicator",
+    "reviewer_notes"
+  ],
+  "properties": {
+    "opinion_id": {"type": "integer"},
+    "court_id": {"type": "string"},
+    "decision_date": {"type": "string", "format": "date"},
+    "circuit": {"type": ["string", "null"]},
+    "taxonomy_version": {"type": "string"},
+    "expected_units_total": {"type": "integer", "minimum": 1},
+    "expected_units_tolerance_pct": {"type": "number", "minimum": 0, "maximum": 50},
+    "expected_holdings_count": {"type": "integer", "minimum": 0},
+    "holdings_tolerance": {"type": "integer", "minimum": 0},
+    "primary_taxonomy_codes": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1
+    },
+    "secondary_taxonomy_codes": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "favorability_distribution": {
+      "type": "object",
+      "required": ["defense", "neutral", "adverse"],
+      "properties": {
+        "defense": {"type": "number", "minimum": 0, "maximum": 100},
+        "neutral": {"type": "number", "minimum": 0, "maximum": 100},
+        "adverse": {"type": "number", "minimum": 0, "maximum": 100}
+      },
+      "additionalProperties": false
+    },
+    "adverse_authority_flags": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "circuit_split_indicator": {
+      "type": "object",
+      "required": ["flag", "note"],
+      "properties": {
+        "flag": {"type": "boolean"},
+        "note": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "reviewer_notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

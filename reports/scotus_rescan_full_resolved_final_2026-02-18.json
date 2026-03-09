@@ -1,0 +1,38 @@
+{
+  "csv_path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/supreme_court_case_file_links.csv",
+  "vault_path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court",
+  "ontology_vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "work_dir": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work",
+  "run_extractor": false,
+  "skip_resolver": true,
+  "filters": {
+    "include_orders": false,
+    "include_nonhyphen_dockets": false,
+    "offset": 0,
+    "limit": null
+  },
+  "totals": {
+    "csv_rows": 2933,
+    "filtered_rows": 1191,
+    "attempted": 1191,
+    "succeeded": 1191,
+    "failed": 0,
+    "skipped_missing_note": 0,
+    "extraction_error_count": 0,
+    "changed_total": 1157,
+    "holding_total": 0,
+    "issue_total": 4764,
+    "relation_total": 0,
+    "source_total": 0,
+    "unresolved_total": 0,
+    "unresolved_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "reused_case_id_count": 1160,
+    "elapsed_seconds": 438.085
+  },
+  "failures": []
+}

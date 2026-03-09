@@ -1,0 +1,43 @@
+authority_weights:
+  supreme: 1.0
+  in_circuit_en_banc: 0.9
+  in_circuit_panel: 0.8
+  out_of_circuit_panel: 0.7
+  in_circuit_district: 0.5
+  out_of_circuit_district: 0.4
+  secondary: 0.3
+
+publication_multiplier:
+  published: 1.0
+  unpublished: 0.75
+  nonprecedential: 0.6
+
+majority_multiplier:
+  majority: 1.0
+  plurality: 0.85
+  concurrence_only: 0.6
+
+citation_type_multiplier:
+  controlling: 1.0
+  persuasive: 0.6
+  background: 0.35
+
+relation_effects:
+  applies: 0.06
+  clarifies: 0.05
+  extends: 0.04
+  distinguishes: -0.05
+  limits: -0.10
+  overrules: -0.90
+  questions: -0.15
+
+issue_adjustments:
+  consensus_gamma: 0.35
+  drift_delta: 0.45
+
+source_type_multiplier:
+  constitution: 1.0
+  statute: 0.95
+  reg: 0.9
+  secondary: 0.3
+  other: 0.85

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Chat History</h1>
+<p class="meta">Recent user prompts and assistant responses.</p>
+
+<table>
+  <thead>
+    <tr><th>Chat</th><th>Role</th><th>Content</th></tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+      <tr>
+        <td>{{ row.chat }}</td>
+        <td>{{ row.role }}</td>
+        <td class="mono">{{ row.content }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

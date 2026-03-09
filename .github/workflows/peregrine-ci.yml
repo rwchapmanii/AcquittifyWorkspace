@@ -1,0 +1,83 @@
+name: Peregrine CI
+
+on:
+  pull_request:
+    paths:
+      - "trial-discovery-ai/**"
+      - ".github/workflows/peregrine-ci.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "trial-discovery-ai/**"
+      - ".github/workflows/peregrine-ci.yml"
+
+jobs:
+  backend-tests:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: trialai
+          POSTGRES_USER: trialai
+          POSTGRES_PASSWORD: trialai
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U trialai -d trialai"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      DATABASE_URL: postgresql+psycopg://trialai:trialai@127.0.0.1:5432/trialai
+      AUTH_SECRET_KEY: ci-secret-key
+      AUTH_PASSWORD_RESET_DEV_RETURN_TOKEN: "true"
+      AUTH_RATE_LIMIT_ENABLED: "true"
+      AUTH_RATE_LIMIT_MAX_ATTEMPTS: "10"
+      AUTH_RATE_LIMIT_WINDOW_SECONDS: "60"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e './trial-discovery-ai/backend[dev]'
+
+      - name: Run migrations
+        working-directory: ./trial-discovery-ai/backend
+        run: alembic upgrade head
+
+      - name: Run backend integration tests
+        working-directory: ./trial-discovery-ai/backend
+        run: pytest
+
+  frontend-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: trial-discovery-ai/frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        working-directory: ./trial-discovery-ai/frontend
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: ./trial-discovery-ai/frontend
+        run: npm run build

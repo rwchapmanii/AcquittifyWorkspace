@@ -1,0 +1,93 @@
+version: "1.0"
+
+name: Acquittify-Peregrine
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: trialai-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-trialai}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-trialai_password_change_me}
+      POSTGRES_DB: ${POSTGRES_DB:-trialai}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      # Use $$ to escape env vars so they resolve inside the container
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+    container_name: trialai-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  minio:
+    image: minio/minio:latest
+    container_name: trialai-minio
+    restart: unless-stopped
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin_password_change_me}
+    command: server /data --console-address ":9001"
+    ports:
+      - "${MINIO_API_PORT:-9000}:9000"
+      - "${MINIO_CONSOLE_PORT:-9001}:9001"
+    volumes:
+      - minio_data:/data
+
+  # Creates the bucket(s) on first run (idempotent).
+  # This keeps your MVP reproducible for every dev machine.
+  minio_init:
+    image: minio/mc:latest
+    container_name: trialai-minio-init
+    depends_on:
+      - minio
+    restart: "no"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin_password_change_me}
+      MINIO_BUCKET: ${MINIO_BUCKET:-trialai-artifacts}
+    entrypoint: >
+      /bin/sh -c "
+      echo 'Waiting for MinIO...';
+      until mc alias set local http://minio:9000 \"$${MINIO_ROOT_USER}\" \"$${MINIO_ROOT_PASSWORD}\" 2>/dev/null; do
+        sleep 2;
+      done;
+      echo 'Creating bucket (idempotent)...';
+      mc mb -p local/$${MINIO_BUCKET} 2>/dev/null || true;
+      echo 'Ensuring bucket is private...';
+      mc anonymous set none local/$${MINIO_BUCKET} 2>/dev/null || true;
+      echo 'MinIO init complete.';
+      "
+
+  # Optional DB browser (run with: docker compose --profile tools up -d)
+  adminer:
+    image: adminer:4
+    container_name: trialai-adminer
+    profiles: ["tools"]
+    restart: unless-stopped
+    ports:
+      - "${ADMINER_PORT:-8080}:8080"
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:

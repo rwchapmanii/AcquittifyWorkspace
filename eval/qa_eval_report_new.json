@@ -1,0 +1,261 @@
+{
+  "total": 200,
+  "hits": 2,
+  "recall_at_k": 0.01,
+  "mrr": 0.006,
+  "hit_at_1": 0.01,
+  "required_target_hit_rate": 1.0,
+  "k": 5,
+  "misses": [
+    {
+      "id": "eval_00000",
+      "question": "Which court case specifies that health care fraud statute requires specific intent to defraud?",
+      "gold_chunk_id": "Effenbeim Petition for Cert_229"
+    },
+    {
+      "id": "eval_00001",
+      "question": "In which year did the People v. Berrios case acknowledge that some police officers may be tempted to tamper with the truth?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_45"
+    },
+    {
+      "id": "eval_00002",
+      "question": "Which team is being disbanded according to the memorandum?",
+      "gold_chunk_id": "DOJ Regulating by Prosecution Memo_7"
+    },
+    {
+      "id": "eval_00003",
+      "question": "In which case did the court discuss that confessions and any statement by the defendant can be suppressed?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_378"
+    },
+    {
+      "id": "eval_00004",
+      "question": "What constitutional provision guarantees a speedy trial at the federal level?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_2743"
+    },
+    {
+      "id": "eval_00005",
+      "question": "According to which document are these sentencing guidelines described?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1983"
+    },
+    {
+      "id": "eval_00006",
+      "question": "When did amendment 532 become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1007"
+    },
+    {
+      "id": "eval_00007",
+      "question": "When did the adjustment for abuse of a position of trust become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1856"
+    },
+    {
+      "id": "eval_00008",
+      "question": "When was t hired by DEC?",
+      "gold_chunk_id": "Effenbeim Petition for Cert_131"
+    },
+    {
+      "id": "eval_00009",
+      "question": "When did amendment 422 of the guideline become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1232"
+    },
+    {
+      "id": "eval_00010",
+      "question": "Which document or material is exempt from disclosure under section 552 of title 5?",
+      "gold_chunk_id": "DOJ Foreign Corrupt Practices Guide_427"
+    },
+    {
+      "id": "eval_00011",
+      "question": "In which year did the case People v. Robinson take place?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_3418"
+    },
+    {
+      "id": "eval_00012",
+      "question": "Who is responsible for any errors or opinions expressed in these materials?",
+      "gold_chunk_id": "2022 Term Scotus Cases _157"
+    },
+    {
+      "id": "eval_00013",
+      "question": "Which case is cited as an example of police behavior overpowering the will of someone in the accused's position?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_2305"
+    },
+    {
+      "id": "eval_00015",
+      "question": "In which year did the Cuyler v. Sullivan case take place?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_3245"
+    },
+    {
+      "id": "eval_00016",
+      "question": "In which year did the case of Helstoski v. Meanor take place, and what was its ruling?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_664"
+    },
+    {
+      "id": "eval_00017",
+      "question": "On what date is the Guidelines Manual mentioned in the excerpt scheduled for publication?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _845"
+    },
+    {
+      "id": "eval_00018",
+      "question": "What guideline would most likely apply if the offense involved assaultive conduct with injury more serious than bodily injury or use of a dangerous weapon?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _768"
+    },
+    {
+      "id": "eval_00019",
+      "question": "Which case established the rules for searches of students in public schools by school officials?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_2222"
+    },
+    {
+      "id": "eval_00020",
+      "question": "When was the amendment effective that updated SES involving drugs and narco-terrorism?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1481"
+    },
+    {
+      "id": "eval_00021",
+      "question": "What does the excerpt state about the specific item mentioned?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_5134"
+    },
+    {
+      "id": "eval_00022",
+      "question": "What section discusses the roles of client and counsel in deciding whether to accept a guilty plea?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_1557"
+    },
+    {
+      "id": "eval_00023",
+      "question": "Who wrote the opinion in Bittner v. United States and what was the decision regarding non-willful violations of the Bank Secrecy Act?",
+      "gold_chunk_id": "2023 Term Scotus Cases _164"
+    },
+    {
+      "id": "eval_00024",
+      "question": "What document instructs DOJ prosecutors on coordinating resolutions with foreign authorities?",
+      "gold_chunk_id": "DOJ Foreign Corrupt Practices Guide_318"
+    },
+    {
+      "id": "eval_00025",
+      "question": "Which section of the guidelines addresses dependence upon criminal activity for a livelihood?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _2054"
+    },
+    {
+      "id": "eval_00026",
+      "question": "Who is responsible for establishing procedures to provide responses to specific inquiries by issuers regarding conformance of their conduct with the Department of Justice's present enforcement policy?",
+      "gold_chunk_id": "DOJ Foreign Corrupt Practices Guide_114"
+    },
+    {
+      "id": "eval_00027",
+      "question": "In which year did the Supreme Court case Minnick v. Mississippi take place?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_463"
+    },
+    {
+      "id": "eval_00028",
+      "question": "Which case illustrates that criminal charges could not be deemed an alternate remedy under FCA when there was no qui tam action pending at the time?",
+      "gold_chunk_id": "Asset Forfeiture Policy Manual_244"
+    },
+    {
+      "id": "eval_00029",
+      "question": "Which case is cited as an example in the text to discuss the principles of valid voluntary consent under constitutional actions?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_1774"
+    },
+    {
+      "id": "eval_00030",
+      "question": "In which year did Commonwealth v. Gaudette take place?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_628"
+    },
+    {
+      "id": "eval_00031",
+      "question": "In which year did the Molina-Martinez v. United States case occur?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_4353"
+    },
+    {
+      "id": "eval_00032",
+      "question": "According to which manual and on what date are the guidelines for departures in cases involving synthetic cannabinoids mentioned?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1534"
+    },
+    {
+      "id": "eval_00033",
+      "question": "What is the consequence for an issuer failing to file required information, documents or reports?",
+      "gold_chunk_id": "DOJ Foreign Corrupt Practices Guide_472"
+    },
+    {
+      "id": "eval_00034",
+      "question": "Why is a further determination of the guideline fine range unnecessary when an organization cannot pay the minimum guideline fine?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1173"
+    },
+    {
+      "id": "eval_00035",
+      "question": "In which year did the Supreme Court rule on a case with similar claims to those discussed in this passage?",
+      "gold_chunk_id": "2023 Term Scotus Cases _212"
+    },
+    {
+      "id": "eval_00036",
+      "question": "Which case rejected the defendant's objection to an instruction defining sex as a 'thing of value'?",
+      "gold_chunk_id": "DOJ Foreign Corrupt Practices Guide_533"
+    },
+    {
+      "id": "eval_00037",
+      "question": "When did amendment 422 become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _2205"
+    },
+    {
+      "id": "eval_00038",
+      "question": "What institution might receive forfeited firearms for display purposes?",
+      "gold_chunk_id": "Asset Forfeiture Policy Manual_102"
+    },
+    {
+      "id": "eval_00039",
+      "question": "When did amendment 422 become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _1252"
+    },
+    {
+      "id": "eval_00040",
+      "question": "According to which court ruling is rental income from commercial real property protected under the Due Process Clause?",
+      "gold_chunk_id": "Asset Forfeiture Policy Manual_42"
+    },
+    {
+      "id": "eval_00041",
+      "question": "In which case did the Court hold that an express admission of guilt is not a constitutional requisite to impose criminal penalties?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_5332"
+    },
+    {
+      "id": "eval_00042",
+      "question": "In which year did Miscoe conclude similarly with respect to visits using the Novitas scoring matrix?",
+      "gold_chunk_id": "Effenbeim Petition for Cert_166"
+    },
+    {
+      "id": "eval_00043",
+      "question": "In which case did the court recognize factors weighing against the voluntariness of a minor's confession?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_2375"
+    },
+    {
+      "id": "eval_00044",
+      "question": "When did the sentencing guidelines become effective?",
+      "gold_chunk_id": "Federal Sentencing Guidelines _392"
+    },
+    {
+      "id": "eval_00045",
+      "question": "On what date did the multilateral development banks enter into an agreement for cross-debarment?",
+      "gold_chunk_id": "DOJ Foreign Corrupt Practices Guide_81"
+    },
+    {
+      "id": "eval_00046",
+      "question": "In which year did the United States v. Davila case take place?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_5279"
+    },
+    {
+      "id": "eval_00047",
+      "question": "Under what condition is the server not required to provide an attendance fee or mileage allowance when serving a subpoena?",
+      "gold_chunk_id": "federal_rules_of_criminal_procedure_-_december_2020_0_98"
+    },
+    {
+      "id": "eval_00048",
+      "question": "What system is mentioned as having entries of 'final judicial order' in criminal matters that could jeopardize the Department's Asset Forfeiture Program?",
+      "gold_chunk_id": "Asset Forfeiture Policy Manual_347"
+    },
+    {
+      "id": "eval_00049",
+      "question": "In which year did State v. Henderson take place, and what was its significance regarding eyewitness identification?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_2658"
+    },
+    {
+      "id": "eval_00050",
+      "question": "In which year did the United States v. Kahan case occur, and what was its significance in relation to Simmons?",
+      "gold_chunk_id": "2024 Defense of Criminal Cases Manual_35"
+    }
+  ]
+}

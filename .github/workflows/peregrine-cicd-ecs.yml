@@ -1,0 +1,271 @@
+name: Peregrine CI/CD to ECS
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: peregrine-prod-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build, Push, and Deploy to ECS
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      AWS_REGION: ${{ vars.AWS_REGION }}
+      ECR_API_REPOSITORY: ${{ vars.ECR_API_REPOSITORY }}
+      ECR_WORKER_REPOSITORY: ${{ vars.ECR_WORKER_REPOSITORY }}
+      ECR_FRONTEND_REPOSITORY: ${{ vars.ECR_FRONTEND_REPOSITORY }}
+      ECS_CLUSTER: ${{ vars.ECS_CLUSTER }}
+      ECS_API_SERVICE: ${{ vars.ECS_API_SERVICE }}
+      ECS_WORKER_SERVICE: ${{ vars.ECS_WORKER_SERVICE }}
+      ECS_FRONTEND_SERVICE: ${{ vars.ECS_FRONTEND_SERVICE }}
+      NEXT_PUBLIC_PEREGRINE_API_URL: ${{ vars.NEXT_PUBLIC_PEREGRINE_API_URL }}
+      NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME: ${{ vars.NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME }}
+      NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME: ${{ vars.NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME }}
+      AWS_ROLE_TO_ASSUME: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate required CI/CD variables
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ -z "${AWS_REGION}" ]; then
+            echo "AWS_REGION is not set in GitHub Variables."
+            exit 1
+          fi
+
+          required_vars=(
+            ECR_API_REPOSITORY
+            ECR_WORKER_REPOSITORY
+            ECR_FRONTEND_REPOSITORY
+            ECS_CLUSTER
+            ECS_API_SERVICE
+            ECS_WORKER_SERVICE
+            ECS_FRONTEND_SERVICE
+            NEXT_PUBLIC_PEREGRINE_API_URL
+          )
+
+          for v in "${required_vars[@]}"; do
+            if [ -z "${!v:-}" ]; then
+              echo "${v} is not set in GitHub Variables."
+              exit 1
+            fi
+          done
+
+      - name: Resolve AWS auth mode
+        id: auth-mode
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ -n "${AWS_ROLE_TO_ASSUME:-}" ]; then
+            echo "mode=oidc" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [ -n "${AWS_ACCESS_KEY_ID:-}" ] && [ -n "${AWS_SECRET_ACCESS_KEY:-}" ]; then
+            echo "mode=keys" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "No AWS credentials configured. Set AWS_ROLE_TO_ASSUME (preferred) or AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY."
+          exit 1
+
+      - name: Configure AWS credentials (OIDC)
+        if: ${{ steps.auth-mode.outputs.mode == 'oidc' }}
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ env.AWS_ROLE_TO_ASSUME }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Configure AWS credentials (access keys fallback)
+        if: ${{ steps.auth-mode.outputs.mode == 'keys' }}
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build and push API, worker, and frontend images
+        id: build-and-push
+        shell: bash
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+
+          api_image="${ECR_REGISTRY}/${ECR_API_REPOSITORY}:${IMAGE_TAG}"
+          api_latest="${ECR_REGISTRY}/${ECR_API_REPOSITORY}:latest"
+          worker_image="${ECR_REGISTRY}/${ECR_WORKER_REPOSITORY}:${IMAGE_TAG}"
+          worker_latest="${ECR_REGISTRY}/${ECR_WORKER_REPOSITORY}:latest"
+          frontend_image="${ECR_REGISTRY}/${ECR_FRONTEND_REPOSITORY}:${IMAGE_TAG}"
+          frontend_latest="${ECR_REGISTRY}/${ECR_FRONTEND_REPOSITORY}:latest"
+
+          docker build \
+            -t peregrine-backend:${IMAGE_TAG} \
+            ./trial-discovery-ai/backend
+
+          docker tag peregrine-backend:${IMAGE_TAG} "${api_image}"
+          docker tag peregrine-backend:${IMAGE_TAG} "${api_latest}"
+          docker tag peregrine-backend:${IMAGE_TAG} "${worker_image}"
+          docker tag peregrine-backend:${IMAGE_TAG} "${worker_latest}"
+
+          docker push "${api_image}"
+          docker push "${api_latest}"
+          docker push "${worker_image}"
+          docker push "${worker_latest}"
+
+          frontend_build_args=()
+          frontend_build_args+=(--build-arg "NEXT_PUBLIC_PEREGRINE_API_URL=${NEXT_PUBLIC_PEREGRINE_API_URL}")
+
+          if [ -n "${NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME:-}" ]; then
+            frontend_build_args+=(--build-arg "NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME=${NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME}")
+          fi
+          if [ -n "${NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME:-}" ]; then
+            frontend_build_args+=(--build-arg "NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME=${NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME}")
+          fi
+
+          docker build \
+            "${frontend_build_args[@]}" \
+            -t "${frontend_image}" \
+            -t "${frontend_latest}" \
+            ./trial-discovery-ai/frontend
+
+          docker push "${frontend_image}"
+          docker push "${frontend_latest}"
+
+          {
+            echo "api_image=${api_image}"
+            echo "worker_image=${worker_image}"
+            echo "frontend_image=${frontend_image}"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Deploy updated task definitions to ECS
+        shell: bash
+        env:
+          API_IMAGE: ${{ steps.build-and-push.outputs.api_image }}
+          WORKER_IMAGE: ${{ steps.build-and-push.outputs.worker_image }}
+          FRONTEND_IMAGE: ${{ steps.build-and-push.outputs.frontend_image }}
+        run: |
+          set -euo pipefail
+
+          deploy_service() {
+            local service_name="$1"
+            local container_name="$2"
+            local new_image="$3"
+            local task_arn
+            local workdir
+            local rendered
+            local updated
+            local new_task_arn
+
+            workdir="$(mktemp -d)"
+            rendered="${workdir}/taskdef.json"
+            updated="${workdir}/taskdef-updated.json"
+
+            task_arn="$(aws ecs describe-services \
+              --cluster "${ECS_CLUSTER}" \
+              --services "${service_name}" \
+              --query 'services[0].taskDefinition' \
+              --output text)"
+
+            if [ -z "${task_arn}" ] || [ "${task_arn}" = "None" ]; then
+              echo "Could not resolve task definition for service ${service_name}"
+              exit 1
+            fi
+
+            aws ecs describe-task-definition \
+              --task-definition "${task_arn}" \
+              --query 'taskDefinition' \
+              --output json > "${rendered}"
+
+            if ! jq -e --arg c "${container_name}" '.containerDefinitions[] | select(.name == $c)' "${rendered}" > /dev/null; then
+              echo "Container ${container_name} not found in task definition ${task_arn}"
+              exit 1
+            fi
+
+            jq \
+              --arg c "${container_name}" \
+              --arg i "${new_image}" \
+              '
+                .containerDefinitions |= map(
+                  if .name == $c then
+                    .image = $i
+                    | (
+                        if $c == "frontend" then
+                          del(.healthCheck)
+                        else
+                          .
+                        end
+                      )
+                  else
+                    .
+                  end
+                )
+                | del(
+                    .taskDefinitionArn,
+                    .revision,
+                    .status,
+                    .requiresAttributes,
+                    .compatibilities,
+                    .registeredAt,
+                    .registeredBy
+                  )
+              ' "${rendered}" > "${updated}"
+
+            new_task_arn="$(aws ecs register-task-definition \
+              --cli-input-json "file://${updated}" \
+              --query 'taskDefinition.taskDefinitionArn' \
+              --output text)"
+
+            aws ecs update-service \
+              --cluster "${ECS_CLUSTER}" \
+              --service "${service_name}" \
+              --task-definition "${new_task_arn}" > /dev/null
+
+            status_line="$(aws ecs describe-services \
+              --cluster "${ECS_CLUSTER}" \
+              --services "${service_name}" \
+              --query 'services[0].[serviceName,taskDefinition,runningCount,pendingCount,desiredCount]' \
+              --output text)"
+
+            echo "Triggered deployment ${service_name} -> ${new_task_arn} (${new_image})"
+            echo "Current status: ${status_line}"
+          }
+
+          deploy_service "${ECS_API_SERVICE}" "api" "${API_IMAGE}"
+          deploy_service "${ECS_WORKER_SERVICE}" "worker" "${WORKER_IMAGE}"
+          deploy_service "${ECS_FRONTEND_SERVICE}" "frontend" "${FRONTEND_IMAGE}"
+
+      - name: Deployment summary
+        shell: bash
+        run: |
+          {
+            echo "### ECS Deployment Complete"
+            echo ""
+            echo "- Cluster: \`${ECS_CLUSTER}\`"
+            echo "- API service: \`${ECS_API_SERVICE}\`"
+            echo "- Worker service: \`${ECS_WORKER_SERVICE}\`"
+            echo "- Frontend service: \`${ECS_FRONTEND_SERVICE}\`"
+            echo "- Image tag: \`${GITHUB_SHA}\`"
+          } >> "$GITHUB_STEP_SUMMARY"

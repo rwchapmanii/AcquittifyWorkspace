@@ -1,0 +1,794 @@
+{
+  "cases_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus",
+  "dry_run": true,
+  "duplicate_group_count": 22,
+  "remove_candidate_count": 23,
+  "removed_count": 0,
+  "groups": [
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1104.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/MINNECI ET AL. v. POLLARD ET AL, 10-1104 (2012).md",
+        "case_id": "us.scotus.2012.minneci_et_al.101104",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1104.txt",
+        "primary_citation": "10-1104",
+        "case_summary": "Because in the circumstance of this case, state tort law authorizes adequate alternative damages actions—providing both significant de- terrence and compensation—no Bivens remedy can be implied here.",
+        "citation_anchor_count": 32,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Margaret Minneci, et al. v. Richard Lee Pollard et Al, 200 U.S. 321 (2012) [us.scotus.2012.margaret_minneci_et_al_petitione.200us321].md",
+          "case_id": "us.scotus.2012.margaret_minneci_et_al_petitione.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1104.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        },
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Minneci et al. v. Pollard et Al, 200 U.S. 321 (2012) [us.scotus.2012.minneci_et_al.200us321].md",
+          "case_id": "us.scotus.2012.minneci_et_al.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1104.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1115.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/JAVIER CAVAZOS, ACTING WARDEN v. SHIRLEY REE SMITH, 10-1115 (2011).md",
+        "case_id": "us.scotus.2011.javier_cavazos_acting_warden.101115",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1115.txt",
+        "primary_citation": "10-1115",
+        "case_summary": "PER CURIAM. The opinion of the Court in Jackson v. Virginia, 443 U. S. 307 (1979), makes clear that it is the responsibility of the jury—not the court—to decide what conclusions should be drawn from evidence admitted at trial. A reviewing court may set aside the jury’s verdict on the ground of insufficient evidence only if no rational trier of fact could have agreed with the jury. What is more, a federal court may not overturn a state court decision rejecting a suf- ficiency of the evidence challenge simply because the fed- eral court disagrees with the state court. The federal court instead may do so only if the state court decision was “objectively unreasonable.” Renic…",
+        "citation_anchor_count": 6,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Javier Cavazos, Acting Warden v. Shirley Ree Smith, 443 U.S. 307 (2011).md",
+          "case_id": "us.scotus.2011.javier_cavazos_acting_warden.443us307",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1115.txt",
+          "primary_citation": "443 U. S. 307",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1195.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/MIMS v. ARROW FINANCIAL SERVICES, LLC, 10-1195 (2012).md",
+        "case_id": "us.scotus.2012.mims.101195",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1195.txt",
+        "primary_citation": "10-1195",
+        "case_summary": "The TCPA’s permissive grant of jurisdiction to state courts does not deprive the U. S. district courts of federal-question jurisdiction",
+        "citation_anchor_count": 28,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Mims v. Arrow Financial Services, Llc, 200 U.S. 321 (2012) [us.scotus.2012.mims.200us321].md",
+          "case_id": "us.scotus.2012.mims.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1195.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1276.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/10-1276, 10-1276 (2011).md",
+        "case_id": "us.scotus.2011.10_1276.101276",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1276.txt",
+        "primary_citation": "10-1276",
+        "case_summary": "LANCE DAVENPORT ET AL. 10–1297 v. AMERICAN ATHEISTS, INC., ET AL. ON PETITIONS FOR WRITS OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE TENTH CIRCUIT Nos. 10–1276 and 10–1297. Decided October 31, 2011",
+        "citation_anchor_count": 13,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Utah Highway Patrol Assn. v. American Atheists, Inc, 545 U.S. 677 (2011).md",
+          "case_id": "us.scotus.2011.10_1276.545us677",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1276.txt",
+          "primary_citation": "545 U. S. 677",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1521.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/KPMG LLP v. ROBERT COCCHI ET AL, 10-1521 (2011).md",
+        "case_id": "us.scotus.2011.kpmg_llp.101521",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1521.txt",
+        "primary_citation": "10-1521",
+        "case_summary": "PER CURIAM. Agreements to arbitrate that fall within the scope and coverage of the Federal Arbitration Act (Act), 9 U. S. C. §1 et seq., must be enforced in state and federal courts. State courts, then, “have a prominent role to play as enforcers of agreements to arbitrate.” Vaden v. Discover Bank, 556 U. S. 49, 59 (2009). The Act has been interpreted to require that if a dispute presents multiple claims, some arbitrable and some not, the former must be sent to arbitration even if this will lead to piecemeal litigation. See Dean Witter Reynolds Inc. v. Byrd, 470 U. S. 213, 217 (1985). From this it fol- lows that state and federal courts must examine with care the complai…",
+        "citation_anchor_count": 6,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Kpmg Llp v. Robert Cocchi et Al, 556 U.S. 49 (2011).md",
+          "case_id": "us.scotus.2011.kpmg_llp.556us49",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1521.txt",
+          "primary_citation": "556 U. S. 49",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              7
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1540.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/DAVID BOBBY, WARDEN v. ARCHIE DIXON, 10-1540 (2011).md",
+        "case_id": "us.scotus.2011.david_bobby_warden.101540",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1540.txt",
+        "primary_citation": "10-1540",
+        "case_summary": "PER CURIAM. Under the Antiterrorism and Effective Death Penalty Act, a state prisoner seeking a writ of habeas corpus from a federal court “must show that the state court’s ruling on the claim being presented in federal court was so lacking in justification that there was an error well understood and comprehended in existing law beyond any possibility for fairminded disagreement.” Harrington v. Richter, 562 U. S. ___, ___ (2011) (slip op., at 13). The Court of Appeals for the Sixth Circuit purported to identify three such grievous errors in the Ohio Supreme Court’s affirmance of respondent Archie Dixon’s murder conviction. Because it is not clear that the Ohio Supreme Co…",
+        "citation_anchor_count": 8,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/David Bobby, Warden v. Archie Dixon, 384 U.S. 436 (2011).md",
+          "case_id": "us.scotus.2011.david_bobby_warden.384us436",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1540.txt",
+          "primary_citation": "384 U. S. 436",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1548dis.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/BRENDA CASH, ACTING WARDEN v. BOBBY JOE MAXWELL, 10-1548 (2012).md",
+        "case_id": "us.scotus.2012.brenda_cash_acting_warden.101548",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1548dis.txt",
+        "primary_citation": "10-1548",
+        "case_summary": "these commands—thereby invalidating two 26-year-old murder convictions which the intervening loss of witnesses and evidence will likely make it impossible to retry. I dis- sent from the Court’s decision not to grant certiorari and summarily reverse the Ninth Circuit’s judgment. I In the late 1970’s, 10 homeless men were murdered in downtown Los Angeles—a series of murders that came to be known as the “Skid Row Stabber” killings. Respondent Bobby Joe Maxwell was charged with all 10 murders, and in 1984 a California jury convicted him of two counts of first-degree murder and one related count of robbery. Maxwell was sentenced to life imprisonment without the possibility of…",
+        "citation_anchor_count": 10,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Brenda Cash, Acting Warden v. Bobby Joe Maxwell, 373 U.S. 83 (2012).md",
+          "case_id": "us.scotus.2012.brenda_cash_acting_warden.373us83",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1548dis.txt",
+          "primary_citation": "373 U. S. 83",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              7
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-224.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/NATIONAL MEAT ASSOCIATION v. HARRIS, ATTORNEY GENERAL OF CALIFORNIA, ET AL, 10-224 (2012).md",
+        "case_id": "us.scotus.2012.national_meat_association.10224",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-224.txt",
+        "primary_citation": "10-224",
+        "case_summary": "The FMIA expressly preempts §599f’s application against federal- ly inspected swine slaughterhouses. Pp. 6−14. (a) The FMIA’s preemption clause sweeps widely, and so blocks the applications of §599f challenged here. The clause prevents a State from imposing any additional or different―even if nonconflict- ing―requirements that fall within the FMIA’s scope and concern slaughterhouse facilities or operations. Section 599f imposes addi- tional or different requirements on swine slaughterhouses: Where under federal law a slaughterhouse may take one course of action in",
+        "citation_anchor_count": 5,
+        "score": [
+          6,
+          [
+            -1,
+            5
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/National Meat Association v. Harris, Attorney General of California, et Al, 200 U.S. 321 (2012) [us.scotus.2012.national_meat_association.200us321].md",
+          "case_id": "us.scotus.2012.national_meat_association.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-224.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-507.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/PACIFIC OPERATORS OFFSHORE, LLP, ET AL. v. VALLADOLID ET AL, 10-507 (2012).md",
+        "case_id": "us.scotus.2012.pacific_operators_offshore_llp_e.10507",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-507.txt",
+        "primary_citation": "10-507",
+        "case_summary": "The OCSLA extends coverage to an employee who can establish a substantial nexus between his injury and his employer’s extractive operations on the OCS. (a) The Courts of Appeals have offered competing interpretations of §1333(b)’s scope. According to the Third Circuit, because Congress intended LHWCA coverage to be expansive, §1333(b) extends to all injuries that would not have occurred “but for” operations on the OCS. Thus, an employee who worked on a semisubmersible drill rig,",
+        "citation_anchor_count": 14,
+        "score": [
+          6,
+          [
+            -1,
+            5
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Pacific Operators Offshore, Llp, et al. v. Valladolid et Al, 200 U.S. 321 (2012) [us.scotus.2012.pacific_operators_offshore_llp_e.200us321].md",
+          "case_id": "us.scotus.2012.pacific_operators_offshore_llp_e.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-507.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-545.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/GOLAN ET AL. v. HOLDER, ATTORNEY GENERAL, ET AL, 10-545 (2012).md",
+        "case_id": "us.scotus.2012.golan_et_al.10545",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-545.txt",
+        "primary_citation": "10-545",
+        "case_summary": "No. 10–545. Argued October 5, 2011—Decided January 18, 2012 The Berne Convention for the Protection of Literary and Artistic Works (Berne), which took effect in 1886, is the principal accord governing international copyright relations. Berne’s 164 member states agree to provide a minimum level of copyright protection and to treat au- thors from other member countries as well as they treat their own. Of central importance in this case, Article 18 of Berne requires coun- tries to protect the works of other member states unless the works’ copyright term has expired in either the country where protection is claimed or the country of origin. A different system of transnationa…",
+        "citation_anchor_count": 21,
+        "score": [
+          6,
+          [
+            -1,
+            5
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Golan et al. v. Holder, Attorney General, et Al, 200 U.S. 321 (2012) [us.scotus.2012.golan_et_al.200us321].md",
+          "case_id": "us.scotus.2012.golan_et_al.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-545.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-553.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/CHURCH AND SCHOOL v. EQUAL EMPLOYMENT OPPORTUNITY COMMISSION ET AL, 10-553 (2012).md",
+        "case_id": "us.scotus.2012.church_and_school.10553",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-553.txt",
+        "primary_citation": "10-553",
+        "case_summary": "HOSANNA-TABOR EVANGELICAL LUTHERAN CHURCH AND SCHOOL v. EQUAL EMPLOYMENT OPPORTUNITY COMMISSION ET AL.",
+        "citation_anchor_count": 16,
+        "score": [
+          6,
+          [
+            -1,
+            5
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Church and School v. Equal Employment Opportunity Commission et Al, 200 U.S. 321 (2012) [us.scotus.2012.church_and_school.200us321].md",
+          "case_id": "us.scotus.2012.church_and_school.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-553.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-63.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/MAPLES v. THOMAS, COMMISSIONER, ALABAMA DEPARTMENT OF CORRECTIONS, 10-63 (2012).md",
+        "case_id": "us.scotus.2012.maples.1063",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-63.txt",
+        "primary_citation": "10-63",
+        "case_summary": "Maples has shown the requisite “cause” to excuse his procedur- al default. (a) As a rule, a federal court may not entertain a state prisoner’s habeas claims “when (1) ‘a state court [has] declined to address [those] claims because the prisoner had failed to meet a state proce- dural requirement,’ and (2) ‘the state judgment rests on independent and adequate state procedural grounds.’ ” Walker v. Martin, 562 U. S. ___, ___. The bar to federal review may be lifted, however, if “the prisoner can demonstrate cause for the [procedural] default [in",
+        "citation_anchor_count": 23,
+        "score": [
+          6,
+          [
+            -1,
+            4
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Maples v. Thomas, Commissioner, Alabama Department of Corrections, 200 U.S. 321 (2012) [us.scotus.2012.maples.200us321].md",
+          "case_id": "us.scotus.2012.maples.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-63.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-637.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/GREENE, AKA TRICE v. FISHER, SUPERINTENDENT, STATE CORRECTIONAL INSTITUTION AT SMITHFIELD, ET AL, 10-637 (2011).md",
+        "case_id": "us.scotus.2011.greene_aka_trice.10637",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-637.txt",
+        "primary_citation": "10-637",
+        "case_summary": "GREENE, AKA TRICE v. FISHER, SUPERINTENDENT, STATE CORRECTIONAL INSTITUTION AT SMITHFIELD, ET AL.",
+        "citation_anchor_count": 13,
+        "score": [
+          6,
+          [
+            -1,
+            5
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Greene, Aka Trice v. Fisher, Superintendent, State Correctional Institution At Smithfield, et Al, 200 U.S. 321 (2011).md",
+          "case_id": "us.scotus.2011.greene_aka_trice.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-637.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-6549.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/REYNOLDS v. UNITED STATES, 10-6549 (2012).md",
+        "case_id": "us.scotus.2012.reynolds.106549",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-6549.txt",
+        "primary_citation": "10-6549",
+        "case_summary": "The Act does not require pre-Act offenders to register before the Attorney General validly specifies that the Act’s registration provi- sions apply to them. (a) This conclusion is supported by a natural reading of the Act’s text, which consists of four statements. Statement One says that “[a] sex offender shall register, and keep the registration current.” Statement Two says that, generally, the offender must initially regis- ter before completing his “sentence of imprisonment.” Statement Three says that the sex offender must update a registration within",
+        "citation_anchor_count": 8,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Reynolds v. United States, 200 U.S. 321 (2012) [us.scotus.2012.reynolds.200us321].md",
+          "case_id": "us.scotus.2012.reynolds.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-6549.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-694.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/JUDULANG v. HOLDER, ATTORNEY GENERAL, 10-694 (2011).md",
+        "case_id": "us.scotus.2011.judulang.10694",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-694.txt",
+        "primary_citation": "10-694",
+        "case_summary": "The BIA’s policy for applying §212(c) in deportation cases is “arbi- trary and capricious” under the Administrative Procedure Act, 5 U. S. C. §706(2)(A). (a) While agencies have expertise and experience in administering their statutes that no court may properly ignore, courts retain a nar- row but important role in ensuring that agencies have engaged in reasoned decisionmaking. Thus, in reviewing the BIA’s action, this Court must assess, among other matters, “whether the decision was based on a consideration of the relevant factors and whether there",
+        "citation_anchor_count": 16,
+        "score": [
+          6,
+          [
+            -1,
+            5
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Judulang v. Holder, Attorney General, 200 U.S. 321 (2011).md",
+          "case_id": "us.scotus.2011.judulang.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-694.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-8145.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/SMITH v. CAIN, WARDEN, 10-8145 (2012).md",
+        "case_id": "us.scotus.2012.smith.108145",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-8145.txt",
+        "primary_citation": "10-8145",
+        "case_summary": "Brady requires that Smith’s conviction be reversed. The State does not dispute that the eyewitness’s statements were favorable to Smith and that those statements were not disclosed to Smith. Under Brady, evidence is material if there is a “reasonable probability that, had the evidence been disclosed, the result of the proceeding would have been different.” Cone v. Bell, 556 U. S. 449, 469–470. A “rea- sonable probability” means that the likelihood of a different result is great enough to “undermine[ ] confidence in the outcome of the trial.” Kyles v. Whitley, 514 U. S. 419, 434. Evidence impeaching an eye-",
+        "citation_anchor_count": 15,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Smith v. Cain, Warden, 200 U.S. 321 (2012).md",
+          "case_id": "us.scotus.2012.smith.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-8145.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-895.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/GONZALEZ v. THALER, DIRECTOR, TEXAS DEPARTMENT OF CRIMINAL JUSTICE, CORRECTIONAL INSTITUTIONS DIVISION, 10-895 (2012).md",
+        "case_id": "us.scotus.2012.gonzalez.10895",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-895.txt",
+        "primary_citation": "10-895",
+        "case_summary": "We hold that §2253(c)(3) is not a jurisdictional require- ment.",
+        "citation_anchor_count": 53,
+        "score": [
+          6,
+          [
+            -1,
+            5
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Gonzalez v. Thaler, Director, Texas Department of Criminal Justice, Correctional Institutions Division, 200 U.S. 321 (2012) [us.scotus.2012.gonzalez.200us321].md",
+          "case_id": "us.scotus.2012.gonzalez.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-895.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-8974.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/PERRY v. NEW HAMPSHIRE, 10-8974 (2012).md",
+        "case_id": "us.scotus.2012.perry.108974",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-8974.txt",
+        "primary_citation": "10-8974",
+        "case_summary": "The Due Process Clause does not require a preliminary judicial",
+        "citation_anchor_count": 46,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Perry v. New Hampshire, 200 U.S. 321 (2012) [us.scotus.2012.perry.200us321].md",
+          "case_id": "us.scotus.2012.perry.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-8974.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-948.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/COMPUCREDIT CORP. ET AL. v. GREENWOOD ET AL, 10-948 (2012).md",
+        "case_id": "us.scotus.2012.compucredit_corp_et_al.10948",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-948.txt",
+        "primary_citation": "10-948",
+        "case_summary": "Because the CROA is silent on whether claims under the Act can proceed in an arbitrable forum, the Federal Arbitration Act (FAA) re- quires the arbitration agreement to be enforced according to its terms. (a) Section 2 of the FAA establishes “a liberal federal policy favor- ing arbitration.” Moses H. Cone Memorial Hospital v. Mercury Con- str. Corp., 460 U. S. 1, 24. It requires that courts enforce arbitration agreements according to their terms. See Dean Witter Reynolds Inc. v. Byrd, 470 U. S. 213, 221. That is the case even when federal statu-",
+        "citation_anchor_count": 21,
+        "score": [
+          6,
+          [
+            -1,
+            5
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Compucredit Corp. et al. v. Greenwood et Al, 200 U.S. 321 (2012) [us.scotus.2012.compucredit_corp_et_al.200us321].md",
+          "case_id": "us.scotus.2012.compucredit_corp_et_al.200us321",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-948.txt",
+          "primary_citation": "200 U. S. 321",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-6391dis.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/DUANE EDWARD BUCK v. RICK THALER, DIRECTOR, TEXAS DEPARTMENT OF CRIMINAL JUSTICE, CORRECTIONAL INSTITUTIONS DIVISION, 11-6391 (2011).md",
+        "case_id": "us.scotus.2011.duane_edward_buck.116391",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-6391dis.txt",
+        "primary_citation": "11-6391",
+        "case_summary": "JUSTICE SOTOMAYOR, with whom JUSTICE KAGAN joins, dissenting from denial of certiorari. Today the Court denies review of a death sentence marred by racial overtones and a record compromised by misleading remarks and omissions made by the State of Texas in the federal habeas proceedings below. Because our criminal justice system should not tolerate either circumstance—especially in a capital case—I dissent and vote to grant the petition. Duane E. Buck was convicted of capital murder in a Texas state court. During the penalty phase of Buck’s trial, the defense called psychologist Walter Quijano as a witness. The defense sought Quijano’s opinion as to whether Buck would pos…",
+        "citation_anchor_count": 4,
+        "score": [
+          6,
+          [
+            -1,
+            6
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Duane Edward Buck v. Rick Thaler, Director, Texas Department of Criminal Justice, Correctional Institutions Division, 530 U.S. 1212 (2011).md",
+          "case_id": "us.scotus.2011.duane_edward_buck.530us1212",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-6391dis.txt",
+          "primary_citation": "530 U. S. 1212",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              9
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-713.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/11-713, 11-713 (2012).md",
+        "case_id": "us.scotus.2012.11_713.11713",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-713.txt",
+        "primary_citation": "11-713",
+        "case_summary": "RICK PERRY, GOVERNOR OF TEXAS, ET AL., APPELLANTS 11–713 v. SHANNON PEREZ ET AL",
+        "citation_anchor_count": 20,
+        "score": [
+          6,
+          [
+            -1,
+            5
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Perry v. Perez, 539 U.S. 461 (2012).md",
+          "case_id": "us.scotus.2012.11_713.539us461",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-713.txt",
+          "primary_citation": "539 U. S. 461",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-74.txt",
+      "keep": {
+        "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/MARCUS HARDY, WARDEN v. IRVING L. CROSS, 11-74 (2011).md",
+        "case_id": "us.scotus.2011.marcus_hardy_warden.1174",
+        "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-74.txt",
+        "primary_citation": "11-74",
+        "case_summary": "PER CURIAM. The Antiterrorism and Effective Death Penalty Act of 1996 (AEDPA), 28 U. S. C. §2254, “imposes a highly def- erential standard for evaluating state-court rulings and demands that state-court decisions be given the benefit of the doubt.” Felkner v. Jackson, 562 U. S. ___, ___ (2011) (per curiam) (slip op., at 4) (internal quotation marks omitted). In this case, the Court of Appeals departed from this standard, and we therefore grant certiorari and reverse. Irving Cross was tried for kidnaping and sexually as- saulting A. S. at knifepoint. Cross claimed that A. S. had consented to sex in exchange for money and drugs. De- spite her avowed fear of taking the stan…",
+        "citation_anchor_count": 3,
+        "score": [
+          6,
+          [
+            -1,
+            4
+          ]
+        ]
+      },
+      "remove": [
+        {
+          "path": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2011/Marcus Hardy, Warden v. Irving L. Cross, 390 U.S. 719 (2011).md",
+          "case_id": "us.scotus.2011.marcus_hardy_warden.390us719",
+          "opinion_url": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-74.txt",
+          "primary_citation": "390 U. S. 719",
+          "case_summary": "",
+          "citation_anchor_count": 0,
+          "score": [
+            0,
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "stats": {
+    "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+    "scanned": 1195,
+    "changed": 47,
+    "with_interpretive_edges_before": 1055,
+    "with_interpretive_edges_after": 1060,
+    "interpretive_edges_added_total": 5599,
+    "missing_hover_before": 0,
+    "missing_hover_after": 0,
+    "updated_at": "2026-02-20T14:17:23.581022+00:00"
+  },
+  "edge_type_counts": {
+    "APPLIES_AMENDMENT": 618,
+    "APPLIES_PLAIN_MEANING": 1,
+    "BROADENS_STATUTE": 3,
+    "CLARIFIES_DOCTRINE": 67,
+    "DISTINGUISHES_STATUTE": 2,
+    "EXPLAINS_AMENDMENT": 4,
+    "EXTENDS_AMENDMENT": 1,
+    "EXTENDS_STATUTE": 5,
+    "INTERPRETS_STATUTE": 4876,
+    "INVALIDATES_STATUTE": 2,
+    "INVALIDATES_STATUTE_UNDER": 1,
+    "NARROWS_STATUTE": 1,
+    "QUESTIONS_PRECEDENT_UNDER": 4,
+    "SEVERS_PROVISION": 13,
+    "USES_LEGISLATIVE_HISTORY": 1
+  },
+  "authority_type_counts": {
+    "CONSTITUTION": 631,
+    "FEDERAL_RULE": 14,
+    "PRIOR_CASE": 46,
+    "REGULATION": 6,
+    "STATUTE": 4902
+  },
+  "authority_scope_counts": {
+    "full_opinion_fallback_sparse_syllabus": 376,
+    "full_opinion_no_syllabus": 419,
+    "syllabus": 400
+  },
+  "sample_changed_files": [
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2012/Williams v. Illinois, 567 U.S. ____ (2012).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2013/Alleyne v. United States, 570 U.S. ____ (2013).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2013/Comcast Corp. et al. v. Behrend et al, 569 U.S. ____ (2013).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2013/Federal Trade Commission v. Actavis, Inc., et al, 570 U.S. ____ (2013).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2013/Marx v. General Revenue Corp, 568 U.S. ____ (2013).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2013/Mutual Pharmaceutical Co., Inc. v. Bartlett, 570 U.S. ____ (2013).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2013/Of Health and Human Services v. E. M. A., a Minor, By and Through Her Guardian Ad Litem, Johnson, et al, 568 U.S. ____ (2013).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Antwuan Ball v. United States, 574 U.S. ____ (2014).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Bond v. United States, 572 U.S. ____ (2014).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Burrage v. United States, 571 U.S. ____ (2014).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Daimler Ag v. Bauman et al, 571 U.S. ____ (2014).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Douglas F. Whitman v. United States, 574 U.S. ____ (2014).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Lane v. Franks et al, 573 U.S. ____ (2014).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Pom Wonderful Llc v. Coca-cola Co, 573 U.S. ____ (2014).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Riley v. California, 573 U.S. ____ (2014).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/City of Los Angeles, California v. Patel et al, 576 U.S. ____ (2015).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Commil Usa, Llc v. Cisco Systems, Inc, 575 U.S. ____ (2015).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Davis, Acting Warden v. Ayala, 576 U.S. ____ (2015).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Mcfadden v. United States, 576 U.S. ____ (2015).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Reed et al. v. Town of Gilbert, Arizona, et al, 576 U.S. ____ (2015).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Wellness Int\u2019l Network, Ltd. v. Sharif, 575 U.S. ____ (2015).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Campbell-ewald Co. v. Gomez, 577 U.S. ____ (2016).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Israel Ben-levi, Aka Danny L. Loren v. Betty Brown, 577 U.S. ____ (2016).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/State Farm Fire & Casualty Co. v. United States Ex Rel. Rigsby et al, 580 U.S. ____ (2016).md"
+  ]
+}

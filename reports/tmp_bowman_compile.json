@@ -1,0 +1,241 @@
+{
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "text_file": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-11-796.txt",
+  "citation_count": 8,
+  "citations": [
+    "106 U.S. 89",
+    "200 U.S. 321",
+    "316 U.S. 241",
+    "365 U.S. 336",
+    "377 U.S. 422",
+    "534 U.S. 124",
+    "553 U.S. 617",
+    "657 F.3d 1341"
+  ],
+  "mentions": [
+    {
+      "raw_text": "200 U. S. 321",
+      "normalized_text": "200 U.S. 321",
+      "start_char": 521,
+      "end_char": 534,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "553 U. S. 617",
+      "normalized_text": "553 U.S. 617",
+      "start_char": 2552,
+      "end_char": 2565,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "316 U. S. 241",
+      "normalized_text": "316 U.S. 241",
+      "start_char": 2816,
+      "end_char": 2829,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "657 F. 3d 1341",
+      "normalized_text": "657 F.3d 1341",
+      "start_char": 4642,
+      "end_char": 4656,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "657 F. 3d 1341",
+      "normalized_text": "657 F.3d 1341",
+      "start_char": 6923,
+      "end_char": 6937,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "553 U. S. 617",
+      "normalized_text": "553 U.S. 617",
+      "start_char": 12104,
+      "end_char": 12117,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "316 U. S. 241",
+      "normalized_text": "316 U.S. 241",
+      "start_char": 12344,
+      "end_char": 12357,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "377 U. S. 422",
+      "normalized_text": "377 U.S. 422",
+      "start_char": 13604,
+      "end_char": 13617,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "365 U. S. 336",
+      "normalized_text": "365 U.S. 336",
+      "start_char": 14017,
+      "end_char": 14030,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "534 U. S. 124",
+      "normalized_text": "534 U.S. 124",
+      "start_char": 18095,
+      "end_char": 18108,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "106 U. S.\n89",
+      "normalized_text": "106 U.S. 89",
+      "start_char": 20825,
+      "end_char": 20837,
+      "extractor": "regex",
+      "kind": "case"
+    }
+  ],
+  "citation_roles": [
+    {
+      "normalized_text": "200 U.S. 321",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "553 U.S. 617",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "316 U.S. 241",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "657 F.3d 1341",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "657 F.3d 1341",
+      "role": "background",
+      "confidence": 0.744
+    },
+    {
+      "normalized_text": "553 U.S. 617",
+      "role": "controlling",
+      "confidence": 0.646
+    },
+    {
+      "normalized_text": "316 U.S. 241",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "377 U.S. 422",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "365 U.S. 336",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "534 U.S. 124",
+      "role": "controlling",
+      "confidence": 0.646
+    },
+    {
+      "normalized_text": "106 U.S. 89",
+      "role": "persuasive",
+      "confidence": 0.34
+    }
+  ],
+  "resolved": [],
+  "extraction_error": null,
+  "case_id": "us.scotus.2013.bowman.200us321",
+  "case_summary": "Patent exhaustion does not permit a farmer to reproduce patent- ed seeds through planting and harvesting without the patent holder’s permission. (a) Under the patent exhaustion doctrine, “the initial authorized sale of a patented article terminates all patent rights to that item,” Quanta Computer, Inc. v. LG Electronics, Inc., 553 U. S. 617, 625, and confers on the purchaser, or any subsequent owner, “the right to use [or] sell” the thing as he sees fit, United States v. Univis Lens Co.,",
+  "essential_holding": "Patent exhaustion does not permit a farmer to reproduce patent- ed seeds through planting and harvesting without the patent holder’s permission.",
+  "citation_anchor_count": 9,
+  "holding_count": 0,
+  "issue_count": 4,
+  "relation_count": 0,
+  "source_count": 0,
+  "unresolved_count": 0,
+  "unresolved_by_severity": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "total": 0
+  },
+  "unresolved_items": [],
+  "metrics_summary": {
+    "holding_count": 0,
+    "issue_count": 4,
+    "PF_holding": {},
+    "PF_issue": {
+      "issue.unknown.unspecified.constitutional": 0.0,
+      "issue.unknown.unspecified.rule.5c2904c2.2": 0.0,
+      "issue.unknown.unspecified.stg": 0.0,
+      "issue.unknown.unspecified.stg_trial_rights_due_process_counseling_brazier": 0.0
+    },
+    "explainability_version": 1
+  },
+  "metrics_explainability": {
+    "holdings": {},
+    "issues": {
+      "issue.unknown.unspecified.constitutional": {
+        "linked_holdings": [],
+        "mean_holding_pf": 0.0,
+        "signal_by_circuit": {},
+        "consensus": null,
+        "drift": null,
+        "consensus_multiplier": 1.0,
+        "drift_multiplier": 1.0,
+        "final_pf_issue": 0.0
+      },
+      "issue.unknown.unspecified.rule.5c2904c2.2": {
+        "linked_holdings": [],
+        "mean_holding_pf": 0.0,
+        "signal_by_circuit": {},
+        "consensus": null,
+        "drift": null,
+        "consensus_multiplier": 1.0,
+        "drift_multiplier": 1.0,
+        "final_pf_issue": 0.0
+      },
+      "issue.unknown.unspecified.stg": {
+        "linked_holdings": [],
+        "mean_holding_pf": 0.0,
+        "signal_by_circuit": {},
+        "consensus": null,
+        "drift": null,
+        "consensus_multiplier": 1.0,
+        "drift_multiplier": 1.0,
+        "final_pf_issue": 0.0
+      },
+      "issue.unknown.unspecified.stg_trial_rights_due_process_counseling_brazier": {
+        "linked_holdings": [],
+        "mean_holding_pf": 0.0,
+        "signal_by_circuit": {},
+        "consensus": null,
+        "drift": null,
+        "consensus_multiplier": 1.0,
+        "drift_multiplier": 1.0,
+        "final_pf_issue": 0.0
+      }
+    },
+    "interpretation_events": []
+  },
+  "canonicalization_decisions": [],
+  "write_result": null
+}

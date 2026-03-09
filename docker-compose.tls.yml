@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  caddy:
+    image: caddy:2
+    container_name: acquittify-caddy
+    restart: unless-stopped
+    depends_on:
+      - admin-ui
+    environment:
+      ACQUITTIFY_DOMAIN: ${ACQUITTIFY_DOMAIN}
+      ACQUITTIFY_TLS_EMAIL: ${ACQUITTIFY_TLS_EMAIL}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - acquittify_caddy_data:/data
+      - acquittify_caddy_config:/config
+
+volumes:
+  acquittify_caddy_data:
+  acquittify_caddy_config:

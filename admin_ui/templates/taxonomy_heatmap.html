@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Taxonomy Heatmap</h1>
+<p class="meta">Dotmap of taxonomy distribution by facet (rows) and top-level bucket (columns). Auto-samples from Chroma on refresh.</p>
+
+<div class="card">
+  <form id="heatmap-form" class="filters" onsubmit="return false;">
+    <label>Sample size
+      <input type="number" id="sample-limit" min="500" max="20000" value="{{ sample_limit }}" />
+    </label>
+    <button id="refresh-btn" type="button">Refresh</button>
+    <span id="heatmap-status" class="meta"></span>
+  </form>
+</div>
+
+<div class="card">
+  <div id="heatmap-container"></div>
+</div>
+
+<script>
+  const statusEl = document.getElementById("heatmap-status");
+  const container = document.getElementById("heatmap-container");
+  const refreshBtn = document.getElementById("refresh-btn");
+  const sampleInput = document.getElementById("sample-limit");
+
+  function colorFor(value, max) {
+    if (!max) return "hsl(0 0% 90%)";
+    const t = Math.min(value / max, 1);
+    const light = Math.round(95 - t * 55);
+    return `hsl(0 0% ${light}%)`;
+  }
+
+  function renderHeatmap(data) {
+    if (data.error) {
+      container.innerHTML = `<div class="alert error">${data.error}</div>`;
+      return;
+    }
+    const facets = data.facets || [];
+    const buckets = data.buckets || [];
+    const matrix = data.matrix || [];
+    const maxCell = data.max_cell || 0;
+
+    if (!facets.length || !buckets.length) {
+      container.innerHTML = "<div class='meta'>No taxonomy data found in the sample.</div>";
+      return;
+    }
+
+    const cellSize = 26;
+    const labelWidth = 170;
+    const labelHeight = 70;
+    const width = labelWidth + buckets.length * cellSize;
+    const height = labelHeight + facets.length * cellSize;
+
+    let svg = `<svg width="${width}" height="${height}" style="border:1px solid #d9d9d9; background:#ffffff;">`;
+    svg += `<rect x="0" y="0" width="${width}" height="${height}" fill="#ffffff"></rect>`;
+
+    // Column labels (rotate to reduce crowding)
+    buckets.forEach((bucket, idx) => {
+      const x = labelWidth + idx * cellSize + cellSize / 2;
+      const y = labelHeight - 6;
+      svg += `<text x="${x}" y="${y}" font-size="10" text-anchor="end" fill="#5c5c5c" transform="rotate(-45 ${x} ${y})">${bucket}</text>`;
+    });
+
+    // Row labels and dots
+    facets.forEach((facet, row) => {
+      const y = labelHeight + row * cellSize + cellSize / 2;
+      svg += `<text x="${labelWidth - 6}" y="${y + 3}" font-size="11" text-anchor="end" fill="#111111">${facet}</text>`;
+      buckets.forEach((bucket, col) => {
+        const value = (matrix[row] && matrix[row][col]) ? matrix[row][col] : 0;
+        const cx = labelWidth + col * cellSize + cellSize / 2;
+        const cy = labelHeight + row * cellSize + cellSize / 2;
+        const radius = maxCell ? (Math.sqrt(value / maxCell) * (cellSize * 0.42)) : 0;
+        const fill = colorFor(value, maxCell);
+        svg += `<circle cx="${cx}" cy="${cy}" r="${radius}" fill="${fill}" stroke="#cfcfcf" stroke-width="0.5">` +
+               `<title>${facet} / ${bucket}: ${value}</title>` +
+               `</circle>`;
+      });
+    });
+
+    svg += "</svg>";
+    container.innerHTML = svg;
+  }
+
+  async function loadHeatmap() {
+    const sample = parseInt(sampleInput.value || "5000", 10);
+    statusEl.textContent = "Loading…";
+    const resp = await fetch(`/api/taxonomy-heatmap?sample_limit=${sample}`);
+    const data = await resp.json();
+    statusEl.textContent = data.sample_size ? `Sample ${data.sample_size} / ${data.total}` : "";
+    renderHeatmap(data);
+  }
+
+  refreshBtn.addEventListener("click", loadHeatmap);
+  loadHeatmap();
+</script>
+{% endblock %}

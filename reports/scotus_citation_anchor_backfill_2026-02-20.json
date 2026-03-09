@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-02-20T14:17:56.721637+00:00",
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "dry_run": false,
+  "scanned_files": 1195,
+  "changed_files": 14,
+  "parse_failures": 0,
+  "total_citation_anchors": 12652,
+  "anchor_scope_counts": {
+    "full_opinion_fallback_sparse_syllabus": 59,
+    "full_opinion_no_syllabus": 419,
+    "syllabus": 717
+  },
+  "selected_anchor_mentions_total": 14767,
+  "files_changed": [
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Abramski v. United States, 573 U.S. ____ (2014).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2014/Utility Air Regulatory Group v. Environmental Protection Agency et al, 573 U.S. ____ (2014).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Torrey Dale Grady v. North Carolina, 575 U.S. ____ (2015).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2015/Williams-yulee v. Florida Bar, 575 U.S. ____ (2015).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Birchfield v. North Dakota, 579 U.S. ____ (2016).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Bobby Jerry Tatum v. Arizona, 580 U.S. ____ (2016).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Renaldo Chante Adams v. Alabama, 578 U.S. ____ (2016).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2016/Voisine et al. v. United States, 579 U.S. ____ (2016).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Guardado v. Jones, 584 U.S. ____ (2018).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Michael Gordon Reynolds v. Florida, 586 U.S. ____ (2018).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2018/Thilo Brown v. United States, 586 U.S. ____ (2018).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2020/Ramos v. Louisiana, 590 U.S. ____ (2020).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2021/Jane Doe v. United States, 593 U.S. ____ (2021).md",
+    "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault/cases/scotus/2022/Thomas H. Buffington v. Denis R. Mcdonough, Secretary of Veteran Affairs, 598 U.S. ____ (2022).md"
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "vault_root": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/precedent_vault",
+  "text_file": "/Users/ronaldchapman/Library/Mobile Documents/iCloud~md~obsidian/Documents/Supreme Court/Ontology/.ontology_compile_work/text/SCOTUS-10-1540.txt",
+  "citation_count": 9,
+  "citations": [
+    "384 U. S. 436",
+    "437 U. S. 385",
+    "470 U. S. 298",
+    "474 U. S. 104",
+    "499 U. S. 279",
+    "501 U. S. 171",
+    "542 U. S. 600",
+    "556 U. S. 778",
+    "627 F. 3d 553"
+  ],
+  "mentions": [
+    {
+      "raw_text": "384 U. S. 436",
+      "normalized_text": "384 U. S. 436",
+      "start_char": 2326,
+      "end_char": 2339,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "470\nU. S. 298",
+      "normalized_text": "470 U. S. 298",
+      "start_char": 6032,
+      "end_char": 6045,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "627 F. 3d\n553",
+      "normalized_text": "627 F. 3d 553",
+      "start_char": 6959,
+      "end_char": 6972,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "501 U. S. 171",
+      "normalized_text": "501 U. S. 171",
+      "start_char": 8126,
+      "end_char": 8139,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "556 U. S. 778",
+      "normalized_text": "556 U. S. 778",
+      "start_char": 8192,
+      "end_char": 8205,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "474 U. S. 104",
+      "normalized_text": "474 U. S. 104",
+      "start_char": 9599,
+      "end_char": 9612,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "499\nU. S. 279",
+      "normalized_text": "499 U. S. 279",
+      "start_char": 9658,
+      "end_char": 9671,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "437 U. S. 385",
+      "normalized_text": "437 U. S. 385",
+      "start_char": 10061,
+      "end_char": 10074,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "542 U. S. 600",
+      "normalized_text": "542 U. S. 600",
+      "start_char": 13029,
+      "end_char": 13042,
+      "extractor": "regex",
+      "kind": "case"
+    },
+    {
+      "raw_text": "627 F. 3d 553",
+      "normalized_text": "627 F. 3d 553",
+      "start_char": 18319,
+      "end_char": 18332,
+      "extractor": "regex",
+      "kind": "case"
+    }
+  ],
+  "citation_roles": [
+    {
+      "normalized_text": "384 U. S. 436",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "470 U. S. 298",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "627 F. 3d 553",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "501 U. S. 171",
+      "role": "background",
+      "confidence": 0.744
+    },
+    {
+      "normalized_text": "556 U. S. 778",
+      "role": "background",
+      "confidence": 0.744
+    },
+    {
+      "normalized_text": "474 U. S. 104",
+      "role": "background",
+      "confidence": 0.744
+    },
+    {
+      "normalized_text": "499 U. S. 279",
+      "role": "background",
+      "confidence": 0.744
+    },
+    {
+      "normalized_text": "437 U. S. 385",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "542 U. S. 600",
+      "role": "persuasive",
+      "confidence": 0.34
+    },
+    {
+      "normalized_text": "627 F. 3d 553",
+      "role": "persuasive",
+      "confidence": 0.34
+    }
+  ],
+  "resolved": [],
+  "extraction_error": null,
+  "case_id": "us.scotus.2011.david_bobby_warden.101540",
+  "case_summary": "PER CURIAM. Under the Antiterrorism and Effective Death Penalty Act, a state prisoner seeking a writ of habeas corpus from a federal court “must show that the state court’s ruling on the claim being presented in federal court was so lacking in justification that there was an error well understood and comprehended in existing law beyond any possibility for fairminded disagreement.” Harrington v. Richter, 562 U. S. ___, ___ (2011) (slip op., at 13). The Court of Appeals for the Sixth Circuit purported to identify three such grievous errors in the Ohio Supreme Court’s affirmance of respondent Archie Dixon’s murder conviction. Because it is not clear that the Ohio Supreme Co…",
+  "essential_holding": "Under the Antiterrorism and Effective Death Penalty Act, a state prisoner seeking a writ of habeas corpus from a federal court “must show that the state court’s ruling on the claim being presented in federal court was so lacking in justification that there was an error well understood and comprehended in existing law beyond any possibility for fairminded disagreement.",
+  "citation_anchor_count": 8,
+  "holding_count": 0,
+  "issue_count": 4,
+  "relation_count": 0,
+  "source_count": 0,
+  "unresolved_count": 0,
+  "unresolved_by_severity": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "total": 0
+  },
+  "unresolved_items": [],
+  "metrics_summary": {
+    "holding_count": 0,
+    "issue_count": 4,
+    "PF_holding": {},
+    "PF_issue": {
+      "issue.unknown.unspecified.constitutional": 0.0,
+      "issue.unknown.unspecified.rule.5c2904c2.2": 0.0,
+      "issue.unknown.unspecified.stg": 0.0,
+      "issue.unknown.unspecified.stg_trial_rights_due_process_counseling_brazier": 0.0
+    },
+    "explainability_version": 1
+  },
+  "metrics_explainability": {
+    "holdings": {},
+    "issues": {
+      "issue.unknown.unspecified.constitutional": {
+        "linked_holdings": [],
+        "mean_holding_pf": 0.0,
+        "signal_by_circuit": {},
+        "consensus": null,
+        "drift": null,
+        "consensus_multiplier": 1.0,
+        "drift_multiplier": 1.0,
+        "final_pf_issue": 0.0
+      },
+      "issue.unknown.unspecified.rule.5c2904c2.2": {
+        "linked_holdings": [],
+        "mean_holding_pf": 0.0,
+        "signal_by_circuit": {},
+        "consensus": null,
+        "drift": null,
+        "consensus_multiplier": 1.0,
+        "drift_multiplier": 1.0,
+        "final_pf_issue": 0.0
+      },
+      "issue.unknown.unspecified.stg": {
+        "linked_holdings": [],
+        "mean_holding_pf": 0.0,
+        "signal_by_circuit": {},
+        "consensus": null,
+        "drift": null,
+        "consensus_multiplier": 1.0,
+        "drift_multiplier": 1.0,
+        "final_pf_issue": 0.0
+      },
+      "issue.unknown.unspecified.stg_trial_rights_due_process_counseling_brazier": {
+        "linked_holdings": [],
+        "mean_holding_pf": 0.0,
+        "signal_by_circuit": {},
+        "consensus": null,
+        "drift": null,
+        "consensus_multiplier": 1.0,
+        "drift_multiplier": 1.0,
+        "final_pf_issue": 0.0
+      }
+    },
+    "interpretation_events": []
+  },
+  "canonicalization_decisions": [],
+  "write_result": null
+}
