@@ -7,6 +7,7 @@ TMP2="$(mktemp)"
 U1="phase1_user_$(date +%s)"
 U2="phase1_user2_$(date +%s)"
 MNAME="Phase1 Matter $(date +%s)"
+P1="Password123!"
 
 cleanup() {
   rm -f "$TMP1" "$TMP2"
@@ -14,12 +15,12 @@ cleanup() {
 trap cleanup EXIT
 
 UNAUTH_CODE=$(curl -sS -o /tmp/phase1_unauth.json -w '%{http_code}' "$BASE_URL/matters")
-R1_CODE=$(curl -sS -c "$TMP1" -o /tmp/phase1_r1.json -w '%{http_code}' -H 'Content-Type: application/json' -d "{\"email\":\"$U1\",\"password\":\"password123\"}" "$BASE_URL/auth/register")
+R1_CODE=$(curl -sS -c "$TMP1" -o /tmp/phase1_r1.json -w '%{http_code}' -H 'Content-Type: application/json' -d "{\"email\":\"${U1}@example.test\",\"password\":\"$P1\"}" "$BASE_URL/auth/register")
 CSRF1=$(awk '$6=="peregrine_csrf"{print $7}' "$TMP1" | tail -n1)
 ME1_CODE=$(curl -sS -b "$TMP1" -o /tmp/phase1_me1.json -w '%{http_code}' "$BASE_URL/auth/me")
 C1_CODE=$(curl -sS -b "$TMP1" -o /tmp/phase1_cm.json -w '%{http_code}' -H 'Content-Type: application/json' -H "X-CSRF-Token: $CSRF1" -d "{\"name\":\"$MNAME\"}" "$BASE_URL/matters")
 L1_CODE=$(curl -sS -b "$TMP1" -o /tmp/phase1_l1.json -w '%{http_code}' "$BASE_URL/matters")
-R2_CODE=$(curl -sS -c "$TMP2" -o /tmp/phase1_r2.json -w '%{http_code}' -H 'Content-Type: application/json' -d "{\"email\":\"$U2\",\"password\":\"password123\",\"organization_name\":\"Org Two\"}" "$BASE_URL/auth/register")
+R2_CODE=$(curl -sS -c "$TMP2" -o /tmp/phase1_r2.json -w '%{http_code}' -H 'Content-Type: application/json' -d "{\"email\":\"${U2}@example.test\",\"password\":\"$P1\",\"organization_name\":\"Org Two\"}" "$BASE_URL/auth/register")
 L2_CODE=$(curl -sS -b "$TMP2" -o /tmp/phase1_l2.json -w '%{http_code}' "$BASE_URL/matters")
 
 python3 - <<'PY'

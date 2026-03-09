@@ -4,8 +4,8 @@ set -euo pipefail
 BASE_URL="${1:-http://127.0.0.1:8002}"
 COOKIE_FILE="$(mktemp)"
 EMAIL="phase2_user_$(date +%s)@example.test"
-PASSWORD="password123"
-NEW_PASSWORD="newpassword123"
+PASSWORD="Password123!"
+NEW_PASSWORD="Newpassword123!"
 
 cleanup() {
   rm -f "$COOKIE_FILE"

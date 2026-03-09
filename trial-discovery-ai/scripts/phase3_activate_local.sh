@@ -3,7 +3,14 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 TRIAL_DIR="$ROOT_DIR/trial-discovery-ai"
-COMPOSE_FILE="$TRIAL_DIR/deploy/docker-compose.phase3.yml"
+if [ -f "$TRIAL_DIR/deploy/docker-compose.phase3.yml" ]; then
+  COMPOSE_FILE="$TRIAL_DIR/deploy/docker-compose.phase3.yml"
+elif [ -f "$ROOT_DIR/deploy/docker-compose.phase3.yml" ]; then
+  COMPOSE_FILE="$ROOT_DIR/deploy/docker-compose.phase3.yml"
+else
+  echo "Could not find docker-compose.phase3.yml in expected locations."
+  exit 1
+fi
 PROJECT_NAME="acq_phase3_local"
 
 if ! docker info >/dev/null 2>&1; then
