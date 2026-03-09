@@ -1,0 +1,65 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ECRAuthToken",
+      "Effect": "Allow",
+      "Action": "ecr:GetAuthorizationToken",
+      "Resource": "*"
+    },
+    {
+      "Sid": "ECRPushPullLimitedRepos",
+      "Effect": "Allow",
+      "Action": [
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:BatchGetImage",
+        "ecr:CompleteLayerUpload",
+        "ecr:DescribeRepositories",
+        "ecr:InitiateLayerUpload",
+        "ecr:PutImage",
+        "ecr:UploadLayerPart"
+      ],
+      "Resource": [
+        "arn:aws:ecr:us-east-1:444284889609:repository/acquittify-prod-api",
+        "arn:aws:ecr:us-east-1:444284889609:repository/acquittify-prod-worker",
+        "arn:aws:ecr:us-east-1:444284889609:repository/acquittify-prod-frontend"
+      ]
+    },
+    {
+      "Sid": "ECSDescribeAndRegisterTaskDefinition",
+      "Effect": "Allow",
+      "Action": [
+        "ecs:DescribeTaskDefinition",
+        "ecs:RegisterTaskDefinition"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ECSUpdateOnlyTargetServices",
+      "Effect": "Allow",
+      "Action": [
+        "ecs:DescribeServices",
+        "ecs:UpdateService"
+      ],
+      "Resource": [
+        "arn:aws:ecs:us-east-1:444284889609:service/acquittify-prod-cluster/acquittify-prod-api",
+        "arn:aws:ecs:us-east-1:444284889609:service/acquittify-prod-cluster/acquittify-prod-worker",
+        "arn:aws:ecs:us-east-1:444284889609:service/acquittify-prod-cluster/acquittify-prod-frontend"
+      ]
+    },
+    {
+      "Sid": "PassOnlyEcsTaskRoles",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": [
+        "arn:aws:iam::444284889609:role/acquittify-prod-ecs-exec-role",
+        "arn:aws:iam::444284889609:role/acquittify-prod-ecs-task-role"
+      ],
+      "Condition": {
+        "StringEquals": {
+          "iam:PassedToService": "ecs-tasks.amazonaws.com"
+        }
+      }
+    }
+  ]
+}
