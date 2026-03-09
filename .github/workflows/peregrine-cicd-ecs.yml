@@ -32,8 +32,6 @@ jobs:
       NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME: ${{ vars.NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME }}
       NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME: ${{ vars.NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME }}
       AWS_ROLE_TO_ASSUME: ${{ secrets.AWS_ROLE_TO_ASSUME }}
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     steps:
       - name: Checkout repository
@@ -46,6 +44,10 @@ jobs:
 
           if [ -z "${AWS_REGION}" ]; then
             echo "AWS_REGION is not set in GitHub Variables."
+            exit 1
+          fi
+          if [ -z "${AWS_ROLE_TO_ASSUME}" ]; then
+            echo "AWS_ROLE_TO_ASSUME is not set in GitHub Secrets."
             exit 1
           fi
 
@@ -67,38 +69,11 @@ jobs:
             fi
           done
 
-      - name: Resolve AWS auth mode
-        id: auth-mode
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          if [ -n "${AWS_ROLE_TO_ASSUME:-}" ]; then
-            echo "mode=oidc" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          if [ -n "${AWS_ACCESS_KEY_ID:-}" ] && [ -n "${AWS_SECRET_ACCESS_KEY:-}" ]; then
-            echo "mode=keys" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          echo "No AWS credentials configured. Set AWS_ROLE_TO_ASSUME (preferred) or AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY."
-          exit 1
-
       - name: Configure AWS credentials (OIDC)
-        if: ${{ steps.auth-mode.outputs.mode == 'oidc' }}
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ env.AWS_ROLE_TO_ASSUME }}
-          aws-region: ${{ env.AWS_REGION }}
-
-      - name: Configure AWS credentials (access keys fallback)
-        if: ${{ steps.auth-mode.outputs.mode == 'keys' }}
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          role-session-name: GitHubActions-AcquittifyWorkspace-Deploy
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Login to Amazon ECR
