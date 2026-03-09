@@ -107,3 +107,10 @@ reports/caselaw_archive_backfill.jsonl
 
 # TypeScript incremental cache
 **/*.tsbuildinfo
+
+# Proprietary caselaw ontology assets stay offline
+/Caselaw Ontology/*
+!/Caselaw Ontology/README.md
+
+# Local recycle bin for removed workspace files
+/.trash/

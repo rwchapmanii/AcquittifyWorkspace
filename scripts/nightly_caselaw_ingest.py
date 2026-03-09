@@ -36,8 +36,102 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from acquittify.ontology.taxonomy_case_map import map_case_taxonomies
-from ingestion_agent.parsers.cleaner import clean_text
-from ingestion_agent.utils.text import strip_html
+
+# --- Minimal text utilities (formerly ingestion_agent.*) ---
+
+HTML_TAG_RE = re.compile(r"<[^>]+>")
+HTML_ENTITY_REPLACEMENTS = {
+    "&nbsp;": " ",
+    "&amp;": "&",
+    "&lt;": "<",
+    "&gt;": ">",
+}
+TABLE_OF_AUTHORITIES_RE = re.compile(r"\bTABLE OF AUTHORITIES\b", re.IGNORECASE)
+PAGE_NUMBER_RE = re.compile(r"^\s*(?:-\s*)?\d+\s*(?:-\s*)?$")
+HEADER_FOOTER_RE = re.compile(r"^\s*Page\s+\d+\s+of\s+\d+\s*$", re.IGNORECASE)
+JUDGE_SIGNATURE_RE = re.compile(r"^\s*(/s/|s/)\s+.+$", re.IGNORECASE)
+JUDGE_TITLE_RE = re.compile(
+    r"^\s*(Chief\s+)?(United\s+States\s+)?(District|Circuit|Magistrate|Bankruptcy)\s+Judge\b",
+    re.IGNORECASE,
+)
+SIGNED_BY_RE = re.compile(r"^\s*Signed\s+by\s+.+$", re.IGNORECASE)
+
+
+def _normalize_line_endings(text: str) -> str:
+    return str(text or "").replace("\r\n", "\n").replace("\r", "\n")
+
+
+def strip_html(text: str) -> str:
+    if not text:
+        return ""
+    cleaned = HTML_TAG_RE.sub(" ", text)
+    for entity, replacement in HTML_ENTITY_REPLACEMENTS.items():
+        cleaned = cleaned.replace(entity, replacement)
+    return cleaned
+
+
+def _remove_tables_of_authorities(text: str) -> str:
+    if not TABLE_OF_AUTHORITIES_RE.search(text):
+        return text
+    lines = text.splitlines()
+    cleaned = []
+    skipping = False
+    for line in lines:
+        if TABLE_OF_AUTHORITIES_RE.search(line):
+            skipping = True
+            continue
+        if skipping and not line.strip():
+            skipping = False
+            continue
+        if not skipping:
+            cleaned.append(line)
+    return "\n".join(cleaned)
+
+
+def _remove_headers_footers(text: str) -> str:
+    lines = text.splitlines()
+    cleaned = []
+    for line in lines:
+        if HEADER_FOOTER_RE.match(line):
+            continue
+        if PAGE_NUMBER_RE.match(line.strip()):
+            continue
+        cleaned.append(line)
+    return "\n".join(cleaned)
+
+
+def _remove_judge_signatures(text: str) -> str:
+    lines = text.splitlines()
+    end = len(lines) - 1
+    while end >= 0:
+        line = lines[end].strip()
+        if not line:
+            end -= 1
+            continue
+        if (
+            JUDGE_SIGNATURE_RE.match(line)
+            or JUDGE_TITLE_RE.match(line)
+            or SIGNED_BY_RE.match(line)
+        ):
+            end -= 1
+            continue
+        break
+    return "\n".join(lines[: end + 1])
+
+
+def _normalize_whitespace(text: str) -> str:
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
+def clean_text(text: str) -> str:
+    text = _normalize_line_endings(text)
+    text = _remove_tables_of_authorities(text)
+    text = _remove_headers_footers(text)
+    text = _remove_judge_signatures(text)
+    text = _normalize_whitespace(text)
+    return text
 
 DEFAULT_SEARCH_URL = "https://www.courtlistener.com/api/rest/v4/search/"
 DEFAULT_COURTS_URL = "https://www.courtlistener.com/api/rest/v4/courts/"

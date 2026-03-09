@@ -1,7 +1,0 @@
-fastapi==0.99.1
-uvicorn==0.30.6
-Jinja2==3.1.6
-psycopg[binary]==3.2.6
-python-multipart==0.0.9
-itsdangerous==2.2.0
-chromadb==0.5.5
