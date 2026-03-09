@@ -38,9 +38,10 @@ resource "aws_cloudwatch_log_group" "caselaw_ingest" {
 }
 
 locals {
-  api_image      = "${aws_ecr_repository.api.repository_url}:${var.api_image_tag}"
-  worker_image   = "${aws_ecr_repository.worker.repository_url}:${var.worker_image_tag}"
-  frontend_image = "${aws_ecr_repository.frontend.repository_url}:${var.frontend_image_tag}"
+  api_image             = "${aws_ecr_repository.api.repository_url}:${var.api_image_tag}"
+  worker_image          = "${aws_ecr_repository.worker.repository_url}:${var.worker_image_tag}"
+  frontend_image        = "${aws_ecr_repository.frontend.repository_url}:${var.frontend_image_tag}"
+  effective_agent_model = var.agent_model != "" ? var.agent_model : var.llm_model
 
   api_secrets = concat(
     [
@@ -83,6 +84,7 @@ locals {
     { name = "EMBEDDING_MODEL", value = var.embedding_model },
     { name = "EMBEDDING_DIM", value = tostring(var.embedding_dim) },
     { name = "LLM_MODEL", value = var.llm_model },
+    { name = "AGENT_MODEL", value = local.effective_agent_model },
     { name = "OPENCLAW_AGENT_ID", value = var.openclaw_agent_id },
     { name = "LLM_BASE_URL", value = var.llm_base_url },
     { name = "LLM_REPAIR_MODEL", value = var.llm_repair_model },
@@ -98,6 +100,7 @@ locals {
     { name = "EMBEDDING_MODEL", value = var.embedding_model },
     { name = "EMBEDDING_DIM", value = tostring(var.embedding_dim) },
     { name = "LLM_MODEL", value = var.llm_model },
+    { name = "AGENT_MODEL", value = local.effective_agent_model },
     { name = "OPENCLAW_AGENT_ID", value = var.openclaw_agent_id },
     { name = "LLM_BASE_URL", value = var.llm_base_url },
     { name = "LLM_REPAIR_MODEL", value = var.llm_repair_model },

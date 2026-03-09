@@ -38,6 +38,7 @@ courtlistener_api_token_secret_arn = ""
 
 # LLM/OpenClaw provider config
 llm_model = "openclaw"
+agent_model = "openclaw"
 openclaw_agent_id = "main"
 llm_base_url = ""
 

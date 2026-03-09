@@ -429,6 +429,12 @@ variable "llm_model" {
   default     = "acquittify-qwen"
 }
 
+variable "agent_model" {
+  description = "Agent model used by /agent/chat (if empty, uses llm_model)"
+  type        = string
+  default     = ""
+}
+
 variable "openclaw_agent_id" {
   description = "OpenClaw agent ID sent as x-openclaw-agent-id when LLM_BASE_URL is set"
   type        = string
