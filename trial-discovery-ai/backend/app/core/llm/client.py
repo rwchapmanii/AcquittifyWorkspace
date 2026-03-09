@@ -7,18 +7,27 @@ from openai import OpenAI
 from app.core.config import get_settings
 
 
+def _normalize_openai_base_url(base_url: str | None) -> str | None:
+    normalized = (base_url or "").strip()
+    if normalized.startswith("ws://"):
+        normalized = "http://" + normalized[len("ws://") :]
+    elif normalized.startswith("wss://"):
+        normalized = "https://" + normalized[len("wss://") :]
+    normalized = normalized.rstrip("/")
+    # Some gateways advertise full endpoint paths; OpenAI client expects API root.
+    for suffix in ("/responses", "/chat/completions"):
+        if normalized.endswith(suffix):
+            normalized = normalized[: -len(suffix)]
+            break
+    normalized = normalized.rstrip("/")
+    return normalized or None
+
+
 class LLMClient:
     def __init__(self) -> None:
         settings = get_settings()
         api_key = settings.llm_api_key or settings.openai_api_key
-        base_url = (settings.llm_base_url or "").strip()
-        if base_url.startswith("ws://"):
-            base_url = "http://" + base_url[len("ws://") :]
-        elif base_url.startswith("wss://"):
-            base_url = "https://" + base_url[len("wss://") :]
-        base_url = base_url.rstrip("/")
-        if not base_url:
-            base_url = None
+        base_url = _normalize_openai_base_url(settings.llm_base_url)
         default_headers: dict[str, str] = {}
         if base_url and settings.openclaw_agent_id:
             default_headers["x-openclaw-agent-id"] = settings.openclaw_agent_id

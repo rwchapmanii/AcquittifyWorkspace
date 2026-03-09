@@ -17,7 +17,8 @@ def embed_text(text: str) -> EmbeddingResult:
         or settings.llm_api_key
         or settings.openai_api_key
     )
-    base_url = (settings.embedding_base_url or settings.llm_base_url or "").strip()
+    # Keep embedding traffic separate from LLM traffic unless explicitly configured.
+    base_url = (settings.embedding_base_url or "").strip()
     if base_url.startswith("ws://"):
         base_url = "http://" + base_url[len("ws://") :]
     elif base_url.startswith("wss://"):
