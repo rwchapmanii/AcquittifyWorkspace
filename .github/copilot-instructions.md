@@ -11,7 +11,7 @@ Follow root COPILOT_INSTRUCTIONS.md in addition to this file.
 - Always store/pass metadata: source ids, court/circuit, year, posture, citations, SoR, burden, is_holding/is_dicta, favorability, taxonomy codes.
 
 ## Architecture & data flow (big picture)
-- Streamlit UI lives in [app.py](app.py); it calls `classify_intent()` and then query expansion in [acquittify_query.py](acquittify_query.py).
+- AWS/web APIs and worker services drive runtime behavior; retrieval/query logic centers on [acquittify_query.py](acquittify_query.py).
 - Taxonomy routing happens before retrieval via `classify_question()` in [acquittify_router.py](acquittify_router.py) to produce a controlled `primary_area`.
 - Retrieval in [acquittify_retriever.py](acquittify_retriever.py) applies metadata filters by legal area **before** vector search; Chroma fallback reads from `Corpus/Chroma/documents`.
 - Transcript retrieval is separate: transcript chunks live under `data/transcripts/<CASE>_Transcripts/` and are searched by [acquittify/ingest/transcript_retrieval.py](acquittify/ingest/transcript_retrieval.py). When citing transcript excerpts, include the `citation` field verbatim.
@@ -21,8 +21,8 @@ Follow root COPILOT_INSTRUCTIONS.md in addition to this file.
 - [ingestion_infra/](ingestion_infra/) handles CourtListener bulk/API ingestion into staging (no parsing/chunking/embedding). Example: `python -m ingestion_infra.runners.main bulk_ingest`.
 
 ## Local run & services
-- Streamlit app is launched by [launch_acquittify.sh](launch_acquittify.sh) (fixed port 8501). Use it as the canonical local run path.
-- Local services are managed via docker compose; keep commands explicit when instructing migrations/tests.
+- Canonical runtime is AWS/web (`trial-discovery-ai` backend/frontend and server-side ingestion services).
+- Local services are managed via docker compose and service-specific scripts; keep commands explicit when instructing migrations/tests.
 
 ## Agent tooling conventions
 - Ponner-Investigator uses a local Ollama model (`deepseek-r1:8b`) via [agent-cornelius/ollama_client.py](agent-cornelius/ollama_client.py) with env in [agent-cornelius/.env](agent-cornelius/.env) (see [README.md](README.md)).

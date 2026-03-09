@@ -61,15 +61,14 @@ Flow:
 
 Important: This is a distinct ingest/derive pipeline from nightly script; both write into overlapping DB concepts.
 
-### 2.4 Desktop/Electron graph path (separate app)
+### 2.4 Legacy desktop graph path (retired)
 
-- Graph builder: `AcquittifyElectron/main.js`
-- DB helper: `scripts/caselaw_db_graph.py`
+- Legacy graph builder: `AcquittifyElectron/main.js` (removed from active runtime)
+- Remaining helper: `scripts/caselaw_db_graph.py`
 
-Flow:
-1. Attempts vault ontology graph.
-2. Falls back to DB graph builder script if needed.
-3. DB graph builder currently emits case + taxonomy nodes with `taxonomy_edge` only (no case-to-case citation graph from DB path).
+Current state:
+1. Desktop/Electron path is retired and not part of the canonical AWS/web deployment.
+2. `scripts/caselaw_db_graph.py` remains as a transitional utility script only.
 
 ## 3) Database Objects in Play
 

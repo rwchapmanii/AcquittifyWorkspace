@@ -22,8 +22,7 @@ function toPosixRel(root, absPath) {
 function loadSchemaInfo(workspaceRoot, searchRoot) {
   const candidates = [
     path.resolve(workspaceRoot, BOOTSTRAP_SCHEMA_FILENAME),
-    path.resolve(searchRoot, BOOTSTRAP_SCHEMA_FILENAME),
-    path.resolve(workspaceRoot, 'AcquittifyElectron', BOOTSTRAP_SCHEMA_FILENAME)
+    path.resolve(searchRoot, BOOTSTRAP_SCHEMA_FILENAME)
   ];
   for (const candidate of candidates) {
     try {
@@ -232,4 +231,3 @@ try {
   console.error(err?.message || err);
   process.exitCode = 1;
 }
-

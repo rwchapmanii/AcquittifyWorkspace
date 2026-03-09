@@ -10,8 +10,7 @@ This compiler turns an opinion into citation-anchored ontology artifacts in an O
   - `/Users/ronaldchapman/Desktop/Acquittify/acquittify/ontology/prompts.py`
   - `/Users/ronaldchapman/Desktop/Acquittify/acquittify/ontology/authority_extract.py`
   - `/Users/ronaldchapman/Desktop/Acquittify/scripts/compile_precedent_ontology.py`
-  - `/Users/ronaldchapman/Desktop/Acquittify/AcquittifyElectron/main.js`
-  - `/Users/ronaldchapman/Desktop/Acquittify/AcquittifyElectron/ui/app.js`
+  - `/Users/ronaldchapman/Desktop/Acquittify/scripts/caselaw_db_graph.py`
 - Governing interpretation-edge contract:
   - Extract and persist edges for: `Case -> Constitutional Amendment`, `Case -> Statute (U.S.C.)`, `Case -> Regulation (C.F.R.)`, `Case -> Federal Rule`, `Case -> Prior Case`.
   - Accept strict extraction payloads with either:
@@ -38,8 +37,6 @@ This compiler turns an opinion into citation-anchored ontology artifacts in an O
   - Determinism/idempotency remains required: same inputs produce no structural drift.
 - Governing verification commands:
   - `cd /Users/ronaldchapman/Desktop/Acquittify && PYTHONPATH=. pytest -q tests/ontology`
-  - `cd /Users/ronaldchapman/Desktop/Acquittify && node --check AcquittifyElectron/main.js`
-  - `cd /Users/ronaldchapman/Desktop/Acquittify && node --check AcquittifyElectron/ui/app.js`
 
 ## Implemented outputs
 
