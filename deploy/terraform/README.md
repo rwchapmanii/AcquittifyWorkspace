@@ -29,6 +29,10 @@ Important auth settings:
 Prerequisite: private subnets must have outbound access (NAT gateway or
 VPC endpoints) for pulling images and writing logs.
 
+OpenClaw note: `llm_base_url` must be reachable from ECS tasks. For hosted ECS,
+do not use `127.0.0.1`; use a private DNS/tunnel endpoint and set
+`llm_api_key_secret_arn` when gateway auth requires a token.
+
 1. Copy and edit `terraform.tfvars.example`:
 
 ```bash

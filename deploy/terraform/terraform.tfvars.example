@@ -33,14 +33,16 @@ dropbox_app_key_secret_arn = ""
 dropbox_app_secret_secret_arn = ""
 dropbox_team_member_id_secret_arn = ""
 openai_api_key_secret_arn = ""
+# OpenClaw gateway token secret ARN (required when gateway auth mode is token)
 llm_api_key_secret_arn = ""
 courtlistener_api_token_secret_arn = ""
 
 # LLM/OpenClaw provider config
-llm_model = "openclaw"
-agent_model = "openclaw"
-openclaw_agent_id = "main"
-llm_base_url = ""
+llm_model = "openclaw:acquittify"
+agent_model = "openclaw:acquittify"
+openclaw_agent_id = "acquittify"
+# Must be reachable from ECS tasks; do not use 127.0.0.1 unless gateway runs in-task.
+llm_base_url = "https://<private-openclaw-url>/v1/responses"
 
 # Optional app overrides
 cors_allow_origins = ["https://peregrine.example.com", "https://www.peregrine.example.com"]

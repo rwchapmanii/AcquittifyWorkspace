@@ -23,6 +23,7 @@ dropbox_app_key_secret_arn = ""
 dropbox_app_secret_secret_arn = ""
 dropbox_team_member_id_secret_arn = ""
 openai_api_key_secret_arn = ""
+# OpenClaw gateway token secret ARN (required when gateway auth mode is token)
 llm_api_key_secret_arn = ""
 
 # Optional app overrides
@@ -31,9 +32,9 @@ cookie_domain      = ".example.com"
 frontend_next_public_api_url = "https://api.example.com"
 
 # OpenClaw / LLM gateway
-llm_base_url = ""
-agent_model = "openclaw"
-openclaw_agent_id = "main"
+llm_base_url = "https://<private-openclaw-url>/v1/responses"
+agent_model = "openclaw:acquittify"
+openclaw_agent_id = "acquittify"
 
 # S3/KMS controls
 s3_enable_bucket_versioning = false
