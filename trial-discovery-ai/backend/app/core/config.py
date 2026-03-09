@@ -1,6 +1,6 @@
 from functools import lru_cache
 from pathlib import Path
-from pydantic import Field
+from pydantic import AliasChoices, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 _ENV_PATH = Path(__file__).resolve().parents[2] / ".env"
@@ -39,10 +39,35 @@ class Settings(BaseSettings):
     openai_api_key: str | None = Field(default=None, alias="OPENAI_API_KEY")
     redis_url: str | None = Field(default=None, alias="REDIS_URL")
     cors_allow_origins: str | None = Field(default=None, alias="CORS_ALLOW_ORIGINS")
-    llm_base_url: str | None = Field(default=None, alias="LLM_BASE_URL")
-    llm_api_key: str | None = Field(default=None, alias="LLM_API_KEY")
-    llm_model: str = Field(default="acquittify-qwen", alias="LLM_MODEL")
-    agent_model: str = Field(default="openclaw", alias="AGENT_MODEL")
+    llm_base_url: str | None = Field(
+        default=None,
+        validation_alias=AliasChoices(
+            "LLM_BASE_URL",
+            "OPENCLAW_BASE_URL",
+            "OPENAI_BASE_URL",
+        ),
+    )
+    llm_api_key: str | None = Field(
+        default=None,
+        validation_alias=AliasChoices(
+            "LLM_API_KEY",
+            "OPENCLAW_API_KEY",
+        ),
+    )
+    llm_model: str = Field(
+        default="acquittify-qwen",
+        validation_alias=AliasChoices(
+            "LLM_MODEL",
+            "OPENCLAW_MODEL",
+        ),
+    )
+    agent_model: str = Field(
+        default="openclaw",
+        validation_alias=AliasChoices(
+            "AGENT_MODEL",
+            "OPENCLAW_AGENT_MODEL",
+        ),
+    )
     openclaw_agent_id: str = Field(default="main", alias="OPENCLAW_AGENT_ID")
     llm_repair_model: str = Field(default="acquittify-qwen", alias="LLM_REPAIR_MODEL")
     embedding_base_url: str | None = Field(default=None, alias="EMBEDDING_BASE_URL")

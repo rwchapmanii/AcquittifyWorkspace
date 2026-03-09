@@ -53,7 +53,6 @@ def get_matter_ontology(
         graph = build_matter_ontology_graph(
             session=session,
             matter_id=str(matter.id),
-            user_id=auth.user.id,
             max_documents=max_documents,
             include_statement_nodes=include_statement_nodes,
             include_evidence_nodes=include_evidence_nodes,

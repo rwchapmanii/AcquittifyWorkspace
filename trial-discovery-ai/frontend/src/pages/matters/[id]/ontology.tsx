@@ -400,10 +400,12 @@ export default function MatterOntologyPage() {
   const networkRef = useRef<any>(null);
   const graphDataRef = useRef<{ nodes: any; edges: any } | null>(null);
   const settleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const interactionSettleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hideHoverTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const resizeRafRef = useRef<number | null>(null);
   const suppressClickUntilRef = useRef(0);
   const draggingNodeRef = useRef(false);
+  const keepPhysicsLiveRef = useRef(false);
   const renderSequenceRef = useRef(0);
   const hasRenderedRef = useRef(false);
   const lastProjectionSignatureRef = useRef("");
@@ -565,6 +567,10 @@ export default function MatterOntologyPage() {
       clearTimeout(hideHoverTimerRef.current);
       hideHoverTimerRef.current = null;
     }
+    if (interactionSettleTimerRef.current) {
+      clearTimeout(interactionSettleTimerRef.current);
+      interactionSettleTimerRef.current = null;
+    }
     setHoverCard(null);
   }, []);
 
@@ -633,7 +639,7 @@ export default function MatterOntologyPage() {
           hoverConnectedEdges: true,
           tooltipDelay: 1000000000,
           keyboard: true,
-          zoomSpeed: 0.65,
+          zoomSpeed: 0.22,
           zoomView: true,
           dragView: true,
           dragNodes: true,
@@ -736,7 +742,6 @@ export default function MatterOntologyPage() {
         try {
           network.setSize("100%", "100%");
           network.redraw();
-          fitGraphToViewport(false);
         } catch {
           // ignore
         }
@@ -746,6 +751,10 @@ export default function MatterOntologyPage() {
     network.on("dragStart", (params: { nodes?: string[] }) => {
       draggingNodeRef.current = Array.isArray(params.nodes) && params.nodes.length > 0;
       closeHoverCard();
+      if (interactionSettleTimerRef.current) {
+        clearTimeout(interactionSettleTimerRef.current);
+        interactionSettleTimerRef.current = null;
+      }
       try {
         network.setOptions({ physics: { enabled: true, stabilization: false } });
       } catch {
@@ -756,14 +765,16 @@ export default function MatterOntologyPage() {
     network.on("dragEnd", () => {
       if (draggingNodeRef.current) {
         suppressClickUntilRef.current = Date.now() + 260;
-        setTimeout(() => {
-          try {
-            network.setOptions({ physics: { enabled: false } });
-            network.stopSimulation?.();
-          } catch {
-            // ignore
-          }
-        }, 140);
+        if (!keepPhysicsLiveRef.current) {
+          interactionSettleTimerRef.current = setTimeout(() => {
+            try {
+              network.setOptions({ physics: { enabled: false } });
+              network.stopSimulation?.();
+            } catch {
+              // ignore
+            }
+          }, 680);
+        }
       }
       draggingNodeRef.current = false;
     });
@@ -910,6 +921,10 @@ export default function MatterOntologyPage() {
       const nodeCount = renderNodes.length;
       const tuning = buildOntologyElasticTuning(nodeCount, edgeCount);
       const useCasefileTuning = String(ontology?.meta?.source || "").toLowerCase() === "casefile_schema";
+      const keepPhysicsLive =
+        nodeCount <= (useCasefileTuning ? 950 : 1400) &&
+        edgeCount <= (useCasefileTuning ? 3000 : 5200);
+      keepPhysicsLiveRef.current = keepPhysicsLive;
       const solver = useCasefileTuning ? "forceAtlas2Based" : "barnesHut";
       const solverConfig = useCasefileTuning
         ? {
@@ -931,6 +946,10 @@ export default function MatterOntologyPage() {
 
       renderSequenceRef.current += 1;
       const renderSequence = renderSequenceRef.current;
+      if (interactionSettleTimerRef.current) {
+        clearTimeout(interactionSettleTimerRef.current);
+        interactionSettleTimerRef.current = null;
+      }
 
       graphDataRef.current.nodes.clear();
       graphDataRef.current.edges.clear();
@@ -938,6 +957,10 @@ export default function MatterOntologyPage() {
       graphDataRef.current.edges.add(visualEdges);
 
       network.setOptions({
+        interaction: {
+          hideEdgesOnDrag: edgeCount > 2200,
+          hideEdgesOnZoom: edgeCount > 2600,
+        },
         physics: {
           enabled: true,
           solver,
@@ -979,11 +1002,25 @@ export default function MatterOntologyPage() {
         if (shouldFit) {
           fitGraphToViewport(true);
         }
-        try {
-          network.setOptions({ physics: { enabled: false } });
-          network.stopSimulation?.();
-        } catch {
-          // ignore
+        if (keepPhysicsLiveRef.current) {
+          try {
+            network.setOptions({
+              physics: {
+                enabled: true,
+                stabilization: false,
+                minVelocity: useCasefileTuning ? 0.025 : Math.max(0.06, tuning.minVelocity * 0.5),
+              },
+            });
+          } catch {
+            // ignore
+          }
+        } else {
+          try {
+            network.setOptions({ physics: { enabled: false } });
+            network.stopSimulation?.();
+          } catch {
+            // ignore
+          }
         }
       };
 

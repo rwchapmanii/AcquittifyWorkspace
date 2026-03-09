@@ -13,8 +13,8 @@ from app.api.deps import get_db
 from app.db.models.document import Document
 from app.db.models.enums import DocumentStatus
 from app.db.models.matter import Matter
-from app.workers.tasks import pass1_task
 from app.services.dropbox_case_sync import sync_case_folders
+from app.services.pipelines import enqueue_bootstrap_pass
 
 router = APIRouter(prefix="/matters", tags=["matters"])
 
@@ -368,7 +368,6 @@ def review_matter_documents(
         session.query(Document.id)
         .filter(
             Document.matter_id == matter.id,
-            Document.uploaded_by_user_id == auth.user.id,
         )
         .count()
     )
@@ -382,14 +381,13 @@ def review_matter_documents(
         session.query(Document.id)
         .filter(
             Document.matter_id == matter.id,
-            Document.uploaded_by_user_id == auth.user.id,
             Document.status.in_(eligible_statuses),
         )
         .all()
     )
 
     for (doc_id,) in eligible_docs:
-        pass1_task.delay(str(doc_id))
+        enqueue_bootstrap_pass(str(doc_id))
 
     return {
         "matter_id": str(matter.id),

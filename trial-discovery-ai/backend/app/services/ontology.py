@@ -7,7 +7,6 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from hashlib import sha1
 from typing import Any
-from uuid import UUID
 
 from sqlalchemy import select, text
 from sqlalchemy.orm import Session
@@ -1209,7 +1208,6 @@ def build_matter_ontology_graph(
     *,
     session: Session,
     matter_id: str,
-    user_id: UUID | str,
     max_documents: int = 2500,
     include_statement_nodes: bool = True,
     include_evidence_nodes: bool = True,
@@ -1235,12 +1233,11 @@ def build_matter_ontology_graph(
             FROM derived.document_ingestion_metadata dim
             JOIN documents d ON d.id = dim.document_id
             WHERE dim.matter_id = :matter_id
-              AND d.uploaded_by_user_id = :user_id
             ORDER BY dim.ingested_at DESC NULLS LAST, dim.document_id
             LIMIT :limit
             """
         ),
-        {"matter_id": matter_id, "user_id": user_id, "limit": limit},
+        {"matter_id": matter_id, "limit": limit},
     ).mappings().all()
 
     token_to_documents: defaultdict[str, set[str]] = defaultdict(set)
@@ -1335,7 +1332,7 @@ def build_matter_ontology_graph(
         .join(Document, Document.id == DocumentEntity.document_id)
         .where(
             Entity.matter_id == matter_id,
-            Document.uploaded_by_user_id == user_id,
+            Document.matter_id == matter_id,
         )
         .group_by(Entity.id)
     ).all()
@@ -1424,7 +1421,7 @@ def build_matter_ontology_graph(
         .join(Entity, Entity.id == DocumentEntity.entity_id)
         .where(
             Entity.matter_id == matter_id,
-            Document.uploaded_by_user_id == user_id,
+            Document.matter_id == matter_id,
         )
     ).all()
     for relation in relations:
@@ -1457,7 +1454,7 @@ def build_matter_ontology_graph(
         .join(Document, Document.id == Exhibit.document_id)
         .where(
             Exhibit.matter_id == matter_id,
-            Document.uploaded_by_user_id == user_id,
+            Document.matter_id == matter_id,
         )
     ).all()
     for exhibit in exhibits:

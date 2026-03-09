@@ -237,6 +237,10 @@
   background: radial-gradient(circle at center, #1a1a1a 0%, #111 70%, #0d0d0d 100%);
 }
 
+.wrapEmbedded .graphContainer {
+  min-height: 0;
+}
+
 .graphContainer :global(.vis-network),
 .graphContainer :global(canvas) {
   width: 100% !important;
