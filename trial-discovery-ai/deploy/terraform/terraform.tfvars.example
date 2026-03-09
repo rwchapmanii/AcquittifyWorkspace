@@ -23,11 +23,17 @@ dropbox_app_key_secret_arn = ""
 dropbox_app_secret_secret_arn = ""
 dropbox_team_member_id_secret_arn = ""
 openai_api_key_secret_arn = ""
+llm_api_key_secret_arn = ""
 
 # Optional app overrides
 cors_allow_origins = ["https://example.com"]
 cookie_domain      = ".example.com"
 frontend_next_public_api_url = "https://api.example.com"
+
+# OpenClaw / LLM gateway
+llm_base_url = ""
+agent_model = "openclaw"
+openclaw_agent_id = "main"
 
 # S3/KMS controls
 s3_enable_bucket_versioning = false

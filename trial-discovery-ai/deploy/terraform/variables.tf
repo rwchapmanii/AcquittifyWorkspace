@@ -417,6 +417,24 @@ variable "llm_model" {
   default     = "acquittify-qwen"
 }
 
+variable "llm_base_url" {
+  description = "LLM/OpenClaw base URL (OpenAI-compatible /v1 endpoint)"
+  type        = string
+  default     = ""
+}
+
+variable "agent_model" {
+  description = "Agent model identifier used by /agent/chat"
+  type        = string
+  default     = "openclaw"
+}
+
+variable "openclaw_agent_id" {
+  description = "OpenClaw agent id sent via x-openclaw-agent-id header"
+  type        = string
+  default     = "main"
+}
+
 variable "llm_repair_model" {
   description = "LLM repair model"
   type        = string
@@ -467,6 +485,12 @@ variable "dropbox_team_member_id_secret_arn" {
 
 variable "openai_api_key_secret_arn" {
   description = "Optional OpenAI API key secret ARN"
+  type        = string
+  default     = ""
+}
+
+variable "llm_api_key_secret_arn" {
+  description = "Optional LLM/OpenClaw API key secret ARN"
   type        = string
   default     = ""
 }

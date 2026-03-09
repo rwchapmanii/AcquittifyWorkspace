@@ -33,6 +33,7 @@ locals {
     var.dropbox_app_secret_secret_arn != "" ? var.dropbox_app_secret_secret_arn : null,
     var.dropbox_team_member_id_secret_arn != "" ? var.dropbox_team_member_id_secret_arn : null,
     var.openai_api_key_secret_arn != "" ? var.openai_api_key_secret_arn : null,
+    var.llm_api_key_secret_arn != "" ? var.llm_api_key_secret_arn : null,
   ])
 }
 
