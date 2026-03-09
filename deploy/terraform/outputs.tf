@@ -77,3 +77,23 @@ output "ecr_worker_repository_url" {
 output "ecr_frontend_repository_url" {
   value = aws_ecr_repository.frontend.repository_url
 }
+
+output "openclaw_gateway_instance_id" {
+  value = var.openclaw_gateway_enabled ? aws_instance.openclaw_gateway[0].id : null
+}
+
+output "openclaw_gateway_private_ip" {
+  value = var.openclaw_gateway_enabled ? aws_instance.openclaw_gateway[0].private_ip : null
+}
+
+output "openclaw_gateway_nlb_dns_name" {
+  value = var.openclaw_gateway_enabled ? aws_lb.openclaw_internal[0].dns_name : null
+}
+
+output "openclaw_gateway_private_zone_id" {
+  value = var.openclaw_gateway_enabled ? local.openclaw_gateway_zone_id : null
+}
+
+output "openclaw_gateway_base_url" {
+  value = var.openclaw_gateway_enabled ? local.openclaw_gateway_base_url : null
+}

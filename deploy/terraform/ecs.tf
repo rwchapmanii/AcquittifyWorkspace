@@ -42,6 +42,11 @@ locals {
   worker_image          = "${aws_ecr_repository.worker.repository_url}:${var.worker_image_tag}"
   frontend_image        = "${aws_ecr_repository.frontend.repository_url}:${var.frontend_image_tag}"
   effective_agent_model = var.agent_model != "" ? var.agent_model : var.llm_model
+  effective_llm_base_url = (
+    var.llm_base_url != ""
+    ? var.llm_base_url
+    : (var.openclaw_gateway_enabled ? local.openclaw_gateway_base_url : "")
+  )
 
   api_secrets = concat(
     [
@@ -86,7 +91,7 @@ locals {
     { name = "LLM_MODEL", value = var.llm_model },
     { name = "AGENT_MODEL", value = local.effective_agent_model },
     { name = "OPENCLAW_AGENT_ID", value = var.openclaw_agent_id },
-    { name = "LLM_BASE_URL", value = var.llm_base_url },
+    { name = "LLM_BASE_URL", value = local.effective_llm_base_url },
     { name = "LLM_REPAIR_MODEL", value = var.llm_repair_model },
     { name = "DROPBOX_ROOT_PATH", value = var.dropbox_case_root_path },
     { name = "DROPBOX_CASE_ROOT_PATH", value = var.dropbox_case_root_link },
@@ -102,7 +107,7 @@ locals {
     { name = "LLM_MODEL", value = var.llm_model },
     { name = "AGENT_MODEL", value = local.effective_agent_model },
     { name = "OPENCLAW_AGENT_ID", value = var.openclaw_agent_id },
-    { name = "LLM_BASE_URL", value = var.llm_base_url },
+    { name = "LLM_BASE_URL", value = local.effective_llm_base_url },
     { name = "LLM_REPAIR_MODEL", value = var.llm_repair_model },
     { name = "DROPBOX_ROOT_PATH", value = var.dropbox_case_root_path },
     { name = "DROPBOX_CASE_ROOT_PATH", value = var.dropbox_case_root_link },

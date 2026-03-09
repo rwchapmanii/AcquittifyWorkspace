@@ -602,3 +602,75 @@ variable "caselaw_job_only_courts" {
   type        = string
   default     = ""
 }
+
+variable "openclaw_gateway_enabled" {
+  description = "Enable internal OpenClaw gateway infrastructure (EC2 + internal NLB + private DNS)"
+  type        = bool
+  default     = false
+}
+
+variable "openclaw_gateway_instance_type" {
+  description = "Instance type for the OpenClaw gateway host"
+  type        = string
+  default     = "t3.small"
+}
+
+variable "openclaw_gateway_subnet_id" {
+  description = "Optional subnet ID override for OpenClaw gateway EC2 (defaults to first private subnet)"
+  type        = string
+  default     = ""
+}
+
+variable "openclaw_gateway_ami_id" {
+  description = "Optional AMI ID override for OpenClaw gateway EC2 (defaults to latest Amazon Linux 2023)"
+  type        = string
+  default     = ""
+}
+
+variable "openclaw_gateway_node_version" {
+  description = "Node.js version installed on the OpenClaw gateway host"
+  type        = string
+  default     = "v22.14.0"
+}
+
+variable "openclaw_gateway_openclaw_version" {
+  description = "OpenClaw npm version installed on the OpenClaw gateway host"
+  type        = string
+  default     = "2026.3.8"
+}
+
+variable "openclaw_gateway_bind" {
+  description = "OpenClaw gateway bind mode on EC2 (loopback|lan|tailnet|auto|custom)"
+  type        = string
+  default     = "lan"
+}
+
+variable "openclaw_gateway_port" {
+  description = "OpenClaw gateway TCP port"
+  type        = number
+  default     = 18789
+}
+
+variable "openclaw_gateway_agent_id" {
+  description = "OpenClaw dedicated agent ID used by Acquittify traffic"
+  type        = string
+  default     = "acquittify"
+}
+
+variable "openclaw_private_zone_name" {
+  description = "Private Route53 zone name used for OpenClaw internal DNS"
+  type        = string
+  default     = "acquittify.internal"
+}
+
+variable "openclaw_private_zone_id" {
+  description = "Optional existing private Route53 hosted zone ID for OpenClaw DNS (leave empty to create)"
+  type        = string
+  default     = ""
+}
+
+variable "openclaw_gateway_dns_record" {
+  description = "Record name in the private OpenClaw zone (for example openclaw-gateway)"
+  type        = string
+  default     = "openclaw-gateway"
+}

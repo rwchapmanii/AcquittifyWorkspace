@@ -1,0 +1,141 @@
+#!/bin/bash
+set -euxo pipefail
+exec > >(tee /var/log/openclaw-bootstrap.log | logger -t openclaw-bootstrap -s 2>/dev/console) 2>&1
+
+if command -v dnf >/dev/null 2>&1; then
+  dnf install -y awscli jq docker git curl tar xz
+else
+  yum install -y awscli jq docker git curl tar xz
+fi
+
+NODE_VER="${node_version}"
+NODE_ARCH="x64"
+cd /tmp
+curl -fsSLO "https://nodejs.org/dist/$${NODE_VER}/node-$${NODE_VER}-linux-$${NODE_ARCH}.tar.xz"
+tar -xJf "node-$${NODE_VER}-linux-$${NODE_ARCH}.tar.xz" -C /opt
+ln -sfn "/opt/node-$${NODE_VER}-linux-$${NODE_ARCH}" /opt/node-current
+ln -sfn /opt/node-current/bin/node /usr/local/bin/node
+ln -sfn /opt/node-current/bin/npm /usr/local/bin/npm
+ln -sfn /opt/node-current/bin/npx /usr/local/bin/npx
+
+npm install -g "openclaw@${openclaw_version}"
+ln -sfn /opt/node-current/bin/openclaw /usr/local/bin/openclaw
+
+TOKEN="$(aws secretsmanager get-secret-value --region "${aws_region}" --secret-id "${token_secret_arn}" --query SecretString --output text)"
+OPENAI_KEY="$(aws secretsmanager get-secret-value --region "${aws_region}" --secret-id "${openai_secret_arn}" --query SecretString --output text)"
+
+install -d -m 700 -o ec2-user -g ec2-user /home/ec2-user/.openclaw
+install -d -m 700 -o ec2-user -g ec2-user /home/ec2-user/.openclaw/workspace-acquittify
+
+cat > /home/ec2-user/.openclaw/openclaw.json <<JSON
+{
+  "agents": {
+    "defaults": {
+      "maxConcurrent": 4,
+      "model": {
+        "primary": "openai/gpt-5.1-codex"
+      },
+      "models": {
+        "openai/gpt-5.1-codex": {
+          "alias": "GPT"
+        }
+      },
+      "workspace": "/home/ec2-user/.openclaw/workspace-acquittify"
+    },
+    "list": [
+      {
+        "id": "${openclaw_agent_id}",
+        "default": true,
+        "workspace": "/home/ec2-user/.openclaw/workspace-acquittify",
+        "identity": {
+          "name": "Acquittify Agent"
+        },
+        "sandbox": {
+          "mode": "all",
+          "scope": "agent",
+          "workspaceAccess": "none"
+        },
+        "tools": {
+          "deny": [
+            "read",
+            "write",
+            "edit",
+            "apply_patch",
+            "exec",
+            "process",
+            "browser",
+            "canvas",
+            "nodes",
+            "cron",
+            "gateway",
+            "image",
+            "memory_get",
+            "memory_search"
+          ]
+        }
+      }
+    ]
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "$${TOKEN}"
+    },
+    "bind": "${gateway_bind}",
+    "mode": "local",
+    "port": ${gateway_port},
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "http": {
+      "endpoints": {
+        "responses": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "tools": {
+    "elevated": {
+      "enabled": false
+    }
+  }
+}
+JSON
+chown ec2-user:ec2-user /home/ec2-user/.openclaw/openclaw.json
+chmod 600 /home/ec2-user/.openclaw/openclaw.json
+
+cat > /etc/openclaw.env <<ENV
+OPENAI_API_KEY=$${OPENAI_KEY}
+HOME=/home/ec2-user
+ENV
+chmod 600 /etc/openclaw.env
+
+systemctl enable --now docker
+usermod -aG docker ec2-user
+
+cat > /etc/systemd/system/openclaw-gateway.service <<UNIT
+[Unit]
+Description=OpenClaw Gateway
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+EnvironmentFile=/etc/openclaw.env
+WorkingDirectory=/home/ec2-user
+ExecStart=/usr/local/bin/openclaw gateway run --allow-unconfigured
+Restart=always
+RestartSec=5
+KillSignal=SIGINT
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target
+UNIT
+
+systemctl daemon-reload
+systemctl enable --now openclaw-gateway
