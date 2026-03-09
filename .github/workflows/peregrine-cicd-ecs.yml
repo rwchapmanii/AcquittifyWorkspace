@@ -20,18 +20,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
-      AWS_REGION: ${{ vars.AWS_REGION }}
-      ECR_API_REPOSITORY: ${{ vars.ECR_API_REPOSITORY }}
-      ECR_WORKER_REPOSITORY: ${{ vars.ECR_WORKER_REPOSITORY }}
-      ECR_FRONTEND_REPOSITORY: ${{ vars.ECR_FRONTEND_REPOSITORY }}
-      ECS_CLUSTER: ${{ vars.ECS_CLUSTER }}
-      ECS_API_SERVICE: ${{ vars.ECS_API_SERVICE }}
-      ECS_WORKER_SERVICE: ${{ vars.ECS_WORKER_SERVICE }}
-      ECS_FRONTEND_SERVICE: ${{ vars.ECS_FRONTEND_SERVICE }}
-      NEXT_PUBLIC_PEREGRINE_API_URL: ${{ vars.NEXT_PUBLIC_PEREGRINE_API_URL }}
-      NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME: ${{ vars.NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME }}
-      NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME: ${{ vars.NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME }}
-      AWS_ROLE_TO_ASSUME: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+      AWS_REGION: ${{ vars.AWS_REGION || 'us-east-1' }}
+      ECR_API_REPOSITORY: ${{ vars.ECR_API_REPOSITORY || 'acquittify-prod-api' }}
+      ECR_WORKER_REPOSITORY: ${{ vars.ECR_WORKER_REPOSITORY || 'acquittify-prod-worker' }}
+      ECR_FRONTEND_REPOSITORY: ${{ vars.ECR_FRONTEND_REPOSITORY || 'acquittify-prod-frontend' }}
+      ECS_CLUSTER: ${{ vars.ECS_CLUSTER || 'acquittify-prod-cluster' }}
+      ECS_API_SERVICE: ${{ vars.ECS_API_SERVICE || 'acquittify-prod-api' }}
+      ECS_WORKER_SERVICE: ${{ vars.ECS_WORKER_SERVICE || 'acquittify-prod-worker' }}
+      ECS_FRONTEND_SERVICE: ${{ vars.ECS_FRONTEND_SERVICE || 'acquittify-prod-frontend' }}
+      NEXT_PUBLIC_PEREGRINE_API_URL: ${{ vars.NEXT_PUBLIC_PEREGRINE_API_URL || 'https://api.acquittify.ai' }}
+      NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME: ${{ vars.NEXT_PUBLIC_PEREGRINE_CSRF_COOKIE_NAME || 'peregrine_csrf' }}
+      NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME: ${{ vars.NEXT_PUBLIC_PEREGRINE_CSRF_HEADER_NAME || 'X-CSRF-Token' }}
+      AWS_ROLE_TO_ASSUME: ${{ vars.AWS_ROLE_TO_ASSUME || 'arn:aws:iam::444284889609:role/GitHubActionsAcquittifyWorkspaceDeployRole' }}
 
     steps:
       - name: Checkout repository
@@ -42,16 +42,13 @@ jobs:
         run: |
           set -euo pipefail
 
-          if [ -z "${AWS_REGION}" ]; then
-            echo "AWS_REGION is not set in GitHub Variables."
-            exit 1
-          fi
           if [ -z "${AWS_ROLE_TO_ASSUME}" ]; then
-            echo "AWS_ROLE_TO_ASSUME is not set in GitHub Secrets."
+            echo "AWS_ROLE_TO_ASSUME is empty."
             exit 1
           fi
 
-          required_vars=(
+          required_envs=(
+            AWS_REGION
             ECR_API_REPOSITORY
             ECR_WORKER_REPOSITORY
             ECR_FRONTEND_REPOSITORY
@@ -62,9 +59,9 @@ jobs:
             NEXT_PUBLIC_PEREGRINE_API_URL
           )
 
-          for v in "${required_vars[@]}"; do
+          for v in "${required_envs[@]}"; do
             if [ -z "${!v:-}" ]; then
-              echo "${v} is not set in GitHub Variables."
+              echo "${v} is empty."
               exit 1
             fi
           done
