@@ -39,6 +39,7 @@ uvicorn==0.30.6
 google-api-python-client==2.154.0
 google-auth==2.35.0
 google-auth-oauthlib==1.2.1
+openai==1.35.14
 
 chromadb==0.4.9
 sentence-transformers==2.2.2
