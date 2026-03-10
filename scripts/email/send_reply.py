@@ -17,6 +17,21 @@ SECRETS_DIR = Path("~/.openclaw/secrets").expanduser()
 TOKEN_TEMPLATE = "gmail_token_{email}.json"
 
 
+def append_signature(text: str) -> str:
+    sig_path = Path("~/.openclaw/email_style/signature.txt").expanduser()
+    if not sig_path.exists():
+        return text
+    signature = sig_path.read_text(encoding="utf-8").strip()
+    if not signature:
+        return text
+    if signature in text:
+        return text
+    return text.rstrip() + "
+
+" + signature + "
+"
+
+
 def load_credentials(email: str) -> Credentials:
     token_path = SECRETS_DIR / TOKEN_TEMPLATE.format(email=email.replace("@", "_"))
     token_data = json.loads(token_path.read_text(encoding="utf-8"))
@@ -34,7 +49,7 @@ def load_credentials(email: str) -> Credentials:
 
 def send(email: str, queue_path: Path, body_path: Path) -> None:
     queue_entry = json.loads(queue_path.read_text(encoding="utf-8"))
-    body = body_path.read_text(encoding="utf-8")
+    body = append_signature(body_path.read_text(encoding="utf-8"))
     creds = load_credentials(email)
     service = build("gmail", "v1", credentials=creds, cache_discovery=False)
 

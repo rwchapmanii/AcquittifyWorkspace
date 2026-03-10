@@ -23,6 +23,21 @@ DRAFT_TEXT_DIR = STYLE_DIR / "drafts"
 DEFAULT_MODEL = os.getenv("EMAIL_DRAFT_MODEL", "gpt-4o-mini")
 
 
+def append_signature(text: str) -> str:
+    sig_path = STYLE_DIR / "signature.txt"
+    if not sig_path.exists():
+        return text
+    signature = sig_path.read_text(encoding="utf-8").strip()
+    if not signature:
+        return text
+    if signature in text:
+        return text
+    return text.rstrip() + "
+
+" + signature + "
+"
+
+
 def load_profile() -> dict:
     return json.loads(PROFILE_JSON.read_text(encoding="utf-8"))
 
@@ -111,6 +126,7 @@ def main() -> int:
     queue_entry = load_queue_entry(Path(args.queue))
     prompt = build_style_prompt(profile)
     draft_text = call_openai(prompt, queue_entry.get("summary", ""), queue_entry.get("style_examples", []))
+    draft_text = append_signature(draft_text)
     DRAFT_TEXT_DIR.mkdir(parents=True, exist_ok=True)
     draft_path = DRAFT_TEXT_DIR / f"draft_{queue_entry['message_id']}.txt"
     draft_path.write_text(draft_text, encoding="utf-8")
