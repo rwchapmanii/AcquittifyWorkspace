@@ -20,7 +20,9 @@ COPY app ./app
 COPY scripts ./scripts
 
 RUN python -m pip install --upgrade pip \
-    && pip install .
+    && pip install . \
+    && python -m pip install --no-cache-dir "cryptography>=43.0.0" \
+    && python -c "import cryptography"
 
 EXPOSE 8002
 
