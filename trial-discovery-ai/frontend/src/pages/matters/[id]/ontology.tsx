@@ -937,6 +937,12 @@ export default function MatterOntologyPage() {
           },
         };
       });
+      const uniqueVisualNodesMap = new Map<string, (typeof visualNodes)[number]>();
+      visualNodes.forEach((node) => {
+        if (!node.id) return;
+        uniqueVisualNodesMap.set(String(node.id), node);
+      });
+      const uniqueVisualNodes = Array.from(uniqueVisualNodesMap.values());
 
       const visualEdges = allEdgeRows.map((row, idx) => ({
         id: `${row.source}->${row.target}-${idx}`,
@@ -953,8 +959,8 @@ export default function MatterOntologyPage() {
       }));
 
       const renderNodes =
-        visualNodes.length > 0
-          ? visualNodes
+        uniqueVisualNodes.length > 0
+          ? uniqueVisualNodes
           : [
               {
                 id: "__empty_ontology_graph__",
@@ -976,14 +982,27 @@ export default function MatterOntologyPage() {
       const nodeCount = renderNodes.length;
       const tuning = buildOntologyElasticTuning(nodeCount, edgeCount);
       const isCasefileView = !isCaselawView;
+      const useCasefileRepulsion = isCasefileView && nodeCount <= 165;
       const useCasefileForceAtlas =
-        isCasefileView && nodeCount >= 180 && edgeCount <= 1600;
+        isCasefileView && !useCasefileRepulsion && nodeCount >= 180 && edgeCount <= 1600;
       const keepPhysicsLive =
         nodeCount <= (isCasefileView ? 1200 : 1400) &&
         edgeCount <= (isCasefileView ? 3500 : 5200);
       keepPhysicsLiveRef.current = keepPhysicsLive;
-      const solver = useCasefileForceAtlas ? "forceAtlas2Based" : "barnesHut";
-      const solverConfig = useCasefileForceAtlas
+      const solver = useCasefileRepulsion
+        ? "repulsion"
+        : useCasefileForceAtlas
+          ? "forceAtlas2Based"
+          : "barnesHut";
+      const solverConfig = useCasefileRepulsion
+        ? {
+            nodeDistance: Math.round(Math.max(168, tuning.springLength * 1.05)),
+            centralGravity: 0.024,
+            springLength: Math.round(Math.max(138, tuning.springLength * 0.88)),
+            springConstant: Math.max(0.034, tuning.springConstant * 1.18),
+            damping: Math.min(0.42, tuning.damping + 0.04),
+          }
+        : useCasefileForceAtlas
         ? {
             gravitationalConstant: -72,
             centralGravity: 0.011,
@@ -1018,10 +1037,20 @@ export default function MatterOntologyPage() {
         interactionSettleTimerRef.current = null;
       }
 
-      graphDataRef.current.nodes.clear();
-      graphDataRef.current.edges.clear();
-      graphDataRef.current.nodes.add(renderNodes);
-      graphDataRef.current.edges.add(visualEdges);
+      try {
+        graphDataRef.current.nodes.clear();
+        graphDataRef.current.edges.clear();
+        graphDataRef.current.nodes.add(renderNodes);
+        graphDataRef.current.edges.add(visualEdges);
+      } catch (graphApplyError) {
+        const message =
+          graphApplyError instanceof Error ? graphApplyError.message : "unknown vis-network error";
+        setError(`Unable to render ontology graph: ${message}`);
+        setStatus("Ontology graph render failed.");
+        setRefreshTone("error");
+        setRefreshText(`Render error: ${message}`);
+        return;
+      }
 
       network.setOptions({
         interaction: {
@@ -1041,7 +1070,9 @@ export default function MatterOntologyPage() {
           },
           [solver]: solverConfig,
           minVelocity: isCasefileView
-            ? useCasefileForceAtlas
+            ? useCasefileRepulsion
+              ? 0.06
+              : useCasefileForceAtlas
               ? 0.04
               : 0.08
             : tuning.minVelocity,
@@ -1083,7 +1114,9 @@ export default function MatterOntologyPage() {
                 enabled: true,
                 stabilization: false,
                 minVelocity: isCasefileView
-                  ? useCasefileForceAtlas
+                  ? useCasefileRepulsion
+                    ? 0.035
+                    : useCasefileForceAtlas
                     ? 0.025
                     : 0.055
                   : Math.max(0.06, tuning.minVelocity * 0.5),
