@@ -975,13 +975,15 @@ export default function MatterOntologyPage() {
       const edgeCount = visualEdges.length;
       const nodeCount = renderNodes.length;
       const tuning = buildOntologyElasticTuning(nodeCount, edgeCount);
-      const useCasefileTuning = !isCaselawView;
+      const isCasefileView = !isCaselawView;
+      const useCasefileForceAtlas =
+        isCasefileView && nodeCount >= 180 && edgeCount <= 1600;
       const keepPhysicsLive =
-        nodeCount <= (useCasefileTuning ? 950 : 1400) &&
-        edgeCount <= (useCasefileTuning ? 3000 : 5200);
+        nodeCount <= (isCasefileView ? 1200 : 1400) &&
+        edgeCount <= (isCasefileView ? 3500 : 5200);
       keepPhysicsLiveRef.current = keepPhysicsLive;
-      const solver = useCasefileTuning ? "forceAtlas2Based" : "barnesHut";
-      const solverConfig = useCasefileTuning
+      const solver = useCasefileForceAtlas ? "forceAtlas2Based" : "barnesHut";
+      const solverConfig = useCasefileForceAtlas
         ? {
             gravitationalConstant: -72,
             centralGravity: 0.011,
@@ -991,12 +993,22 @@ export default function MatterOntologyPage() {
             avoidOverlap: Math.max(0.62, tuning.avoidOverlap),
           }
         : {
-            gravitationalConstant: tuning.gravitationalConstant,
-            centralGravity: tuning.centralGravity,
-            springLength: tuning.springLength,
+            gravitationalConstant: isCasefileView
+              ? Math.round(tuning.gravitationalConstant * 0.92)
+              : tuning.gravitationalConstant,
+            centralGravity: isCasefileView
+              ? Math.max(0.016, Math.min(0.05, tuning.centralGravity * 0.88))
+              : tuning.centralGravity,
+            springLength: isCasefileView
+              ? Math.round(Math.max(164, tuning.springLength * 1.08))
+              : tuning.springLength,
             springConstant: tuning.springConstant,
-            damping: tuning.damping,
-            avoidOverlap: tuning.avoidOverlap,
+            damping: isCasefileView
+              ? Math.min(0.38, tuning.damping + 0.03)
+              : tuning.damping,
+            avoidOverlap: isCasefileView
+              ? Math.max(0.52, tuning.avoidOverlap)
+              : tuning.avoidOverlap,
           };
 
       renderSequenceRef.current += 1;
@@ -1021,14 +1033,20 @@ export default function MatterOntologyPage() {
           solver,
           stabilization: {
             enabled: true,
-            iterations: useCasefileTuning ? Math.max(360, tuning.stabilizationIterations) : tuning.stabilizationIterations,
+            iterations: isCasefileView
+              ? Math.max(360, tuning.stabilizationIterations)
+              : tuning.stabilizationIterations,
             updateInterval: 20,
             fit: false,
           },
           [solver]: solverConfig,
-          minVelocity: useCasefileTuning ? 0.04 : tuning.minVelocity,
-          maxVelocity: useCasefileTuning ? 38 : 42,
-          timestep: useCasefileTuning ? 0.42 : 0.5,
+          minVelocity: isCasefileView
+            ? useCasefileForceAtlas
+              ? 0.04
+              : 0.08
+            : tuning.minVelocity,
+          maxVelocity: isCasefileView ? 38 : 42,
+          timestep: isCasefileView ? 0.42 : 0.5,
           adaptiveTimestep: true,
         },
       });
@@ -1037,6 +1055,7 @@ export default function MatterOntologyPage() {
       network.redraw();
 
       const projectionSignature = [
+        matterId,
         ontologyView,
         String(renderNodes.length),
         String(visualEdges.length),
@@ -1063,7 +1082,11 @@ export default function MatterOntologyPage() {
               physics: {
                 enabled: true,
                 stabilization: false,
-                minVelocity: useCasefileTuning ? 0.025 : Math.max(0.06, tuning.minVelocity * 0.5),
+                minVelocity: isCasefileView
+                  ? useCasefileForceAtlas
+                    ? 0.025
+                    : 0.055
+                  : Math.max(0.06, tuning.minVelocity * 0.5),
               },
             });
           } catch {
@@ -1139,6 +1162,7 @@ export default function MatterOntologyPage() {
     caselawKeywordTerms,
     caselawCaseTerms,
     caselawCircuit,
+    matterId,
   ]);
 
   const hoverNode = hoverCard ? nodeById.get(hoverCard.nodeId) || null : null;
