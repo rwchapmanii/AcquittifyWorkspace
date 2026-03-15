@@ -951,6 +951,7 @@ def process_court_date(
         "ontology_units_inserted": 0,
         "skipped_non_criminal": 0,
         "errors": 0,
+        "error_samples": [],
     }
 
     try:
@@ -960,82 +961,101 @@ def process_court_date(
             page_size=config.page_size,
             max_pages=config.max_pages_per_query,
         ):
-            step["scanned"] += 1
+            try:
+                step["scanned"] += 1
 
-            cluster_id = int(item.get("cluster_id") or 0)
-            if not cluster_id:
-                continue
-            case_id = f"case.courtlistener.cluster.{cluster_id}"
-            case_name = str(item.get("caseName") or item.get("case_name") or "").strip() or case_id
-            court_name = str(item.get("court") or court_id).strip() or court_id
-            date_filed = str(item.get("dateFiled") or target_date.isoformat()).strip()
-            docket_number = str(item.get("docketNumber") or "").strip()
-            citations = extract_citations(item)
+                cluster_id = int(item.get("cluster_id") or 0)
+                if not cluster_id:
+                    continue
+                case_id = f"case.courtlistener.cluster.{cluster_id}"
+                case_name = str(item.get("caseName") or item.get("case_name") or "").strip() or case_id
+                court_name = str(item.get("court") or court_id).strip() or court_id
+                date_filed = str(item.get("dateFiled") or target_date.isoformat()).strip()
+                docket_number = str(item.get("docketNumber") or "").strip()
+                citations = extract_citations(item)
 
-            opinions = item.get("opinions") or []
-            opinion_id = None
-            if isinstance(opinions, list) and opinions:
-                first = opinions[0]
-                if isinstance(first, dict):
-                    opinion_id = first.get("id")
+                opinions = item.get("opinions") or []
+                opinion_id = None
+                if isinstance(opinions, list) and opinions:
+                    first = opinions[0]
+                    if isinstance(first, dict):
+                        opinion_id = first.get("id")
 
-            detail = client.fetch_opinion_detail(int(opinion_id)) if opinion_id else None
-            opinion_text = normalize_text(opinion_text_from_detail(detail) or opinion_text_from_search_item(item))
-            case_type, reason = classify_case_type(case_name, docket_number, citations, opinion_text)
-            if not include_case(case_type, config.include_quasi_criminal):
-                step["skipped_non_criminal"] += 1
-                continue
+                detail = client.fetch_opinion_detail(int(opinion_id)) if opinion_id else None
+                opinion_text = normalize_text(opinion_text_from_detail(detail) or opinion_text_from_search_item(item))
+                case_type, reason = classify_case_type(case_name, docket_number, citations, opinion_text)
+                if not include_case(case_type, config.include_quasi_criminal):
+                    step["skipped_non_criminal"] += 1
+                    continue
 
-            taxonomy_codes = taxonomy_codes_for(case_type)
-            absolute_url = to_absolute_courtlistener_url(str(item.get("absolute_url") or ""))
-            case_summary, essential_holding = build_case_summary_and_holding(case_name, opinion_text)
-            fm = case_frontmatter(
-                case_id=case_id,
-                case_name=case_name,
-                court_id=court_id,
-                court_name=court_name,
-                date_filed=date_filed,
-                citations=citations,
-                case_type=case_type,
-                reason=reason,
-                cluster_id=cluster_id,
-                opinion_id=int(opinion_id) if opinion_id else None,
-                absolute_url=absolute_url,
-                taxonomy_codes=taxonomy_codes,
-                taxonomy_version="2026.01",
-                case_summary=case_summary,
-                essential_holding=essential_holding,
-            )
-            payload = {
-                "case_id": case_id,
-                "courtlistener_cluster_id": cluster_id,
-                "courtlistener_opinion_id": int(opinion_id) if opinion_id else None,
-                "court_id": court_id,
-                "court_name": court_name,
-                "date_filed": date_filed if parse_iso_date(date_filed) else None,
-                "docket_number": docket_number,
-                "case_name": case_name,
-                "case_type": case_type,
-                "taxonomy_codes": taxonomy_codes,
-                "taxonomy_version": "2026.01",
-                "frontmatter_yaml": frontmatter_to_yaml(fm),
-                "frontmatter_json": fm,
-                "opinion_text": opinion_text,
-                "opinion_text_sha256": hashlib.sha256(opinion_text.encode("utf-8")).hexdigest() if opinion_text else "",
-                "source_payload": item,
-            }
-
-            inserted = CaseStore.insert_case(conn, payload)
-            if inserted:
-                step["inserted"] += 1
-                step["ontology_units_inserted"] += CaseStore.insert_legal_units(
-                    conn,
-                    payload=payload,
-                    ingestion_batch_id=ingestion_batch_id,
+                taxonomy_codes = taxonomy_codes_for(case_type)
+                absolute_url = to_absolute_courtlistener_url(str(item.get("absolute_url") or ""))
+                case_summary, essential_holding = build_case_summary_and_holding(case_name, opinion_text)
+                fm = case_frontmatter(
+                    case_id=case_id,
+                    case_name=case_name,
+                    court_id=court_id,
+                    court_name=court_name,
+                    date_filed=date_filed,
+                    citations=citations,
+                    case_type=case_type,
+                    reason=reason,
+                    cluster_id=cluster_id,
+                    opinion_id=int(opinion_id) if opinion_id else None,
+                    absolute_url=absolute_url,
+                    taxonomy_codes=taxonomy_codes,
+                    taxonomy_version="2026.01",
+                    case_summary=case_summary,
+                    essential_holding=essential_holding,
                 )
+                payload = {
+                    "case_id": case_id,
+                    "courtlistener_cluster_id": cluster_id,
+                    "courtlistener_opinion_id": int(opinion_id) if opinion_id else None,
+                    "court_id": court_id,
+                    "court_name": court_name,
+                    "date_filed": date_filed if parse_iso_date(date_filed) else None,
+                    "docket_number": docket_number,
+                    "case_name": case_name,
+                    "case_type": case_type,
+                    "taxonomy_codes": taxonomy_codes,
+                    "taxonomy_version": "2026.01",
+                    "frontmatter_yaml": frontmatter_to_yaml(fm),
+                    "frontmatter_json": fm,
+                    "opinion_text": opinion_text,
+                    "opinion_text_sha256": hashlib.sha256(opinion_text.encode("utf-8")).hexdigest() if opinion_text else "",
+                    "source_payload": item,
+                }
 
-    except Exception:
+                inserted = CaseStore.insert_case(conn, payload)
+                if inserted:
+                    step["inserted"] += 1
+                    step["ontology_units_inserted"] += CaseStore.insert_legal_units(
+                        conn,
+                        payload=payload,
+                        ingestion_batch_id=ingestion_batch_id,
+                    )
+            except Exception as exc:  # noqa: BLE001
+                try:
+                    conn.rollback()
+                except Exception:  # noqa: BLE001
+                    pass
+                step["errors"] += 1
+                samples = step.get("error_samples") or []
+                if len(samples) < 5:
+                    samples.append(str(exc)[:300])
+                    step["error_samples"] = samples
+
+    except Exception as exc:  # noqa: BLE001
+        try:
+            conn.rollback()
+        except Exception:  # noqa: BLE001
+            pass
         step["errors"] += 1
+        samples = step.get("error_samples") or []
+        if len(samples) < 5:
+            samples.append(str(exc)[:300])
+            step["error_samples"] = samples
 
     return step
 

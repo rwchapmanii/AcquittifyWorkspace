@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-03-10T00:50:05.736648+00:00",
+  "lookback_hours": 24,
+  "recent_run_count": 2,
+  "recent_totals": {
+    "scanned": 92,
+    "inserted": 0,
+    "skipped_non_criminal": 92,
+    "insert_rate": 0.0,
+    "skip_ratio": 1.0
+  },
+  "consecutive_zero_insert_runs": 2,
+  "cursor_movement": null,
+  "guardrails": {
+    "zero_insert_3x": false,
+    "high_skip_ratio": true,
+    "cursor_stalled": false
+  },
+  "latest_runs": [
+    {
+      "started_at": "2026-03-09T11:34:39.586519+00:00",
+      "status": "max_queries_reached",
+      "scanned": 92,
+      "inserted": 0,
+      "skipped_non_criminal": 92,
+      "step_count": 120,
+      "backfill_cursor_date": "2026-03-01",
+      "log_stream": "caselaw-ingest/caselaw-ingest/8c9b0db64dda49b68f0c2e29bc34d853"
+    },
+    {
+      "started_at": "2026-03-09T10:50:44.227917+00:00",
+      "status": "error",
+      "scanned": 0,
+      "inserted": 0,
+      "skipped_non_criminal": 0,
+      "step_count": 0,
+      "backfill_cursor_date": "",
+      "log_stream": "caselaw-ingest/caselaw-ingest/224a071f30ab4f1f8e13c67d1b62b3d0"
+    }
+  ]
+}
