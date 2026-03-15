@@ -403,6 +403,8 @@ export default function MatterOntologyPage() {
   const interactionSettleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hideHoverTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const resizeRafRef = useRef<number | null>(null);
+  const containerResizeObserverRef = useRef<ResizeObserver | null>(null);
+  const containerSizeRef = useRef<{ width: number; height: number }>({ width: 0, height: 0 });
   const suppressClickUntilRef = useRef(0);
   const draggingNodeRef = useRef(false);
   const keepPhysicsLiveRef = useRef(false);
@@ -587,6 +589,11 @@ export default function MatterOntologyPage() {
       cancelAnimationFrame(resizeRafRef.current);
       resizeRafRef.current = null;
     }
+    if (containerResizeObserverRef.current) {
+      containerResizeObserverRef.current.disconnect();
+      containerResizeObserverRef.current = null;
+    }
+    containerSizeRef.current = { width: 0, height: 0 };
     if (networkRef.current) {
       try {
         networkRef.current.destroy();
@@ -639,7 +646,7 @@ export default function MatterOntologyPage() {
           hoverConnectedEdges: true,
           tooltipDelay: 1000000000,
           keyboard: true,
-          zoomSpeed: 0.22,
+          zoomSpeed: 0.12,
           zoomView: true,
           dragView: true,
           dragNodes: true,
@@ -742,6 +749,13 @@ export default function MatterOntologyPage() {
         try {
           network.setSize("100%", "100%");
           network.redraw();
+          const host = containerRef.current;
+          if (host) {
+            containerSizeRef.current = {
+              width: Math.max(0, Math.round(host.clientWidth)),
+              height: Math.max(0, Math.round(host.clientHeight)),
+            };
+          }
         } catch {
           // ignore
         }
@@ -778,6 +792,47 @@ export default function MatterOntologyPage() {
       }
       draggingNodeRef.current = false;
     });
+
+    if (containerRef.current && typeof ResizeObserver !== "undefined") {
+      const host = containerRef.current;
+      containerSizeRef.current = {
+        width: Math.max(0, Math.round(host.clientWidth)),
+        height: Math.max(0, Math.round(host.clientHeight)),
+      };
+      containerResizeObserverRef.current?.disconnect();
+      containerResizeObserverRef.current = new ResizeObserver((entries) => {
+        const next = entries[0]?.contentRect;
+        if (!next) return;
+        const width = Math.max(0, Math.round(next.width));
+        const height = Math.max(0, Math.round(next.height));
+        if (width < 2 || height < 2) {
+          containerSizeRef.current = { width, height };
+          return;
+        }
+        const previous = containerSizeRef.current;
+        const becameVisible =
+          (previous.width < 2 || previous.height < 2) && width >= 2 && height >= 2;
+        const largeDelta =
+          Math.abs(width - previous.width) >= 120 || Math.abs(height - previous.height) >= 90;
+        containerSizeRef.current = { width, height };
+        if (resizeRafRef.current !== null) {
+          cancelAnimationFrame(resizeRafRef.current);
+        }
+        resizeRafRef.current = requestAnimationFrame(() => {
+          resizeRafRef.current = null;
+          try {
+            network.setSize("100%", "100%");
+            network.redraw();
+          } catch {
+            return;
+          }
+          if (becameVisible || largeDelta) {
+            fitGraphToViewport(false);
+          }
+        });
+      });
+      containerResizeObserverRef.current.observe(host);
+    }
 
     networkRef.current = network;
     return network;
@@ -920,7 +975,7 @@ export default function MatterOntologyPage() {
       const edgeCount = visualEdges.length;
       const nodeCount = renderNodes.length;
       const tuning = buildOntologyElasticTuning(nodeCount, edgeCount);
-      const useCasefileTuning = String(ontology?.meta?.source || "").toLowerCase() === "casefile_schema";
+      const useCasefileTuning = !isCaselawView;
       const keepPhysicsLive =
         nodeCount <= (useCasefileTuning ? 950 : 1400) &&
         edgeCount <= (useCasefileTuning ? 3000 : 5200);

@@ -903,6 +903,32 @@ def _add_pass_events(
             )
 
 
+def _add_fallback_document_links(
+    *, builder: _GraphBuilder, document_profiles: list[_DocumentGraphProfile]
+) -> int:
+    if len(builder.edges) > 0 or len(document_profiles) < 2:
+        return 0
+
+    def _sort_key(profile: _DocumentGraphProfile) -> tuple[datetime, str, str]:
+        raw_ingested = profile.row.get("ingested_at")
+        ingested_at = raw_ingested if isinstance(raw_ingested, datetime) else datetime.min
+        return (ingested_at, profile.node_display_name, profile.document_uuid)
+
+    ordered_profiles = sorted(document_profiles, key=_sort_key)
+    links_added = 0
+    for left, right in zip(ordered_profiles, ordered_profiles[1:]):
+        builder.add_edge(
+            source=f"document:{left.document_uuid}",
+            target=f"document:{right.document_uuid}",
+            edge_type="related_document",
+            label="related document",
+            metadata={"fallback": "chronology"},
+            weight=0.55,
+        )
+        links_added += 1
+    return links_added
+
+
 def build_caselaw_ontology_graph(
     *,
     session: Session,
@@ -1490,6 +1516,11 @@ def build_matter_ontology_graph(
                 label="purpose",
             )
 
+    fallback_document_links_added = _add_fallback_document_links(
+        builder=builder,
+        document_profiles=document_profiles,
+    )
+
     graph = builder.finalize()
     graph["meta"].update(
         {
@@ -1497,8 +1528,11 @@ def build_matter_ontology_graph(
             "documents_loaded": len(documents),
             "truncated_documents": len(documents) >= limit,
             "max_documents": limit,
+            "source": "casefile_schema",
+            "casefile_mode": True,
             "include_statement_nodes": include_statement_nodes,
             "include_evidence_nodes": include_evidence_nodes,
+            "fallback_document_links_added": fallback_document_links_added,
             "document_node_naming_standard": (
                 "DOC::{YYYY_MM_DD|UNDATED}::{DOCUMENT_TYPE}::{TITLE}"
             ),
